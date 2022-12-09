@@ -91,7 +91,7 @@ const ContentContainer = styled.div`
   right: 16px;
 
   @media screen and (max-width: 600px) {
-    position: relative;
+    position: sticky;
     right: 0;
     width: 100%;
     margin: 16px;
