@@ -29,8 +29,8 @@ const jobs = [
     role: 'Software Engineer',
     dates: 'Sept 2019 - June 2022',
     image: "https://images.easyfundraising.org.uk/retailer/cropped/logo-giffgaff-1546873593.jpg",
-    products: ["Front End Core Services", "Mobile Apps", "Community"],
-    stack: ["React", "Javascript", "HTML", "React Native", "GraphQL"],
+    products: ["FE Core", "Mobile Apps", "Community"],
+    stack: ["React/Native", "Javascript", "GraphQL", "HTML"],
     bulletPoints: [
       'Led implementation of  ‘Help and Search’ section into giffgaff mobile application, featuring live chat (React Native, Typescript, Redux, GraphQL).',
       'Built and monitored NodeJS service to serve React components, utilising Hypernova (Javascript).',
@@ -48,17 +48,21 @@ const education = [
     dates: 'Sept 2016 - July 2019',
   },
   {
-    school: 'Saint Mary\'s Catholic School',
+    school: 'St. Mary\'s Sixth Form',
     qualification: 'A-Level',
     dates: 'Sept 2014 - July 2016',
   },
 ]
 
+const loughboroughImages = [ Grad1, Grad2, Grad3 ];
+
+const skills = ['Javascript • Typescript', 'React • React Native', 'HTML • CSS', 'NodeJS', 'GraphQL', 'UX Mindset', 'Communication', 'Determination', 'Empathy']
+
 const StyledButton = styled.button`
   background-color: #ede0ff;
   color: #6603fc;
   border-radius: 12px;
-  padding: 16px 16px;
+  padding: 12px 16px;
   width: auto;
   border: none;
   font-weight: bold;
@@ -145,9 +149,6 @@ const StyledModal = styled(Modal)`
   background: white;
 `
 
-const loughboroughImages = [ Grad1, Grad2, Grad3 ];
-const skills = ['Javascript • Typescript', 'React • React Native', 'HTML • CSS', 'NodeJS', 'GraphQL', 'UX Mindset', 'Communication', 'Determination', 'Empathy']
-
 const ImagesCard = ({ images }: any) => (
   <Card noPadding circle bgColor='transparent'>
     <Slide prevArrow={<></>} nextArrow={<></>} transitionDuration={500}>
@@ -199,6 +200,10 @@ const List = ({ title, titleColor, list }: any) => {
 
   h1 {
     color: ${(props) => props.titleColor};
+
+    @media screen and (max-width: 450px) {
+      display: none;
+    }
   }
 
   div {
@@ -211,6 +216,8 @@ const List = ({ title, titleColor, list }: any) => {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+      height: 100%;
+      overflow: hidden;
     }
   }
 
@@ -220,12 +227,13 @@ const List = ({ title, titleColor, list }: any) => {
     color: white;
 
     @media screen and (max-width: 600px) {
+      margin: 4px 8px;
       &::before {
         content: " ";
         white-space: pre;
       }
       &::after {
-        content: " •";
+        content: " \n";
       }
 
       &:nth-last-child(1) {
@@ -236,9 +244,14 @@ const List = ({ title, titleColor, list }: any) => {
     }
   }
 `
+  const StyledTitle = styled.h1`
+    @media screen and (max-width: 450px) {
+      margin-top: 0;
+    }
+  `
   return (
     <StyledList titleColor={titleColor}>
-      <h1>{title}</h1>
+      <StyledTitle>{title}</StyledTitle>
       <div>
         {list.map((item: string) => (
           <p>{item}</p>
@@ -247,6 +260,14 @@ const List = ({ title, titleColor, list }: any) => {
     </StyledList>
   )
 }
+
+const ResumeItemHeader = ({ title, subtitle, subsubtitle }: any) => (
+  <>
+    <h2 style={{ marginTop: 0 }}>{title}</h2>
+    <p style={{ margin: 0 }}>{subtitle}</p>
+    <small style={{ fontStyle: 'italic', color: 'grey' }}>{subsubtitle}</small>
+  </>            
+)
 
 const Resume = () => {
   const [modalContent, setModalContent] = useState<any>(null);
@@ -277,6 +298,22 @@ const Resume = () => {
       </StyledModal>
   )
 
+  const StyledProductsList = styled.div`
+    margin-top: 32px;
+
+    @media screen and (max-width: 545px) {
+      display: none;
+    }
+  `
+
+  const StyledTechList = styled.div`
+    margin-top: 32px;
+
+    @media screen and (max-width: 360px) {
+      display: none;
+    }
+  `
+
   return (
     <Page>
       <ContentModal />
@@ -293,30 +330,28 @@ const Resume = () => {
         {jobs.map(job => (
           <Card tall>
             <div style={{ width: '100%' }}>
-              <h2>{job.company}</h2>
-              <p style={{ margin: 0 }}>{job.role}</p>
-              <small style={{ fontStyle: 'italic', color: 'grey' }}>{job.dates}</small>
+              <ResumeItemHeader title={job.company} subtitle={job.role} subsubtitle={job.dates} />
 
-              <div style={{ marginTop: '32px' }}>
+              <StyledProductsList>
                 <strong>Products</strong>
                 <div style={{ marginTop: '10px' }}>
                   {job.products.map(product => (
                     <p style={{ margin: 0, marginTop: '5px' }}>{product}</p>
                   ))}
                 </div>
-              </div>
+              </StyledProductsList>
               
-              <div style={{ marginTop: '32px' }}>
+              <StyledTechList style={{ marginTop: '32px' }}>
                 <strong>Technologies</strong>
                 <div style={{ marginTop: '10px' }}>
                   {job.stack.map(tech => (
                     <p style={{ margin: 0, marginTop: '5px' }}>{tech}</p>
                   ))}
                 </div>
-              </div>
+              </StyledTechList>
 
               <div style={{ position: 'absolute', bottom: 15, right: 15 }}>
-                <StyledButton onClick={() => setModalContent(job)}>Learn more</StyledButton>
+                <StyledButton onClick={() => setModalContent(job)}>More</StyledButton>
               </div>
             </div>
           </Card>
@@ -327,14 +362,12 @@ const Resume = () => {
 
         {education.map(education => (
           <Card>
-          <div style={{ width: '100%' }}>
-            <h3>{education.school}</h3>
-            <p>{education.qualification}</p>
-            <small>{education.dates}</small>
-            <div style={{ position: 'absolute', bottom: 15, right: 15 }}>
-              <StyledButton onClick={() => setModalContent(education)}>Learn more</StyledButton>
+            <div style={{ width: '100%' }}>
+            <ResumeItemHeader title={education.school} subtitle={education.qualification} subsubtitle={education.dates} />
+              <div style={{ position: 'absolute', bottom: 15, right: 15 }}>
+                <StyledButton onClick={() => setModalContent(education)}>More</StyledButton>
+              </div>
             </div>
-          </div>
         </Card>
         ))}
 
