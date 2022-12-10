@@ -87,26 +87,23 @@ const ContentContainer = styled.div`
   margin: 10px;
   margin-right: 0px;
   box-sizing: border-box;
-  position: absolute;
   right: 16px;
 
   @media screen and (max-width: 600px) {
-    position: sticky;
     right: 0;
     width: 100%;
     margin: 16px;
-    height: 100%;
   }
 
   @media screen and (max-width: 320px) {
     background: none;
     padding: 0;
+    margin: 0;
     
   }
 `
 
 const MemojiContainer = styled.img`
-  position: absolute;
   left: 16px;
   border-radius: 50%;
   height: 60%;
@@ -147,6 +144,21 @@ const StyledModal = styled(Modal)`
   border-radius: 25px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   background: white;
+`
+const StyledProductsList = styled.div`
+    margin-top: 32px;
+
+    @media screen and (max-width: 545px) {
+      display: none;
+    }
+  `
+
+const StyledTechList = styled.div`
+  margin-top: 32px;
+
+  @media screen and (max-width: 360px) {
+    display: none;
+  }
 `
 
 const ImagesCard = ({ images }: any) => (
@@ -278,7 +290,6 @@ const Resume = () => {
         onAfterOpen={() => {}}
         onRequestClose={() => {}}
         contentLabel="Example Modal"
-  
       >
         <div style={{ display: 'flex ', justifyContent: 'space-between' }}>
           <div>
@@ -297,22 +308,6 @@ const Resume = () => {
         </div>
       </StyledModal>
   )
-
-  const StyledProductsList = styled.div`
-    margin-top: 32px;
-
-    @media screen and (max-width: 545px) {
-      display: none;
-    }
-  `
-
-  const StyledTechList = styled.div`
-    margin-top: 32px;
-
-    @media screen and (max-width: 360px) {
-      display: none;
-    }
-  `
 
   return (
     <Page>
