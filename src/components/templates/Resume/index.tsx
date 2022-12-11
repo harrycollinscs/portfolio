@@ -71,47 +71,55 @@ const StyledButton = styled.button`
 const ContentAndImage = styled.div`
   display: flex;
   height: 100%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 
   @media screen and (max-width: 600px) {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 380px) {
+    justify-content: center;
   }
 `
 
 const ContentContainer = styled.div`
-  width: 60%;
   background-color: #c1e9ff;
   border-radius: 25px;
   padding: 16px;
-  margin: 10px;
-  margin-right: 0px;
   box-sizing: border-box;
   right: 16px;
+  align-items: center;
 
   @media screen and (max-width: 600px) {
     right: 0;
     width: 100%;
-    margin: 16px;
+  }
+
+  @media screen and (max-width: 380px) {
+    height: 100%;
+    display: flex;
   }
 
   @media screen and (max-width: 320px) {
     background: none;
     padding: 0;
     margin: 0;
-    
   }
 `
 
 const MemojiContainer = styled.img`
-  left: 16px;
   border-radius: 50%;
   height: 60%;
   aspect-ratio: 1 / 1;
+  margin-right: 16px;
 
   @media screen and (max-width: 600px) {
-    position: relative;
-    left: 0;
+    margin: 0;
     height: 50%;
   }
 
@@ -282,9 +290,10 @@ const ResumeItemHeader = ({ title, subtitle, subsubtitle }: any) => (
 )
 
 const Resume = () => {
+  const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
   const [modalContent, setModalContent] = useState<any>(null);
  
-  const ContentModal = () => (
+  const ContentModal = ({ isOpen, title, subtitle, image, bulletPoints }: any) => (
     <StyledModal
         isOpen={modalContent}
         onAfterOpen={() => {}}
@@ -311,7 +320,7 @@ const Resume = () => {
 
   return (
     <Page>
-      <ContentModal />
+      <ContentModal isOpen={modalIsOpen} title='dummy' subtitle='dummy' image='dummy' bulletPoint='dummy'/>
       <Grid>
         <TitleCard title='EMPLOYMENT' bgColor='#003666' color='#c1e9ff' />
         <Card bgColor="#d6f5ff" long>
