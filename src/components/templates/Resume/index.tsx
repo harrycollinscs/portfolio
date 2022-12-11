@@ -11,6 +11,9 @@ import 'react-slideshow-image/dist/styles.css'
 import Grad1 from '../../../assets/images/Grad1.png'
 import Grad2 from '../../../assets/images/Grad2.png'
 import Grad3 from '../../../assets/images/Grad3.png'
+import ResumeCard from '../../molecules/ResumeCard';
+import TitleCard from '../../molecules/TitleCard';
+import ListCard from '../../molecules/ListCard';
 
 const jobs = [
   {
@@ -153,21 +156,6 @@ const StyledModal = styled(Modal)`
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   background: white;
 `
-const StyledProductsList = styled.div`
-    margin-top: 32px;
-
-    @media screen and (max-width: 545px) {
-      display: none;
-    }
-  `
-
-const StyledTechList = styled.div`
-  margin-top: 32px;
-
-  @media screen and (max-width: 360px) {
-    display: none;
-  }
-`
 
 const ImagesCard = ({ images }: any) => (
   <Card noPadding circle bgColor='transparent'>
@@ -181,113 +169,6 @@ const ImagesCard = ({ images }: any) => (
   </Card>
 )
 
-const TitleCard = ({ title, bgColor, color }: { title: string, bgColor: string, color: string }) => {
-  const Content = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-
-    h1 {
-      color: ${color};
-      font-size: 300%;
-
-      @media screen and (max-width: 450px) {
-        font-size: 250%;
-      }
-      @media screen and (max-width: 380px) {
-        font-size: 200%;
-      }
-      @media screen and (max-width: 320px) {
-        font-size: 150%;
-      }
-    }
-  `
-
-  return (
-    <Card bgColor={bgColor} long>
-      <Content>
-        <h1>{title}</h1>
-      </Content>
-    </Card>
-  )
-}
-
-const List = ({ title, titleColor, list }: any) => {
-  const StyledList = styled.div<any>`
-  text-align: center;
-  height: 100%;
-
-  h1 {
-    color: ${(props) => props.titleColor};
-
-    @media screen and (max-width: 450px) {
-      display: none;
-    }
-  }
-
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 80%;
-
-    @media screen and (max-width: 600px) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      height: 100%;
-      overflow: hidden;
-    }
-  }
-
-  p { 
-    padding: 0px;
-    margin: 0px;
-    color: white;
-
-    @media screen and (max-width: 600px) {
-      margin: 4px 8px;
-      &::before {
-        content: " ";
-        white-space: pre;
-      }
-      &::after {
-        content: " \n";
-      }
-
-      &:nth-last-child(1) {
-        &::after {
-          content: "";
-        }
-      }
-    }
-  }
-`
-  const StyledTitle = styled.h1`
-    @media screen and (max-width: 450px) {
-      margin-top: 0;
-    }
-  `
-  return (
-    <StyledList titleColor={titleColor}>
-      <StyledTitle>{title}</StyledTitle>
-      <div>
-        {list.map((item: string) => (
-          <p>{item}</p>
-        ))}
-      </div>
-    </StyledList>
-  )
-}
-
-const ResumeItemHeader = ({ title, subtitle, subsubtitle }: any) => (
-  <>
-    <h2 style={{ marginTop: 0 }}>{title}</h2>
-    <p style={{ margin: 0 }}>{subtitle}</p>
-    <small style={{ fontStyle: 'italic', color: 'grey' }}>{subsubtitle}</small>
-  </>            
-)
 
 const Resume = () => {
   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
@@ -331,59 +212,24 @@ const Resume = () => {
             </ContentContainer>
           </ContentAndImage>
         </Card>
+
         {jobs.map(job => (
-          <Card tall>
-            <div style={{ width: '100%' }}>
-              <ResumeItemHeader title={job.company} subtitle={job.role} subsubtitle={job.dates} />
-
-              <StyledProductsList>
-                <strong>Products</strong>
-                <div style={{ marginTop: '10px' }}>
-                  {job.products.map(product => (
-                    <p style={{ margin: 0, marginTop: '5px' }}>{product}</p>
-                  ))}
-                </div>
-              </StyledProductsList>
-              
-              <StyledTechList style={{ marginTop: '32px' }}>
-                <strong>Technologies</strong>
-                <div style={{ marginTop: '10px' }}>
-                  {job.stack.map(tech => (
-                    <p style={{ margin: 0, marginTop: '5px' }}>{tech}</p>
-                  ))}
-                </div>
-              </StyledTechList>
-
-              <div style={{ position: 'absolute', bottom: 15, right: 15 }}>
-                <StyledButton onClick={() => setModalContent(job)}>More</StyledButton>
-              </div>
-            </div>
-          </Card>
+          <ResumeCard title={job.company} subtitle={job.role} subsubtitle={job.dates} products={job.products} technologies={job.stack} action={() => setModalContent(job)} isTall={true} />
         ))}
 
         <TitleCard title='EDUCATION' bgColor='#fbb347' color='#ffedb3' />
 
-
         {education.map(education => (
-          <Card>
-            <div style={{ width: '100%' }}>
-            <ResumeItemHeader title={education.school} subtitle={education.qualification} subsubtitle={education.dates} />
-              <div style={{ position: 'absolute', bottom: 15, right: 15 }}>
-                <StyledButton onClick={() => setModalContent(education)}>More</StyledButton>
-              </div>
-            </div>
-        </Card>
+          <ResumeCard title={education.school} subtitle={education.qualification} subsubtitle={education.dates} action={() => setModalContent(education)} />
         ))}
 
         <ImagesCard images={loughboroughImages} />
+
         <Card long />
         
-        <Card tall bgColor='#3b3a67'>
-          <List title='SKILLS' titleColor='#8984bd' list={skills}/> 
-        </Card>
-      
+        <ListCard title='SKILLS' listItems={skills} bgColor='#3b3a67' titleColor='#8984bd' />
+
         <Card />
-        <Card /><Card />
       </Grid>
     </Page>
   )
