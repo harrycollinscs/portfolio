@@ -9,7 +9,10 @@ jobs:
       - run: npm i @cloudflare/wrangler -g
       - run: wrangler publishs
 workflows:
-  deploy:
+  build-test-deploy:
     jobs:
+      - build:
+          context: cf-worker
+      - test
       - deploy:
-      context: cf-worker
+          context: cf-worker
