@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: sudo npm install
       - run: sudo npm i @cloudflare/wrangler -g
-      - run: wrangler publishs
+      - run: wrangler publish
 workflows:
   deploy:
     jobs:
