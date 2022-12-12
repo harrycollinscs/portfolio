@@ -1,0 +1,15 @@
+version: 4.0.0
+jobs:
+  deploy:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm i @cloudflare/wrangler -g
+      - run: wrangler publishs
+workflows:
+  deploy:
+    jobs:
+      - deploy:
+      context: cf-worker

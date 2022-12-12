@@ -1,0 +1,8 @@
+name = "cf-worker"
+type = "javascript"
+
+account_id = ""
+workers_dev = false
+route = "harrycollins.dev/cf-worker"
+zone_id = ""
+compatibility_date = "2022-12-12"

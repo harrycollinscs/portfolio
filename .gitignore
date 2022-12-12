@@ -21,3 +21,16 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#cf-worker
+cf-worker/target
+cf-worker/dist
+cf-worker/**/*.rs.bk
+cf-worker/Cargo.lock
+cf-worker/bin/
+cf-worker/pkg/
+cf-worker/wasm-pack.log
+cf-worker/worker/
+cf-worker/node_modules/
+cf-worker/.cargo-ok
+
