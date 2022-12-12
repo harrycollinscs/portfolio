@@ -5,8 +5,8 @@ jobs:
       - image: circleci/node:lts
     steps:
       - checkout
-      - run: npm install
-      - run: npm i @cloudflare/wrangler -g
+      - run: sudo npm install
+      - run: sudo npm i @cloudflare/wrangler -g
       - run: wrangler publishs
 workflows:
   deploy:
