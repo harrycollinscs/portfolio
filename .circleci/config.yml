@@ -11,5 +11,5 @@ jobs:
 workflows:
   deploy:
     jobs:
-      - deploy:
-      context: cf-worker
+      deploy:
+        context: cf-workergit
