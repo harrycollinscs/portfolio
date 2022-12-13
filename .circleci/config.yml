@@ -6,8 +6,8 @@ jobs:
     steps:
       - checkout
       - run: sudo npm install
-      - run: cd cf-worker
-      - run: sudo npm install @cloudflare/wrangler -g; wrangler publish
+      # - run: cd cf-worker
+      # - run: sudo npm install @cloudflare/wrangler -g; wrangler publish
 
 workflows:
   deploy:
