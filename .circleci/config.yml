@@ -2,12 +2,12 @@ version: 2.1
 jobs:
   deploy:
     docker:
-      - image: circleci/node:lts
+      - image: circleci/yarn:lts
     steps:
       - checkout
-      - run: sudo npm install
+      - run: yarn install
       - run: cd cf-worker
-      - run: sudo npm install @cloudflare/wrangler; npx wrangler publish
+      - run: yarn add @cloudflare/wrangler -g; wrangler publish
 
 workflows:
   deploy:
