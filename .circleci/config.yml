@@ -8,7 +8,7 @@ jobs:
       - run: npm install
       # - run: cd cf-worker
       - run: npm install @cloudflare/wrangler;
-      # - run: wrangler publish
+      - run: npx wrangler publish
 
 workflows:
   deploy:
