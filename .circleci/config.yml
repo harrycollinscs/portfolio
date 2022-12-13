@@ -5,9 +5,9 @@ jobs:
       - image: cimg/node:19.2.0
     steps:
       - checkout
-      - run: yarn install
+      - run: sudo npm install
       - run: cd cf-worker
-      - run: yarn add @cloudflare/wrangler -g; wrangler publish
+      - run: sudo npm install @cloudflare/wrangler -g; wrangler publish
 
 workflows:
   deploy:
