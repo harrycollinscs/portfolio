@@ -5,12 +5,9 @@ jobs:
       - image: circleci/node:lts
     steps:
       - checkout
-      - run: sudo chmod 777 /root
       - run: sudo npm install
-      - run: npm install --prefix=$HOME/.local --global serverless
       - run: cd cf-worker
       - run: sudo npm install @cloudflare/wrangler; npx wrangler publish
-      - run: sudo chmod 700 /root; sudo chmod -R 700 /root/.wrangler
 
 workflows:
   deploy:
