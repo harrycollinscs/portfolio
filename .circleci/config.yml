@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: npm install;
       - run: echo ${CLOUDFLARE_API_KEY}
-      - run: cd cf-worker && npm install @cloudflare/wrangler && CF_API_KEY=$CLOUDFLARE_API_TOKEN CF_EMAIL=harrycol97@gmail.com npx wrangler publish;
+      - run: cd cf-worker && npm install @cloudflare/wrangler && CF_API_TOKEN=$CLOUDFLARE_API_TOKEN CF_EMAIL=harrycol97@gmail.com npx wrangler publish;
 
 workflows:
   deploy:
