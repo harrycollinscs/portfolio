@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   deploy:
     docker:
-      - image: circleci/yarn:lts
+      - image: cimg/node:19.2.0
     steps:
       - checkout
       - run: yarn install
