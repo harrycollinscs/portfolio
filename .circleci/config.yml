@@ -3,6 +3,9 @@ jobs:
   deploy:
     docker:
       - image: cimg/node:lts
+    # environment:
+    #   CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
+    #   CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
     steps:
       - checkout
       - run: npm install;
