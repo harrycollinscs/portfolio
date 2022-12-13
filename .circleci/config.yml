@@ -5,9 +5,9 @@ jobs:
       - image: cimg/node:lts
     steps:
       - checkout
-      - run: sudo npm install
-      - run: cd cf-worker
-      - run: sudo npm install @cloudflare/wrangler -g;
+      - run: npm install
+      # - run: cd cf-worker
+      - run: npm install @cloudflare/wrangler -g;
       # - run: wrangler publish
 
 workflows:
