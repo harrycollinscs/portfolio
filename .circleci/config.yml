@@ -8,7 +8,7 @@ jobs:
       - run: sudo npm install
       - run: npm install --prefix=$HOME/.local --global serverless
       - run: sudo npm install @cloudflare/wrangler -g
-      - run: wrangler publish
+      - run: cd cf-worker/; wrangler publish
 workflows:
   deploy:
     jobs:
