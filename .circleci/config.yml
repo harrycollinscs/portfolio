@@ -6,9 +6,7 @@ jobs:
     steps:
       - checkout
       - run: npm install;
-      - run: cd cf-worker && ls;
-      - run: npm install @cloudflare/wrangler;
-      - run: npx wrangler publish;
+      - run: cd cf-worker && npm install @cloudflare/wrangler && npx wrangler publish;
 
 workflows:
   deploy:
