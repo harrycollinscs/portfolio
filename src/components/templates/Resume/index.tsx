@@ -171,7 +171,7 @@ const ImagesCard = ({ images }: any) => (
 
 
 const Resume = () => {
-  const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
+  // const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
   const [modalContent, setModalContent] = useState<any>(null);
  
   const ContentModal = ({ isOpen, title, subtitle, image, bulletPoints }: any) => (
@@ -201,7 +201,7 @@ const Resume = () => {
 
   return (
     <Page>
-      <ContentModal isOpen={modalIsOpen} title='dummy' subtitle='dummy' image='dummy' bulletPoint='dummy'/>
+      <ContentModal isOpen={modalContent} title='dummy' subtitle='dummy' image='dummy' bulletPoint='dummy'/>
       <Grid>
         <TitleCard title='EMPLOYMENT' bgColor='#003666' color='#c1e9ff' />
         <Card bgColor="#d6f5ff" long>
