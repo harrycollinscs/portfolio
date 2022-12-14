@@ -5,7 +5,10 @@ jobs:
       - image: cimg/node:lts
     steps:
       - checkout
-      - run: npm install;
+      - run: npm install
+      - run: ls
+      - run: npm run build
+      - run: ls
       - run: cd cf-worker && npm install wrangler --save-dev && npm i worktop.build && CF_API_TOKEN=$CLOUDFLARE_API_TOKEN CLOUD_FLARE_EMAIL=harrycol97@gmail.com npx wrangler pages publish ../build --project-name=portfolio --branch=main
 
 workflows:
