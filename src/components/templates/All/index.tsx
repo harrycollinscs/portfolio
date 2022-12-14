@@ -10,7 +10,6 @@ import HarryCollins1 from '../../../assets/images/HarryCollins1.png'
 import HarryNewYork from '../../../assets/images/HarryNewYork.png'
 import HarryBridge from '../../../assets/images/HarryBridge.png'
 
-import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 import ImagesCard from '../../molecules/ImagesCard';
 

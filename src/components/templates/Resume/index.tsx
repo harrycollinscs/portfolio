@@ -5,7 +5,6 @@ import Modal from 'react-modal'
 import Memoji from '../../../assets/images/memoji.jpg'
 import Grid from '../../atoms/Grid';
 import Card from '../../atoms/Card';
-import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
 
 import Grad1 from '../../../assets/images/Grad1.png'
