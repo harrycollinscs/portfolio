@@ -12,20 +12,9 @@ import HarryBridge from '../../../assets/images/HarryBridge.png'
 
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
+import ImagesCard from '../../molecules/ImagesCard';
 
 const slideImages = [ HarryNewYork, HarryBridge, HarryCollins1 ];
-
-const ImagesCard = ({ images }: any) => (
-  <Card noPadding circle bgColor='transparent'>
-    <Slide prevArrow={<></>} nextArrow={<></>} >
-      {images.map((image: any, index: number)=> (
-        <div  className="each-slide" key={index}>
-          <img style={{ height: '100%', width: '100%', borderRadius: '50%'}} src={image} alt="sliding"/>
-        </div>
-      ))} 
-    </Slide>
-  </Card>
-)
 
 const openLink = (link: string) => {
   window.open(link, '_blank');

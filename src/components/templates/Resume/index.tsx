@@ -14,6 +14,7 @@ import Grad3 from '../../../assets/images/Grad3.png'
 import ResumeCard from '../../molecules/ResumeCard';
 import TitleCard from '../../molecules/TitleCard';
 import ListCard from '../../molecules/ListCard';
+import ImagesCard from '../../molecules/ImagesCard';
 
 const jobs = [
   {
@@ -156,19 +157,6 @@ const StyledModal = styled(Modal)`
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   background: white;
 `
-
-const ImagesCard = ({ images }: any) => (
-  <Card noPadding circle bgColor='transparent'>
-    <Slide prevArrow={<></>} nextArrow={<></>} transitionDuration={500}>
-      {images?.map((image: any, index: number)=> (
-        <div  className="each-slide" key={index}>
-          <img style={{ height: '100%', width: '100%', borderRadius: '50%'}} src={image} alt="sliding"/>
-        </div>
-      ))} 
-    </Slide>
-  </Card>
-)
-
 
 const Resume = () => {
   // const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
