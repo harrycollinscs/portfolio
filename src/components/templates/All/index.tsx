@@ -31,14 +31,12 @@ const openLink = (link: string) => {
   window.open(link, '_blank');
 }
 
-const All = () => {
-
-  const Title = styled.h1`
-    
-
+const Title = styled.h1`
     color: #efefef;
     -webkit-text-stroke: 0.5px #b0b0b0;
-  `
+`
+
+const All = () => {
 
   return (
     <Page>

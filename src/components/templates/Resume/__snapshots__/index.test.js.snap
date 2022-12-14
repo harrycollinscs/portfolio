@@ -1,0 +1,560 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bcXHqe eimxqs"
+>
+  <div
+    className="sc-gswNZR iuRrXo"
+  >
+    <div
+      className="sc-dkrFOg wAzCx"
+    >
+      <div
+        className="sc-kDvujY jaaqQm"
+        color="#c1e9ff"
+      >
+        <h1>
+          EMPLOYMENT
+        </h1>
+      </div>
+    </div>
+    <div
+      className="sc-dkrFOg jVGUWt"
+    >
+      <div
+        className="sc-bqWxrE cHatLX"
+      >
+        <img
+          alt=""
+          className="sc-hBxehG gYjDIT"
+          src={Object {}}
+        />
+        <div
+          className="sc-ksBlkl eIOYQL"
+        >
+          <p>
+            Driven software engineer with 3 years of professional experience in software development. Focus in web and mobile app development.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-dkrFOg gAcZeq"
+    >
+      <div
+        className="sc-iBYQkv bHzXBj"
+      >
+        <h2
+          className="sc-eDvSVe lnaoEU"
+        >
+          Vodafone
+        </h2>
+        <p
+          className="sc-jSUZER eDYipk"
+        >
+          Software Engineer
+        </p>
+        <small
+          className="sc-gKPRtg hQhJbe"
+        >
+          Aug 2022 - Present
+        </small>
+        <div
+          className="sc-pyfCe gYJRML"
+        >
+          <strong>
+            Products
+          </strong>
+          <div
+            style={
+              Object {
+                "marginTop": "10px",
+              }
+            }
+          >
+            <p
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              Upgrades & Offers
+            </p>
+          </div>
+        </div>
+        <div
+          className="sc-jrcTuL kFvwkl"
+          style={
+            Object {
+              "marginTop": "32px",
+            }
+          }
+        >
+          <strong>
+            Technologies
+          </strong>
+          <div
+            style={
+              Object {
+                "marginTop": "10px",
+              }
+            }
+          >
+            <p
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              React
+            </p>
+            <p
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              Typescript
+            </p>
+            <p
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              HTML
+            </p>
+          </div>
+        </div>
+        <div
+          className="sc-ftTHYK caKGMS"
+        >
+          <button
+            className="sc-hLBbgP dYyVMa"
+            onClick={[Function]}
+          >
+            More
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-dkrFOg gAcZeq"
+    >
+      <div
+        className="sc-iBYQkv bHzXBj"
+      >
+        <h2
+          className="sc-eDvSVe lnaoEU"
+        >
+          giffgaff
+        </h2>
+        <p
+          className="sc-jSUZER eDYipk"
+        >
+          Software Engineer
+        </p>
+        <small
+          className="sc-gKPRtg hQhJbe"
+        >
+          Sept 2019 - June 2022
+        </small>
+        <div
+          className="sc-pyfCe gYJRML"
+        >
+          <strong>
+            Products
+          </strong>
+          <div
+            style={
+              Object {
+                "marginTop": "10px",
+              }
+            }
+          >
+            <p
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              FE Core
+            </p>
+            <p
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              Mobile Apps
+            </p>
+            <p
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              Community
+            </p>
+          </div>
+        </div>
+        <div
+          className="sc-jrcTuL kFvwkl"
+          style={
+            Object {
+              "marginTop": "32px",
+            }
+          }
+        >
+          <strong>
+            Technologies
+          </strong>
+          <div
+            style={
+              Object {
+                "marginTop": "10px",
+              }
+            }
+          >
+            <p
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              React/Native
+            </p>
+            <p
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              Javascript
+            </p>
+            <p
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              GraphQL
+            </p>
+            <p
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              HTML
+            </p>
+          </div>
+        </div>
+        <div
+          className="sc-ftTHYK caKGMS"
+        >
+          <button
+            className="sc-hLBbgP dYyVMa"
+            onClick={[Function]}
+          >
+            More
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-dkrFOg eQdlFO"
+    >
+      <div
+        className="sc-kDvujY kQHOJo"
+        color="#ffedb3"
+      >
+        <h1>
+          EDUCATION
+        </h1>
+      </div>
+    </div>
+    <div
+      className="sc-dkrFOg gHMHIB"
+    >
+      <div
+        className="sc-iBYQkv bHzXBj"
+      >
+        <h2
+          className="sc-eDvSVe lnaoEU"
+        >
+          Loughborough University
+        </h2>
+        <p
+          className="sc-jSUZER eDYipk"
+        >
+          BSc Computer Science
+        </p>
+        <small
+          className="sc-gKPRtg hQhJbe"
+        >
+          Sept 2016 - July 2019
+        </small>
+        <div
+          className="sc-ftTHYK caKGMS"
+        >
+          <button
+            className="sc-hLBbgP dYyVMa"
+            onClick={[Function]}
+          >
+            More
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-dkrFOg gHMHIB"
+    >
+      <div
+        className="sc-iBYQkv bHzXBj"
+      >
+        <h2
+          className="sc-eDvSVe lnaoEU"
+        >
+          St. Mary's Sixth Form
+        </h2>
+        <p
+          className="sc-jSUZER eDYipk"
+        >
+          A-Level
+        </p>
+        <small
+          className="sc-gKPRtg hQhJbe"
+        >
+          Sept 2014 - July 2016
+        </small>
+        <div
+          className="sc-ftTHYK caKGMS"
+        >
+          <button
+            className="sc-hLBbgP dYyVMa"
+            onClick={[Function]}
+          >
+            More
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-dkrFOg krVsfh"
+    >
+      <div
+        aria-roledescription="carousel"
+        dir="ltr"
+      >
+        <div
+          className="react-slideshow-container"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchCancel={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+        >
+          <div
+            className="react-slideshow-wrapper slide "
+          >
+            <div
+              className="images-wrap"
+              style={
+                Object {
+                  "transform": "translate(-0px)",
+                }
+              }
+            >
+              <div
+                aria-hidden="true"
+                aria-roledescription="slide"
+                data-index={-1}
+              >
+                <div
+                  className="each-slide"
+                >
+                  <img
+                    alt="sliding"
+                    src={Object {}}
+                    style={
+                      Object {
+                        "borderRadius": "50%",
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                aria-roledescription="slide"
+                className="active"
+                data-index={0}
+              >
+                <div
+                  className="each-slide"
+                >
+                  <img
+                    alt="sliding"
+                    src={Object {}}
+                    style={
+                      Object {
+                        "borderRadius": "50%",
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                aria-roledescription="slide"
+                className=""
+                data-index={1}
+              >
+                <div
+                  className="each-slide"
+                >
+                  <img
+                    alt="sliding"
+                    src={Object {}}
+                    style={
+                      Object {
+                        "borderRadius": "50%",
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                aria-roledescription="slide"
+                className=""
+                data-index={2}
+              >
+                <div
+                  className="each-slide"
+                >
+                  <img
+                    alt="sliding"
+                    src={Object {}}
+                    style={
+                      Object {
+                        "borderRadius": "50%",
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                aria-roledescription="slide"
+                data-index={3}
+              >
+                <div
+                  className="each-slide"
+                >
+                  <img
+                    alt="sliding"
+                    src={Object {}}
+                    style={
+                      Object {
+                        "borderRadius": "50%",
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-dkrFOg iqtpTI"
+    />
+    <div
+      className="sc-dkrFOg kIqdrY"
+    >
+      <div
+        className="sc-ipEyDJ jCUoVC"
+      >
+        <h1
+          className="sc-csuSiG bNmCeH"
+        >
+          SKILLS
+        </h1>
+        <div>
+          <p>
+            Javascript • Typescript
+          </p>
+          <p>
+            React • React Native
+          </p>
+          <p>
+            HTML • CSS
+          </p>
+          <p>
+            NodeJS
+          </p>
+          <p>
+            GraphQL
+          </p>
+          <p>
+            UX Mindset
+          </p>
+          <p>
+            Communication
+          </p>
+          <p>
+            Determination
+          </p>
+          <p>
+            Empathy
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-dkrFOg gHMHIB"
+    />
+  </div>
+</div>
+`;

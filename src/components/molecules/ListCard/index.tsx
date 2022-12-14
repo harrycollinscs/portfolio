@@ -1,8 +1,8 @@
+import React from 'react'
 import Card from '../../atoms/Card'
 import styled from 'styled-components'
 
-const List = ({ title, titleColor, list }: any) => {
-  const StyledList = styled.div<any>`
+const StyledList = styled.div<any>`
   text-align: center;
   height: 100%;
 
@@ -52,22 +52,23 @@ const List = ({ title, titleColor, list }: any) => {
     }
   }
 `
-  const StyledTitle = styled.h1`
-    @media screen and (max-width: 450px) {
-      margin-top: 0;
-    }
-  `
-  return (
-    <StyledList titleColor={titleColor}>
-      <StyledTitle>{title}</StyledTitle>
-      <div>
-        {list.map((item: string) => (
-          <p>{item}</p>
-        ))}
-      </div>
-    </StyledList>
-  )
-}
+
+const StyledTitle = styled.h1`
+  @media screen and (max-width: 450px) {
+    margin-top: 0;
+  }
+`
+
+const List = ({ title, titleColor, list }: any) => (
+  <StyledList titleColor={titleColor}>
+    <StyledTitle>{title}</StyledTitle>
+    <div>
+      {list?.map((item: string) => (
+        <p>{item}</p>
+      ))}
+    </div>
+  </StyledList>
+)
 
 const ListCard = ({ title, listItems, bgColor, titleColor }: any) => (
   <Card tall bgColor={bgColor}>

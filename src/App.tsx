@@ -68,7 +68,7 @@ const Tabs = ({ tabs }: TabManagerProps) => {
       <TabsContainer>
         <TabButtons>
           {tabs.map(({title}, index: number) => (
-            <Tab isActive={index===activeTab} onClick={() => setActiveTab(index)}>
+            <Tab key={index} isActive={index===activeTab} onClick={() => setActiveTab(index)}>
               {title}
             </Tab>
           ))}

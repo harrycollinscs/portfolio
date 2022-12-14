@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bcXHqe eimxqs"
+>
+  <div
+    className="sc-gswNZR iuRrXo"
+  >
+    <div
+      className="sc-dkrFOg krVsfh"
+    >
+      <div
+        aria-roledescription="carousel"
+        dir="ltr"
+      >
+        <div
+          className="react-slideshow-container"
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseMove={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+          onTouchCancel={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+        >
+          <div
+            className="react-slideshow-wrapper slide "
+          >
+            <div
+              className="images-wrap"
+              style={
+                Object {
+                  "transform": "translate(-0px)",
+                }
+              }
+            >
+              <div
+                aria-hidden="true"
+                aria-roledescription="slide"
+                data-index={-1}
+              >
+                <div
+                  className="each-slide"
+                >
+                  <img
+                    alt="sliding"
+                    src={Object {}}
+                    style={
+                      Object {
+                        "borderRadius": "50%",
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                aria-roledescription="slide"
+                className="active"
+                data-index={0}
+              >
+                <div
+                  className="each-slide"
+                >
+                  <img
+                    alt="sliding"
+                    src={Object {}}
+                    style={
+                      Object {
+                        "borderRadius": "50%",
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                aria-roledescription="slide"
+                className=""
+                data-index={1}
+              >
+                <div
+                  className="each-slide"
+                >
+                  <img
+                    alt="sliding"
+                    src={Object {}}
+                    style={
+                      Object {
+                        "borderRadius": "50%",
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                aria-roledescription="slide"
+                className=""
+                data-index={2}
+              >
+                <div
+                  className="each-slide"
+                >
+                  <img
+                    alt="sliding"
+                    src={Object {}}
+                    style={
+                      Object {
+                        "borderRadius": "50%",
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                aria-roledescription="slide"
+                data-index={3}
+              >
+                <div
+                  className="each-slide"
+                >
+                  <img
+                    alt="sliding"
+                    src={Object {}}
+                    style={
+                      Object {
+                        "borderRadius": "50%",
+                        "height": "100%",
+                        "width": "100%",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-dkrFOg gHMHIB"
+    />
+    <div
+      className="sc-dkrFOg gAcZeq"
+    >
+      <h1
+        style={
+          Object {
+            "color": "grey",
+          }
+        }
+      >
+        About me
+      </h1>
+    </div>
+    <div
+      className="sc-dkrFOg gHMHIB"
+    />
+    <div
+      className="sc-dkrFOg iqtpTI"
+    >
+      <h1
+        className="sc-hLBbgP kSSfri"
+      >
+        Tech Stack
+      </h1>
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "flexWrap": "wrap",
+            "margin": 40,
+          }
+        }
+      />
+    </div>
+    <div
+      className="sc-dkrFOg gHMHIB"
+    />
+    <div
+      className="sc-dkrFOg gHMHIB"
+    />
+    <div
+      className="sc-dkrFOg iKRSwo"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-dkrFOg iKRSwo"
+      onClick={[Function]}
+    />
+    <div
+      className="sc-dkrFOg iKRSwo"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
