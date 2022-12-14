@@ -46,7 +46,7 @@ const All = () => {
         <ImagesCard images={slideImages} />
         <Card />
         <Card tall>
-          <h1 style={{ color: 'grey' }}>About me</h1>
+          <h1 style={{ color: 'grey' }}>About</h1>
         </Card>
         <Card />
 
