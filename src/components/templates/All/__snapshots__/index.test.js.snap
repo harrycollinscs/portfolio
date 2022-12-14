@@ -48,14 +48,8 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
+                    className="sc-hLBbgP dxQtpM"
                     src={Object {}}
-                    style={
-                      Object {
-                        "borderRadius": "50%",
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
                   />
                 </div>
               </div>
@@ -70,14 +64,8 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
+                    className="sc-hLBbgP dxQtpM"
                     src={Object {}}
-                    style={
-                      Object {
-                        "borderRadius": "50%",
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
                   />
                 </div>
               </div>
@@ -92,14 +80,8 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
+                    className="sc-hLBbgP dxQtpM"
                     src={Object {}}
-                    style={
-                      Object {
-                        "borderRadius": "50%",
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
                   />
                 </div>
               </div>
@@ -114,14 +96,8 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
+                    className="sc-hLBbgP dxQtpM"
                     src={Object {}}
-                    style={
-                      Object {
-                        "borderRadius": "50%",
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
                   />
                 </div>
               </div>
@@ -135,14 +111,8 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
+                    className="sc-hLBbgP dxQtpM"
                     src={Object {}}
-                    style={
-                      Object {
-                        "borderRadius": "50%",
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
                   />
                 </div>
               </div>
@@ -174,7 +144,7 @@ exports[`renders correctly 1`] = `
       className="sc-dkrFOg iqtpTI"
     >
       <h1
-        className="sc-hLBbgP kSSfri"
+        className="sc-eDvSVe gbGthS"
       >
         Tech Stack
       </h1>

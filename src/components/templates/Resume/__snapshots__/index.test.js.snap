@@ -23,15 +23,15 @@ exports[`renders correctly 1`] = `
       className="sc-dkrFOg jVGUWt"
     >
       <div
-        className="sc-bqWxrE cHatLX"
+        className="sc-ksBlkl liJeEN"
       >
         <img
           alt=""
-          className="sc-hBxehG gYjDIT"
+          className="sc-fnGiBr lXSyR"
           src={Object {}}
         />
         <div
-          className="sc-ksBlkl eIOYQL"
+          className="sc-hBxehG gzkpTq"
         >
           <p>
             Driven software engineer with 3 years of professional experience in software development. Focus in web and mobile app development.
@@ -404,14 +404,8 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
+                    className="sc-eDWCr eeGtnc"
                     src={Object {}}
-                    style={
-                      Object {
-                        "borderRadius": "50%",
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
                   />
                 </div>
               </div>
@@ -426,14 +420,8 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
+                    className="sc-eDWCr eeGtnc"
                     src={Object {}}
-                    style={
-                      Object {
-                        "borderRadius": "50%",
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
                   />
                 </div>
               </div>
@@ -448,14 +436,8 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
+                    className="sc-eDWCr eeGtnc"
                     src={Object {}}
-                    style={
-                      Object {
-                        "borderRadius": "50%",
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
                   />
                 </div>
               </div>
@@ -470,14 +452,8 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
+                    className="sc-eDWCr eeGtnc"
                     src={Object {}}
-                    style={
-                      Object {
-                        "borderRadius": "50%",
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
                   />
                 </div>
               </div>
@@ -491,14 +467,8 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
+                    className="sc-eDWCr eeGtnc"
                     src={Object {}}
-                    style={
-                      Object {
-                        "borderRadius": "50%",
-                        "height": "100%",
-                        "width": "100%",
-                      }
-                    }
                   />
                 </div>
               </div>
