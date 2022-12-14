@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css';
 import { useState, ReactNode } from 'react';
 import styled, { css } from 'styled-components';
