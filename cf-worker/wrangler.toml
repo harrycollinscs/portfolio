@@ -3,6 +3,6 @@ type = "javascript"
 
 account_id = "6d76d1845c856971533d60eb8203e54e"
 workers_dev = false
-route = "https://my-worker.harrycolllins.workers.dev"
+route = "https://cf-worker.harrycollins.dev"
 zone_id = "591283eef7b3c9cb34b2e31f3bd5b428"
 compatibility_date = "2022-12-12"
