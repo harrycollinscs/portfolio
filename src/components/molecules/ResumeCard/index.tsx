@@ -35,18 +35,19 @@ const ButtonContainer = styled.div`
   right: 15px;
 `
 
-const StyledProductsList = styled.div`
-    margin-top: 32px;
+const ListItemsContainer = styled.div`
+  margin-top: 10px;
+`
 
-    @media screen and (max-width: 545px) {
-      display: none;
-    }
-  `
+const ListItem = styled.p`
+  margin: 0;
+  margin-top: 5px;
+`
 
-const StyledTechList = styled.div`
+const List = styled.div<{index: number}>`
   margin-top: 32px;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: ${(props) => props.index ? '545' : '360'}px) {
     display: none;
   }
 `
@@ -59,31 +60,24 @@ const ResumeItemHeader = ({ title, subtitle, subsubtitle }: any) => (
   </>            
 )
 
-const ResumeCard = ({ title, subtitle, subsubtitle, products = null, technologies = null, action, isTall = false }: any) => (
+const ResumeCard = ({ title, subtitle, subsubtitle, lists = [], action, isTall = false }: any) => (
   <Card tall={isTall}>
     <Container>
     <ResumeItemHeader title={title} subtitle={subtitle} subsubtitle={subsubtitle} />
-    {products && (
-      <StyledProductsList>
-        <strong>Products</strong>
-        <div style={{ marginTop: '10px' }}>
-          {products.map((product: any) => (
-            <p style={{ margin: 0, marginTop: '5px' }}>{product}</p>
-          ))}
-        </div>
-      </StyledProductsList>
-    )}
 
-    {technologies && (
-      <StyledTechList style={{ marginTop: '32px' }}>
-        <strong>Technologies</strong>
-        <div style={{ marginTop: '10px' }}>
-          {technologies.map((tech: any) => (
-            <p style={{ margin: 0, marginTop: '5px' }}>{tech}</p>
+    {
+      lists.map((item: any, index: number) => (
+        <List index={index}>
+        <strong>{item.title}</strong>
+        <ListItemsContainer>
+          {item?.list?.map((product: any) => (
+            <ListItem style={{ margin: 0, marginTop: '5px' }}>{product}</ListItem>
           ))}
-        </div>
-     </StyledTechList>
-    )}
+        </ListItemsContainer>
+      </List>
+      ))
+    }
+
     <ButtonContainer>
       {action && <StyledButton onClick={action}>More</StyledButton>}
     </ButtonContainer>

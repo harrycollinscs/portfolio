@@ -11,7 +11,7 @@ exports[`renders correctly 1`] = `
       className="sc-dkrFOg wAzCx"
     >
       <div
-        className="sc-kDvujY jaaqQm"
+        className="sc-ipEyDJ ilrHGW"
         color="#c1e9ff"
       >
         <h1>
@@ -23,15 +23,15 @@ exports[`renders correctly 1`] = `
       className="sc-dkrFOg jVGUWt"
     >
       <div
-        className="sc-ksBlkl liJeEN"
+        className="sc-hBxehG wkeTY"
       >
         <img
           alt=""
-          className="sc-fnGiBr lXSyR"
+          className="sc-fEXmlR bFYbWf"
           src={Object {}}
         />
         <div
-          className="sc-hBxehG gzkpTq"
+          className="sc-fnGiBr jjqZxU"
         >
           <p>
             Driven software engineer with 3 years of professional experience in software development. Focus in web and mobile app development.
@@ -61,19 +61,16 @@ exports[`renders correctly 1`] = `
           Aug 2022 - Present
         </small>
         <div
-          className="sc-pyfCe gYJRML"
+          className="sc-kDvujY jLhsdD"
         >
           <strong>
             Products
           </strong>
           <div
-            style={
-              Object {
-                "marginTop": "10px",
-              }
-            }
+            className="sc-pyfCe jYvaer"
           >
             <p
+              className="sc-jrcTuL bBXktZ"
               style={
                 Object {
                   "margin": 0,
@@ -86,24 +83,16 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-jrcTuL kFvwkl"
-          style={
-            Object {
-              "marginTop": "32px",
-            }
-          }
+          className="sc-kDvujY gYuGEa"
         >
           <strong>
             Technologies
           </strong>
           <div
-            style={
-              Object {
-                "marginTop": "10px",
-              }
-            }
+            className="sc-pyfCe jYvaer"
           >
             <p
+              className="sc-jrcTuL bBXktZ"
               style={
                 Object {
                   "margin": 0,
@@ -114,6 +103,7 @@ exports[`renders correctly 1`] = `
               React
             </p>
             <p
+              className="sc-jrcTuL bBXktZ"
               style={
                 Object {
                   "margin": 0,
@@ -124,6 +114,7 @@ exports[`renders correctly 1`] = `
               Typescript
             </p>
             <p
+              className="sc-jrcTuL bBXktZ"
               style={
                 Object {
                   "margin": 0,
@@ -169,19 +160,16 @@ exports[`renders correctly 1`] = `
           Sept 2019 - June 2022
         </small>
         <div
-          className="sc-pyfCe gYJRML"
+          className="sc-kDvujY jLhsdD"
         >
           <strong>
             Products
           </strong>
           <div
-            style={
-              Object {
-                "marginTop": "10px",
-              }
-            }
+            className="sc-pyfCe jYvaer"
           >
             <p
+              className="sc-jrcTuL bBXktZ"
               style={
                 Object {
                   "margin": 0,
@@ -192,6 +180,7 @@ exports[`renders correctly 1`] = `
               FE Core
             </p>
             <p
+              className="sc-jrcTuL bBXktZ"
               style={
                 Object {
                   "margin": 0,
@@ -202,6 +191,7 @@ exports[`renders correctly 1`] = `
               Mobile Apps
             </p>
             <p
+              className="sc-jrcTuL bBXktZ"
               style={
                 Object {
                   "margin": 0,
@@ -214,24 +204,16 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-jrcTuL kFvwkl"
-          style={
-            Object {
-              "marginTop": "32px",
-            }
-          }
+          className="sc-kDvujY gYuGEa"
         >
           <strong>
             Technologies
           </strong>
           <div
-            style={
-              Object {
-                "marginTop": "10px",
-              }
-            }
+            className="sc-pyfCe jYvaer"
           >
             <p
+              className="sc-jrcTuL bBXktZ"
               style={
                 Object {
                   "margin": 0,
@@ -242,6 +224,7 @@ exports[`renders correctly 1`] = `
               React/Native
             </p>
             <p
+              className="sc-jrcTuL bBXktZ"
               style={
                 Object {
                   "margin": 0,
@@ -252,6 +235,7 @@ exports[`renders correctly 1`] = `
               Javascript
             </p>
             <p
+              className="sc-jrcTuL bBXktZ"
               style={
                 Object {
                   "margin": 0,
@@ -262,6 +246,7 @@ exports[`renders correctly 1`] = `
               GraphQL
             </p>
             <p
+              className="sc-jrcTuL bBXktZ"
               style={
                 Object {
                   "margin": 0,
@@ -289,7 +274,7 @@ exports[`renders correctly 1`] = `
       className="sc-dkrFOg eQdlFO"
     >
       <div
-        className="sc-kDvujY kQHOJo"
+        className="sc-ipEyDJ cugSsw"
         color="#ffedb3"
       >
         <h1>
@@ -404,7 +389,7 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
-                    className="sc-eDWCr eeGtnc"
+                    className="sc-bqWxrE lcrvEY"
                     src={Object {}}
                   />
                 </div>
@@ -420,7 +405,7 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
-                    className="sc-eDWCr eeGtnc"
+                    className="sc-bqWxrE lcrvEY"
                     src={Object {}}
                   />
                 </div>
@@ -436,7 +421,7 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
-                    className="sc-eDWCr eeGtnc"
+                    className="sc-bqWxrE lcrvEY"
                     src={Object {}}
                   />
                 </div>
@@ -452,7 +437,7 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
-                    className="sc-eDWCr eeGtnc"
+                    className="sc-bqWxrE lcrvEY"
                     src={Object {}}
                   />
                 </div>
@@ -467,7 +452,7 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
-                    className="sc-eDWCr eeGtnc"
+                    className="sc-bqWxrE lcrvEY"
                     src={Object {}}
                   />
                 </div>
@@ -484,10 +469,10 @@ exports[`renders correctly 1`] = `
       className="sc-dkrFOg kIqdrY"
     >
       <div
-        className="sc-ipEyDJ jCUoVC"
+        className="sc-csuSiG iUAOYt"
       >
         <h1
-          className="sc-csuSiG bNmCeH"
+          className="sc-eDWCr kExGGU"
         >
           SKILLS
         </h1>

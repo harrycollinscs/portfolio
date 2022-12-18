@@ -122,47 +122,178 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-dkrFOg gHMHIB"
-    />
+      className="sc-dkrFOg xDTza"
+    >
+      <div
+        className="sc-csuSiG bDWrvf"
+        color="#bfbfbf"
+      >
+        <h1>
+          HARRY COLLINS
+        </h1>
+      </div>
+    </div>
     <div
       className="sc-dkrFOg gAcZeq"
     >
-      <h1
-        style={
-          Object {
-            "color": "grey",
-          }
-        }
+      <div
+        className="sc-ftTHYK jctzJl"
       >
-        About me
-      </h1>
+        <h2
+          className="sc-jSUZER hAHduq"
+        />
+        <p
+          className="sc-gKPRtg ihOPBE"
+        />
+        <small
+          className="sc-iBYQkv WURkt"
+        />
+        <div
+          className="sc-ipEyDJ ebKHKT"
+        >
+          <strong />
+          <div
+            className="sc-jrcTuL kcXhmE"
+          >
+            <p
+              className="sc-kDvujY fPUlnY"
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              Hey, I'm Harry. I'm a London based Software Engineer 
+            </p>
+          </div>
+        </div>
+        <div
+          className="sc-ipEyDJ fPehwK"
+        >
+          <strong>
+            Age
+          </strong>
+          <div
+            className="sc-jrcTuL kcXhmE"
+          >
+            <p
+              className="sc-kDvujY fPUlnY"
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              24
+            </p>
+          </div>
+        </div>
+        <div
+          className="sc-ipEyDJ fPehwK"
+        >
+          <strong>
+            Location
+          </strong>
+          <div
+            className="sc-jrcTuL kcXhmE"
+          >
+            <p
+              className="sc-kDvujY fPUlnY"
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              London, UK
+            </p>
+          </div>
+        </div>
+        <div
+          className="sc-ipEyDJ fPehwK"
+        >
+          <strong>
+            Interests
+          </strong>
+          <div
+            className="sc-jrcTuL kcXhmE"
+          >
+            <p
+              className="sc-kDvujY fPUlnY"
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              Music
+            </p>
+            <p
+              className="sc-kDvujY fPUlnY"
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              Basketball
+            </p>
+            <p
+              className="sc-kDvujY fPUlnY"
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              Travelling
+            </p>
+            <p
+              className="sc-kDvujY fPUlnY"
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              Fitness
+            </p>
+            <p
+              className="sc-kDvujY fPUlnY"
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              Food (Pasta)
+            </p>
+          </div>
+        </div>
+        <div
+          className="sc-pyfCe jmgcDT"
+        />
+      </div>
     </div>
+    <div
+      className="sc-dkrFOg iqtpTI"
+    />
+    <div
+      className="sc-dkrFOg gHMHIB"
+    />
     <div
       className="sc-dkrFOg gHMHIB"
     />
     <div
       className="sc-dkrFOg iqtpTI"
-    >
-      <h1
-        className="sc-eDvSVe gbGthS"
-      >
-        Tech Stack
-      </h1>
-      <div
-        style={
-          Object {
-            "display": "flex",
-            "flexWrap": "wrap",
-            "margin": 40,
-          }
-        }
-      />
-    </div>
-    <div
-      className="sc-dkrFOg gHMHIB"
-    />
-    <div
-      className="sc-dkrFOg gHMHIB"
     />
     <div
       className="sc-dkrFOg iKRSwo"

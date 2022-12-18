@@ -191,6 +191,7 @@ const Resume = () => {
       <ContentModal isOpen={modalContent} title='dummy' subtitle='dummy' image='dummy' bulletPoint='dummy'/>
       <Grid>
         <TitleCard title='EMPLOYMENT' bgColor='#003666' color='#c1e9ff' />
+        
         <Card bgColor="#d6f5ff" long>
           <ContentAndImage> 
             <MemojiContainer src={Memoji} alt=""/>
@@ -201,7 +202,7 @@ const Resume = () => {
         </Card>
 
         {jobs.map(job => (
-          <ResumeCard title={job.company} subtitle={job.role} subsubtitle={job.dates} products={job.products} technologies={job.stack} action={() => setModalContent(job)} isTall={true} />
+          <ResumeCard title={job.company} subtitle={job.role} subsubtitle={job.dates} lists={[{title: 'Products', list: job.products}, {title: 'Technologies', list: job.stack }]} action={() => setModalContent(job)} isTall={true} />
         ))}
 
         <TitleCard title='EDUCATION' bgColor='#fbb347' color='#ffedb3' />

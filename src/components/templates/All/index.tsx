@@ -12,6 +12,8 @@ import HarryBridge from '../../../assets/images/HarryBridge.png'
 
 import 'react-slideshow-image/dist/styles.css'
 import ImagesCard from '../../molecules/ImagesCard';
+import ResumeCard from '../../molecules/ResumeCard';
+import TitleCard from '../../molecules/TitleCard';
 
 const slideImages = [ HarryNewYork, HarryBridge, HarryCollins1 ];
 
@@ -19,10 +21,24 @@ const openLink = (link: string) => {
   window.open(link, '_blank');
 }
 
-const Title = styled.h1`
-    color: #efefef;
-    -webkit-text-stroke: 0.5px #b0b0b0;
-`
+const AboutMe = [
+  {
+    title: '',
+    list: ["Hey, I'm Harry. I'm a London based Software Engineer "],
+  },
+  {
+    title: 'Age',
+    list: ['24'],
+  },
+  {
+    title: 'Location',
+    list: ['London, UK'],
+  },
+  {
+    title: 'Interests',
+    list: ['Music', 'Basketball', 'Travelling', 'Fitness', 'Food (Pasta)'],
+  }
+]
 
 const All = () => {
 
@@ -30,22 +46,14 @@ const All = () => {
     <Page>
       <Grid>
         <ImagesCard images={slideImages} />
-        <Card />
-        <Card tall>
-          <h1 style={{ color: 'grey' }}>About me</h1>
-        </Card>
-        <Card />
+        <TitleCard title='HARRY COLLINS' bgColor='#2b2c2e' color='#bfbfbf' />
 
-        <Card long>
-          <Title>Tech Stack</Title>
-          <div style={{ display: 'flex', flexWrap: 'wrap', margin: 40 }}>
-          
-
-          </div>
-
-        </Card>
+        <ResumeCard subtitle='' subsubtitle='' lists={AboutMe} isTall />
+        <Card long />
         <Card />
         <Card />
+        <Card long />
+       
 
         <Card bgImage={Linkedin} action={() => openLink('https://www.linkedin.com/in/harrycollinscs/')}/>
         <Card bgImage={Github} action={() => openLink('https://www.github.com/harrycollinscs/')} />
