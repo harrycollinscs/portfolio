@@ -1,6 +1,5 @@
 import React from 'react';
 import Page from '../../atoms/Page';
-import styled from 'styled-components'
 import Grid from '../../atoms/Grid';
 import Card from '../../atoms/Card';
 import Linkedin from '../../../assets/images/LinkedIn.jpg'
