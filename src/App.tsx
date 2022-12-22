@@ -5,14 +5,15 @@ import styled, { css } from 'styled-components';
 import Resume from './components/templates/Resume';
 import About from './components/templates/About';
 import All from './components/templates/All';
+import Projects from './components/templates/Projects';
 
 const Body = styled.div`
 `
 const TabsContainer = styled.div`
   justify-content: center;
-  margin: 12px;
+  margin: 24px;
   position: sticky;
-  top: 12px;
+  top: 48px;
   display: flex;
   z-index: 1000;
 `
@@ -87,7 +88,8 @@ const App = () => {
   const tabs = [
     { component: <All />, title: 'All'},
     { component: <Resume />, title: 'Resume'},
-    { component: <About />, title: 'About'}
+    { component: <About />, title: 'About'},
+    { component: <Projects />, title: 'Projects'}
   ];
 
   return (

@@ -33,7 +33,7 @@ const jobs = [
     dates: 'Sept 2019 - June 2022',
     image: "https://images.easyfundraising.org.uk/retailer/cropped/logo-giffgaff-1546873593.jpg",
     products: ["FE Core", "Mobile Apps", "Community"],
-    stack: ["React/Native", "Javascript", "GraphQL", "HTML"],
+    stack: ["React/Native", "Javascript", "GraphQL"],
     bulletPoints: [
       'Led implementation of  ‘Help and Search’ section into giffgaff mobile application, featuring live chat (React Native, Typescript, Redux, GraphQL).',
       'Built and monitored NodeJS service to serve React components, utilising Hypernova (Javascript).',
@@ -191,7 +191,7 @@ const Resume = () => {
       <ContentModal isOpen={modalContent} title='dummy' subtitle='dummy' image='dummy' bulletPoint='dummy'/>
       <Grid>
         <TitleCard title='EMPLOYMENT' bgColor='#003666' color='#c1e9ff' />
-        
+
         <Card bgColor="#d6f5ff" long>
           <ContentAndImage> 
             <MemojiContainer src={Memoji} alt=""/>

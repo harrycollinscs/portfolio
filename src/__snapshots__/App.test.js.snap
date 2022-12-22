@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
     }
   >
     <div
-      className="sc-dIfARi hWwhyK"
+      className="sc-dIfARi gQFLtY"
     >
       <div
         className="sc-hHTYSt YAeea"
@@ -36,6 +36,12 @@ exports[`renders correctly 1`] = `
           onClick={[Function]}
         >
           About
+        </div>
+        <div
+          className="sc-dmctIk gDbfHq"
+          onClick={[Function]}
+        >
+          Projects
         </div>
       </div>
     </div>
@@ -163,11 +169,11 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-dkrFOg xDTza"
+            className="sc-dkrFOg wcpUm"
           >
             <div
-              className="sc-ipEyDJ fZqabw"
-              color="#bfbfbf"
+              className="sc-ipEyDJ hcotBU"
+              color="#d0d0d0"
             >
               <h1>
                 HARRY COLLINS
@@ -180,40 +186,20 @@ exports[`renders correctly 1`] = `
             <div
               className="sc-iBYQkv bHzXBj"
             >
-              <h2
-                className="sc-eDvSVe lnaoEU"
-              />
-              <p
-                className="sc-jSUZER eDYipk"
-              />
-              <small
-                className="sc-gKPRtg hQhJbe"
-              />
               <div
-                className="sc-kDvujY jLhsdD"
+                className="sc-kDvujY jAryDq"
               >
-                <strong />
-                <div
-                  className="sc-pyfCe jYvaer"
-                >
-                  <p
-                    className="sc-jrcTuL bBXktZ"
+                <strong>
+                  <h2
                     style={
                       Object {
-                        "margin": 0,
-                        "marginTop": "5px",
+                        "color": "grey",
+                        "marginTop": 0,
                       }
                     }
                   >
-                    Hey, I'm Harry. I'm a London based Software Engineer 
-                  </p>
-                </div>
-              </div>
-              <div
-                className="sc-kDvujY gYuGEa"
-              >
-                <strong>
-                  Age
+                    Age
+                  </h2>
                 </strong>
                 <div
                   className="sc-pyfCe jYvaer"
@@ -232,10 +218,19 @@ exports[`renders correctly 1`] = `
                 </div>
               </div>
               <div
-                className="sc-kDvujY gYuGEa"
+                className="sc-kDvujY jAJpBj"
               >
                 <strong>
-                  Location
+                  <h2
+                    style={
+                      Object {
+                        "color": "grey",
+                        "marginTop": 0,
+                      }
+                    }
+                  >
+                    Location
+                  </h2>
                 </strong>
                 <div
                   className="sc-pyfCe jYvaer"
@@ -254,10 +249,19 @@ exports[`renders correctly 1`] = `
                 </div>
               </div>
               <div
-                className="sc-kDvujY gYuGEa"
+                className="sc-kDvujY jAJpBj"
               >
                 <strong>
-                  Interests
+                  <h2
+                    style={
+                      Object {
+                        "color": "grey",
+                        "marginTop": 0,
+                      }
+                    }
+                  >
+                    Interests
+                  </h2>
                 </strong>
                 <div
                   className="sc-pyfCe jYvaer"

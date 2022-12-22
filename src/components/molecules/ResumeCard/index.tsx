@@ -45,7 +45,12 @@ const ListItem = styled.p`
 `
 
 const List = styled.div<{index: number}>`
-  margin-top: 32px;
+  margin-top: 24px;
+  background-color: #eee;
+  border-radius: 25px;
+  text-align: center;
+
+  padding: 10px;
 
   @media screen and (max-width: ${(props) => props.index ? '545' : '360'}px) {
     display: none;
@@ -63,18 +68,22 @@ const ResumeItemHeader = ({ title, subtitle, subsubtitle }: any) => (
 const ResumeCard = ({ title, subtitle, subsubtitle, lists = [], action, isTall = false }: any) => (
   <Card tall={isTall}>
     <Container>
-    <ResumeItemHeader title={title} subtitle={subtitle} subsubtitle={subsubtitle} />
+      { (title || subtitle || subsubtitle) && (
+        <ResumeItemHeader title={title} subtitle={subtitle} subsubtitle={subsubtitle} />
+      )}
 
     {
       lists.map((item: any, index: number) => (
         <List index={index}>
-        <strong>{item.title}</strong>
-        <ListItemsContainer>
-          {item?.list?.map((product: any) => (
-            <ListItem style={{ margin: 0, marginTop: '5px' }}>{product}</ListItem>
-          ))}
-        </ListItemsContainer>
-      </List>
+          {/* <div style={{ margin: 10, marginTop: 100 }}> */}
+          <strong><h2 style={{ color: 'grey', marginTop: 0 }}>{item.title}</h2></strong>
+          <ListItemsContainer>
+            {item?.list?.map((product: any) => (
+              <ListItem style={{ margin: 0, marginTop: '5px' }}>{product}</ListItem>
+            ))}
+          </ListItemsContainer>
+          {/* </div> */}
+        </List>
       ))
     }
 

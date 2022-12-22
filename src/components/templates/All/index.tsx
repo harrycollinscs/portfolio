@@ -22,10 +22,6 @@ const openLink = (link: string) => {
 
 const AboutMe = [
   {
-    title: '',
-    list: ["Hey, I'm Harry. I'm a London based Software Engineer "],
-  },
-  {
     title: 'Age',
     list: ['24'],
   },
@@ -45,7 +41,7 @@ const All = () => {
     <Page>
       <Grid>
         <ImagesCard images={slideImages} />
-        <TitleCard title='HARRY COLLINS' bgColor='#2b2c2e' color='#bfbfbf' />
+        <TitleCard title='HARRY COLLINS' bgColor='#fff' color='#d0d0d0' />
 
         <ResumeCard subtitle='' subsubtitle='' lists={AboutMe} isTall />
         <Card long />

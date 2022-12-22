@@ -122,11 +122,11 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-dkrFOg xDTza"
+      className="sc-dkrFOg wcpUm"
     >
       <div
-        className="sc-csuSiG bDWrvf"
-        color="#bfbfbf"
+        className="sc-csuSiG hCzevf"
+        color="#d0d0d0"
       >
         <h1>
           HARRY COLLINS
@@ -139,40 +139,20 @@ exports[`renders correctly 1`] = `
       <div
         className="sc-ftTHYK jctzJl"
       >
-        <h2
-          className="sc-jSUZER hAHduq"
-        />
-        <p
-          className="sc-gKPRtg ihOPBE"
-        />
-        <small
-          className="sc-iBYQkv WURkt"
-        />
         <div
-          className="sc-ipEyDJ ebKHKT"
+          className="sc-ipEyDJ gQkMiG"
         >
-          <strong />
-          <div
-            className="sc-jrcTuL kcXhmE"
-          >
-            <p
-              className="sc-kDvujY fPUlnY"
+          <strong>
+            <h2
               style={
                 Object {
-                  "margin": 0,
-                  "marginTop": "5px",
+                  "color": "grey",
+                  "marginTop": 0,
                 }
               }
             >
-              Hey, I'm Harry. I'm a London based Software Engineer 
-            </p>
-          </div>
-        </div>
-        <div
-          className="sc-ipEyDJ fPehwK"
-        >
-          <strong>
-            Age
+              Age
+            </h2>
           </strong>
           <div
             className="sc-jrcTuL kcXhmE"
@@ -191,10 +171,19 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-ipEyDJ fPehwK"
+          className="sc-ipEyDJ cqwrVf"
         >
           <strong>
-            Location
+            <h2
+              style={
+                Object {
+                  "color": "grey",
+                  "marginTop": 0,
+                }
+              }
+            >
+              Location
+            </h2>
           </strong>
           <div
             className="sc-jrcTuL kcXhmE"
@@ -213,10 +202,19 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-ipEyDJ fPehwK"
+          className="sc-ipEyDJ cqwrVf"
         >
           <strong>
-            Interests
+            <h2
+              style={
+                Object {
+                  "color": "grey",
+                  "marginTop": 0,
+                }
+              }
+            >
+              Interests
+            </h2>
           </strong>
           <div
             className="sc-jrcTuL kcXhmE"

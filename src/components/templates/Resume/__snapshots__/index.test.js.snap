@@ -61,10 +61,19 @@ exports[`renders correctly 1`] = `
           Aug 2022 - Present
         </small>
         <div
-          className="sc-kDvujY jLhsdD"
+          className="sc-kDvujY jAryDq"
         >
           <strong>
-            Products
+            <h2
+              style={
+                Object {
+                  "color": "grey",
+                  "marginTop": 0,
+                }
+              }
+            >
+              Products
+            </h2>
           </strong>
           <div
             className="sc-pyfCe jYvaer"
@@ -83,10 +92,19 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-kDvujY gYuGEa"
+          className="sc-kDvujY jAJpBj"
         >
           <strong>
-            Technologies
+            <h2
+              style={
+                Object {
+                  "color": "grey",
+                  "marginTop": 0,
+                }
+              }
+            >
+              Technologies
+            </h2>
           </strong>
           <div
             className="sc-pyfCe jYvaer"
@@ -160,10 +178,19 @@ exports[`renders correctly 1`] = `
           Sept 2019 - June 2022
         </small>
         <div
-          className="sc-kDvujY jLhsdD"
+          className="sc-kDvujY jAryDq"
         >
           <strong>
-            Products
+            <h2
+              style={
+                Object {
+                  "color": "grey",
+                  "marginTop": 0,
+                }
+              }
+            >
+              Products
+            </h2>
           </strong>
           <div
             className="sc-pyfCe jYvaer"
@@ -204,10 +231,19 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-kDvujY gYuGEa"
+          className="sc-kDvujY jAJpBj"
         >
           <strong>
-            Technologies
+            <h2
+              style={
+                Object {
+                  "color": "grey",
+                  "marginTop": 0,
+                }
+              }
+            >
+              Technologies
+            </h2>
           </strong>
           <div
             className="sc-pyfCe jYvaer"
@@ -244,17 +280,6 @@ exports[`renders correctly 1`] = `
               }
             >
               GraphQL
-            </p>
-            <p
-              className="sc-jrcTuL bBXktZ"
-              style={
-                Object {
-                  "margin": 0,
-                  "marginTop": "5px",
-                }
-              }
-            >
-              HTML
             </p>
           </div>
         </div>

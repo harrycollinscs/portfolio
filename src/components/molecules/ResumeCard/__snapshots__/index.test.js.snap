@@ -7,15 +7,6 @@ exports[`renders correctly 1`] = `
   <div
     className="sc-jSUZER julnjM"
   >
-    <h2
-      className="sc-dkrFOg dkCkOc"
-    />
-    <p
-      className="sc-hLBbgP kHGjwC"
-    />
-    <small
-      className="sc-eDvSVe naXBw"
-    />
     <div
       className="sc-gKPRtg ikSGTb"
     />

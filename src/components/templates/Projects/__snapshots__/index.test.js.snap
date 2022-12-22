@@ -15,7 +15,7 @@ exports[`renders correctly 1`] = `
         color="#c1e9ff"
       >
         <h1>
-          ABOUT
+          PROJECTS
         </h1>
       </div>
     </div>
