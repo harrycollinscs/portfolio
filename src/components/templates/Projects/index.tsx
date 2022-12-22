@@ -1,5 +1,4 @@
 import React from 'react';
-import Card from '../../atoms/Card';
 import Grid from '../../atoms/Grid';
 import Page from '../../atoms/Page';
 import TitleCard from '../../molecules/TitleCard';
