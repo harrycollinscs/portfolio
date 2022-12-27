@@ -8,7 +8,7 @@ exports[`renders correctly 1`] = `
     className="sc-gswNZR iuRrXo"
   >
     <div
-      className="sc-dkrFOg krVsfh"
+      className="sc-dkrFOg beUrbd"
     >
       <div
         aria-roledescription="carousel"
@@ -122,10 +122,10 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-dkrFOg wcpUm"
+      className="sc-dkrFOg dRJxC"
     >
       <div
-        className="sc-csuSiG hCzevf"
+        className="sc-eDWCr kUEMiw"
         color="#d0d0d0"
       >
         <h1>
@@ -134,13 +134,13 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-dkrFOg gAcZeq"
+      className="sc-dkrFOg kUHmoK"
     >
       <div
-        className="sc-ftTHYK jctzJl"
+        className="sc-iBYQkv jOIYsz"
       >
         <div
-          className="sc-ipEyDJ gQkMiG"
+          className="sc-ipEyDJ kSQOgU"
         >
           <strong>
             <h2
@@ -151,7 +151,7 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              Age
+              👨🏻‍💻 Age
             </h2>
           </strong>
           <div
@@ -171,7 +171,7 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-ipEyDJ cqwrVf"
+          className="sc-ipEyDJ kSQOgU"
         >
           <strong>
             <h2
@@ -182,7 +182,7 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              Location
+              📍 Location
             </h2>
           </strong>
           <div
@@ -202,7 +202,7 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-ipEyDJ cqwrVf"
+          className="sc-ipEyDJ kSQOgU"
         >
           <strong>
             <h2
@@ -213,7 +213,7 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              Interests
+              ⛹🏻‍♂️ Interests
             </h2>
           </strong>
           <div
@@ -276,33 +276,33 @@ exports[`renders correctly 1`] = `
             </p>
           </div>
         </div>
-        <div
-          className="sc-pyfCe jmgcDT"
-        />
       </div>
+      <div
+        className="sc-ftTHYK ijsFNe"
+      />
     </div>
     <div
-      className="sc-dkrFOg iqtpTI"
+      className="sc-dkrFOg jaQSBE"
     />
     <div
-      className="sc-dkrFOg gHMHIB"
+      className="sc-dkrFOg hECYgN"
     />
     <div
-      className="sc-dkrFOg gHMHIB"
+      className="sc-dkrFOg hECYgN"
     />
     <div
-      className="sc-dkrFOg iqtpTI"
+      className="sc-dkrFOg jaQSBE"
     />
     <div
-      className="sc-dkrFOg iKRSwo"
+      className="sc-dkrFOg jPCCaQ"
       onClick={[Function]}
     />
     <div
-      className="sc-dkrFOg iKRSwo"
+      className="sc-dkrFOg jPCCaQ"
       onClick={[Function]}
     />
     <div
-      className="sc-dkrFOg iKRSwo"
+      className="sc-dkrFOg jPCCaQ"
       onClick={[Function]}
     />
   </div>

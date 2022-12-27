@@ -22,15 +22,15 @@ const openLink = (link: string) => {
 
 const AboutMe = [
   {
-    title: 'Age',
+    title: '👨🏻‍💻 Age',
     list: ['24'],
   },
   {
-    title: 'Location',
+    title: '📍 Location',
     list: ['London, UK'],
   },
   {
-    title: 'Interests',
+    title: '⛹🏻‍♂️ Interests',
     list: ['Music', 'Basketball', 'Travelling', 'Fitness', 'Food (Pasta)'],
   }
 ]

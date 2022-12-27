@@ -8,10 +8,10 @@ exports[`renders correctly 1`] = `
     className="sc-gswNZR iuRrXo"
   >
     <div
-      className="sc-dkrFOg wAzCx"
+      className="sc-dkrFOg bMSBwt"
     >
       <div
-        className="sc-ipEyDJ ilrHGW"
+        className="sc-csuSiG hfMmvp"
         color="#c1e9ff"
       >
         <h1>
@@ -20,18 +20,18 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-dkrFOg jVGUWt"
+      className="sc-dkrFOg cyrHTR"
     >
       <div
-        className="sc-hBxehG wkeTY"
+        className="sc-fnGiBr jpBQAq"
       >
         <img
           alt=""
-          className="sc-fEXmlR bFYbWf"
+          className="sc-bjfHbI kSaLdK"
           src={Object {}}
         />
         <div
-          className="sc-fnGiBr jjqZxU"
+          className="sc-fEXmlR fgKEHa"
         >
           <p>
             Driven software engineer with 3 years of professional experience in software development. Focus in web and mobile app development.
@@ -40,59 +40,38 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-dkrFOg gAcZeq"
+      className="sc-dkrFOg kUHmoK"
     >
       <div
-        className="sc-iBYQkv bHzXBj"
+        action={[Function]}
+        className="sc-gKPRtg jOLeIT"
       >
-        <h2
-          className="sc-eDvSVe lnaoEU"
-        >
-          Vodafone
-        </h2>
-        <p
-          className="sc-jSUZER eDYipk"
-        >
-          Software Engineer
-        </p>
-        <small
-          className="sc-gKPRtg hQhJbe"
-        >
-          Aug 2022 - Present
-        </small>
         <div
-          className="sc-kDvujY jAryDq"
+          className="sc-ipEyDJ jiylQT"
+          style={
+            Object {
+              "width": "-webkit-fill-available",
+            }
+          }
         >
-          <strong>
-            <h2
-              style={
-                Object {
-                  "color": "grey",
-                  "marginTop": 0,
-                }
-              }
-            >
-              Products
-            </h2>
-          </strong>
-          <div
-            className="sc-pyfCe jYvaer"
+          <h2
+            className="sc-hLBbgP coKlKI"
           >
-            <p
-              className="sc-jrcTuL bBXktZ"
-              style={
-                Object {
-                  "margin": 0,
-                  "marginTop": "5px",
-                }
-              }
-            >
-              Upgrades & Offers
-            </p>
-          </div>
+            Vodafone
+          </h2>
+          <p
+            className="sc-eDvSVe hKAcy"
+          >
+            Software Engineer
+          </p>
+          <small
+            className="sc-jSUZER bIcfNy"
+          >
+            Aug 2022 - Present
+          </small>
         </div>
         <div
-          className="sc-kDvujY jAJpBj"
+          className="sc-kDvujY dxZBBg"
         >
           <strong>
             <h2
@@ -103,7 +82,7 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              Technologies
+              Stack
             </h2>
           </strong>
           <div
@@ -145,40 +124,7 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-ftTHYK caKGMS"
-        >
-          <button
-            className="sc-hLBbgP dYyVMa"
-            onClick={[Function]}
-          >
-            More
-          </button>
-        </div>
-      </div>
-    </div>
-    <div
-      className="sc-dkrFOg gAcZeq"
-    >
-      <div
-        className="sc-iBYQkv bHzXBj"
-      >
-        <h2
-          className="sc-eDvSVe lnaoEU"
-        >
-          giffgaff
-        </h2>
-        <p
-          className="sc-jSUZER eDYipk"
-        >
-          Software Engineer
-        </p>
-        <small
-          className="sc-gKPRtg hQhJbe"
-        >
-          Sept 2019 - June 2022
-        </small>
-        <div
-          className="sc-kDvujY jAryDq"
+          className="sc-kDvujY dxZBBg"
         >
           <strong>
             <h2
@@ -204,34 +150,55 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              FE Core
-            </p>
-            <p
-              className="sc-jrcTuL bBXktZ"
-              style={
-                Object {
-                  "margin": 0,
-                  "marginTop": "5px",
-                }
-              }
-            >
-              Mobile Apps
-            </p>
-            <p
-              className="sc-jrcTuL bBXktZ"
-              style={
-                Object {
-                  "margin": 0,
-                  "marginTop": "5px",
-                }
-              }
-            >
-              Community
+              Upgrades & Offers
             </p>
           </div>
         </div>
+      </div>
+      <div
+        className="sc-iBYQkv jJHjWY"
+      >
+        <button
+          className="sc-ftTHYK eqsFIg"
+          onClick={[Function]}
+        >
+          More
+        </button>
+      </div>
+    </div>
+    <div
+      className="sc-dkrFOg kUHmoK"
+    >
+      <div
+        action={[Function]}
+        className="sc-gKPRtg jOLeIT"
+      >
         <div
-          className="sc-kDvujY jAJpBj"
+          className="sc-ipEyDJ jiylQT"
+          style={
+            Object {
+              "width": "-webkit-fill-available",
+            }
+          }
+        >
+          <h2
+            className="sc-hLBbgP coKlKI"
+          >
+            giffgaff
+          </h2>
+          <p
+            className="sc-eDvSVe hKAcy"
+          >
+            Software Engineer
+          </p>
+          <small
+            className="sc-jSUZER bIcfNy"
+          >
+            Sept 2019 - June 2022
+          </small>
+        </div>
+        <div
+          className="sc-kDvujY dxZBBg"
         >
           <strong>
             <h2
@@ -242,7 +209,7 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              Technologies
+              Stack
             </h2>
           </strong>
           <div
@@ -268,7 +235,38 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              Javascript
+              Javascript/NodeJS
+            </p>
+          </div>
+        </div>
+        <div
+          className="sc-kDvujY dxZBBg"
+        >
+          <strong>
+            <h2
+              style={
+                Object {
+                  "color": "grey",
+                  "marginTop": 0,
+                }
+              }
+            >
+              Products
+            </h2>
+          </strong>
+          <div
+            className="sc-pyfCe jYvaer"
+          >
+            <p
+              className="sc-jrcTuL bBXktZ"
+              style={
+                Object {
+                  "margin": 0,
+                  "marginTop": "5px",
+                }
+              }
+            >
+              FE Core/Community
             </p>
             <p
               className="sc-jrcTuL bBXktZ"
@@ -279,27 +277,27 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              GraphQL
+              Mobile Apps
             </p>
           </div>
         </div>
-        <div
-          className="sc-ftTHYK caKGMS"
+      </div>
+      <div
+        className="sc-iBYQkv jJHjWY"
+      >
+        <button
+          className="sc-ftTHYK eqsFIg"
+          onClick={[Function]}
         >
-          <button
-            className="sc-hLBbgP dYyVMa"
-            onClick={[Function]}
-          >
-            More
-          </button>
-        </div>
+          More
+        </button>
       </div>
     </div>
     <div
-      className="sc-dkrFOg eQdlFO"
+      className="sc-dkrFOg kYlpGy"
     >
       <div
-        className="sc-ipEyDJ cugSsw"
+        className="sc-csuSiG bPuUAf"
         color="#ffedb3"
       >
         <h1>
@@ -308,73 +306,93 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-dkrFOg gHMHIB"
+      className="sc-dkrFOg hECYgN"
     >
       <div
-        className="sc-iBYQkv bHzXBj"
+        action={[Function]}
+        className="sc-gKPRtg jOLeIT"
       >
-        <h2
-          className="sc-eDvSVe lnaoEU"
-        >
-          Loughborough University
-        </h2>
-        <p
-          className="sc-jSUZER eDYipk"
-        >
-          BSc Computer Science
-        </p>
-        <small
-          className="sc-gKPRtg hQhJbe"
-        >
-          Sept 2016 - July 2019
-        </small>
         <div
-          className="sc-ftTHYK caKGMS"
+          className="sc-ipEyDJ jiylQT"
+          style={
+            Object {
+              "width": "-webkit-fill-available",
+            }
+          }
         >
-          <button
-            className="sc-hLBbgP dYyVMa"
-            onClick={[Function]}
+          <h2
+            className="sc-hLBbgP coKlKI"
           >
-            More
-          </button>
+            Loughborough University
+          </h2>
+          <p
+            className="sc-eDvSVe hKAcy"
+          >
+            BSc Computer Science
+          </p>
+          <small
+            className="sc-jSUZER bIcfNy"
+          >
+            Sept 2016 - July 2019
+          </small>
         </div>
+      </div>
+      <div
+        className="sc-iBYQkv jJHjWY"
+      >
+        <button
+          className="sc-ftTHYK eqsFIg"
+          onClick={[Function]}
+        >
+          More
+        </button>
       </div>
     </div>
     <div
-      className="sc-dkrFOg gHMHIB"
+      className="sc-dkrFOg hECYgN"
     >
       <div
-        className="sc-iBYQkv bHzXBj"
+        action={[Function]}
+        className="sc-gKPRtg jOLeIT"
       >
-        <h2
-          className="sc-eDvSVe lnaoEU"
-        >
-          St. Mary's Sixth Form
-        </h2>
-        <p
-          className="sc-jSUZER eDYipk"
-        >
-          A-Level
-        </p>
-        <small
-          className="sc-gKPRtg hQhJbe"
-        >
-          Sept 2014 - July 2016
-        </small>
         <div
-          className="sc-ftTHYK caKGMS"
+          className="sc-ipEyDJ jiylQT"
+          style={
+            Object {
+              "width": "-webkit-fill-available",
+            }
+          }
         >
-          <button
-            className="sc-hLBbgP dYyVMa"
-            onClick={[Function]}
+          <h2
+            className="sc-hLBbgP coKlKI"
           >
-            More
-          </button>
+            St. Mary's Sixth Form
+          </h2>
+          <p
+            className="sc-eDvSVe hKAcy"
+          >
+            A-Level
+          </p>
+          <small
+            className="sc-jSUZER bIcfNy"
+          >
+            Sept 2014 - July 2016
+          </small>
         </div>
+      </div>
+      <div
+        className="sc-iBYQkv jJHjWY"
+      >
+        <button
+          className="sc-ftTHYK eqsFIg"
+          onClick={[Function]}
+        >
+          More
+        </button>
       </div>
     </div>
     <div
-      className="sc-dkrFOg krVsfh"
+      className="sc-dkrFOg beUrbd"
     >
       <div
         aria-roledescription="carousel"
@@ -414,7 +432,7 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
-                    className="sc-bqWxrE lcrvEY"
+                    className="sc-ksBlkl iTZeRe"
                     src={Object {}}
                   />
                 </div>
@@ -430,7 +448,7 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
-                    className="sc-bqWxrE lcrvEY"
+                    className="sc-ksBlkl iTZeRe"
                     src={Object {}}
                   />
                 </div>
@@ -446,7 +464,7 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
-                    className="sc-bqWxrE lcrvEY"
+                    className="sc-ksBlkl iTZeRe"
                     src={Object {}}
                   />
                 </div>
@@ -462,7 +480,7 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
-                    className="sc-bqWxrE lcrvEY"
+                    className="sc-ksBlkl iTZeRe"
                     src={Object {}}
                   />
                 </div>
@@ -477,7 +495,7 @@ exports[`renders correctly 1`] = `
                 >
                   <img
                     alt="sliding"
-                    className="sc-bqWxrE lcrvEY"
+                    className="sc-ksBlkl iTZeRe"
                     src={Object {}}
                   />
                 </div>
@@ -488,16 +506,16 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-dkrFOg iqtpTI"
+      className="sc-dkrFOg jaQSBE"
     />
     <div
-      className="sc-dkrFOg kIqdrY"
+      className="sc-dkrFOg ficwqA"
     >
       <div
-        className="sc-csuSiG iUAOYt"
+        className="sc-eDWCr ciWzQS"
       >
         <h1
-          className="sc-eDWCr kExGGU"
+          className="sc-bqWxrE csdKes"
         >
           SKILLS
         </h1>
@@ -533,7 +551,7 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-dkrFOg gHMHIB"
+      className="sc-dkrFOg hECYgN"
     />
   </div>
 </div>

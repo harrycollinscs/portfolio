@@ -2,14 +2,13 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bcXHqe iifPED"
+  className="sc-bcXHqe djQFtD"
 >
   <div
-    className="sc-jSUZER julnjM"
-  >
-    <div
-      className="sc-gKPRtg ikSGTb"
-    />
-  </div>
+    className="sc-eDvSVe dvuuGi"
+  />
+  <div
+    className="sc-jSUZER dgYSNr"
+  />
 </div>
 `;

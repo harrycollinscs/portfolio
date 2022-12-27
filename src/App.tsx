@@ -9,6 +9,7 @@ import Projects from './components/templates/Projects';
 
 const Body = styled.div`
 `
+
 const TabsContainer = styled.div`
   justify-content: center;
   margin: 24px;
@@ -17,12 +18,15 @@ const TabsContainer = styled.div`
   display: flex;
   z-index: 1000;
 `
+
 const TabButtons = styled.div`
   background: white;
   border-radius: 50px;
   display: flex;
   padding: 10px;
+  overflow: auto;
 `
+
 const Tab = styled.div`
   padding: 4px;
   border-radius: 25px;
@@ -49,11 +53,13 @@ const Tab = styled.div`
   }
   
 `
+
 const TabContent =  styled.div`
   height: 100%;
   align-items: center;
   justify-content: center;
 `
+
 interface TabManagerProps {
   tabs: {
     title: string

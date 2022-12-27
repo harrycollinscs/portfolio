@@ -30,6 +30,10 @@ const StyledCard = styled.div<any>`
     box-shadow: none;
   }
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   ${(props) => props.long && css`
     display: flex;
     flex-direction: column;

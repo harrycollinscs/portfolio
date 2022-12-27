@@ -32,8 +32,8 @@ const jobs = [
     role: 'Software Engineer',
     dates: 'Sept 2019 - June 2022',
     image: "https://images.easyfundraising.org.uk/retailer/cropped/logo-giffgaff-1546873593.jpg",
-    products: ["FE Core", "Mobile Apps", "Community"],
-    stack: ["React/Native", "Javascript", "GraphQL"],
+    products: ["FE Core/Community", "Mobile Apps"],
+    stack: ["React/Native", "Javascript/NodeJS"],
     bulletPoints: [
       'Led implementation of  ‘Help and Search’ section into giffgaff mobile application, featuring live chat (React Native, Typescript, Redux, GraphQL).',
       'Built and monitored NodeJS service to serve React components, utilising Hypernova (Javascript).',
@@ -202,7 +202,7 @@ const Resume = () => {
         </Card>
 
         {jobs.map(job => (
-          <ResumeCard title={job.company} subtitle={job.role} subsubtitle={job.dates} lists={[{title: 'Products', list: job.products}, {title: 'Technologies', list: job.stack }]} action={() => setModalContent(job)} isTall={true} />
+          <ResumeCard title={job.company} subtitle={job.role} subsubtitle={job.dates} lists={[{title: 'Stack', list: job.stack}, {title: 'Products', list: job.products }]} action={() => setModalContent(job)} isTall={true} />
         ))}
 
         <TitleCard title='EDUCATION' bgColor='#fbb347' color='#ffedb3' />
