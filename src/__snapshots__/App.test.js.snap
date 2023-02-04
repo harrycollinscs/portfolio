@@ -7,6 +7,7 @@ exports[`renders correctly 1`] = `
   <div
     style={
       Object {
+        "backgroundColor": "#eee",
         "display": "flex",
         "flexDirection": "column",
         "width": "100%",
@@ -14,39 +15,35 @@ exports[`renders correctly 1`] = `
     }
   >
     <div
-      className="sc-hHTYSt ewANav"
+      className="sc-hHTYSt haNszf"
     >
       <div
-        className="sc-dmctIk cNikMg"
+        className="sc-dmctIk nIkVC"
+        onClick={[Function]}
       >
-        <div
-          className="sc-kgTSHT cMfxcR"
-          onClick={[Function]}
-        >
-          All
-        </div>
-        <div
-          className="sc-kgTSHT kGkSDB"
-          onClick={[Function]}
-        >
-          Resume
-        </div>
-        <div
-          className="sc-kgTSHT kGkSDB"
-          onClick={[Function]}
-        >
-          About
-        </div>
-        <div
-          className="sc-kgTSHT kGkSDB"
-          onClick={[Function]}
-        >
-          Projects
-        </div>
+        All
+      </div>
+      <div
+        className="sc-dmctIk gDbfHq"
+        onClick={[Function]}
+      >
+        Resume
+      </div>
+      <div
+        className="sc-dmctIk gDbfHq"
+        onClick={[Function]}
+      >
+        About
+      </div>
+      <div
+        className="sc-dmctIk gDbfHq"
+        onClick={[Function]}
+      >
+        Projects
       </div>
     </div>
     <div
-      className="sc-fLcnxK cNyisc"
+      className="sc-kgTSHT eCZZmj"
     >
       <div
         className="sc-bcXHqe eimxqs"

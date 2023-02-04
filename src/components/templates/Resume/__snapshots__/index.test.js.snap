@@ -306,7 +306,7 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-dkrFOg hECYgN"
+      className="sc-dkrFOg kUHmoK"
     >
       <div
         action={[Function]}
@@ -349,7 +349,7 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-dkrFOg hECYgN"
+      className="sc-dkrFOg kUHmoK"
     >
       <div
         action={[Function]}
@@ -505,9 +505,6 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="sc-dkrFOg jaQSBE"
-    />
     <div
       className="sc-dkrFOg ficwqA"
     >
