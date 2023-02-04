@@ -202,18 +202,17 @@ const Resume = () => {
         </Card>
 
         {jobs.map(job => (
-          <ResumeCard title={job.company} subtitle={job.role} subsubtitle={job.dates} lists={[{title: 'Stack', list: job.stack}, {title: 'Products', list: job.products }]} action={() => setModalContent(job)} isTall={true} />
+          <ResumeCard title={job.company} subtitle={job.role} subsubtitle={job.dates} lists={[{title: 'Stack', list: job.stack}, {title: 'Products', list: job.products }]} action={() => setModalContent(job)} isTall />
         ))}
 
         <TitleCard title='EDUCATION' bgColor='#fbb347' color='#ffedb3' />
 
         {education.map(education => (
-          <ResumeCard title={education.school} subtitle={education.qualification} subsubtitle={education.dates} action={() => setModalContent(education)} />
+          <ResumeCard title={education.school} subtitle={education.qualification} subsubtitle={education.dates} action={() => setModalContent(education)} isTall />
         ))}
 
         <ImagesCard images={loughboroughImages} />
 
-        <Card long />
         
         <ListCard title='SKILLS' listItems={skills} bgColor='#3b3a67' titleColor='#8984bd' />
 

@@ -2,7 +2,7 @@ html {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 
   z-index: -10;
-  background: #efefef;
+  background: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

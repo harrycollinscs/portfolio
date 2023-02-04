@@ -88,6 +88,7 @@ const ResumeItemHeader = ({ title, subtitle, subsubtitle }: any) => (
   </StyledHeader>            
 )
 
+// todo: sort card on All page in mobile
 const ResumeCard = ({ title, subtitle, subsubtitle, lists = [], action, isTall = false }: any) => {
   const hasHeaderText = title || subtitle || subsubtitle;
   return (

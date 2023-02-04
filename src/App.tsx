@@ -12,19 +12,14 @@ const Body = styled.div`
 
 const TabsContainer = styled.div`
   justify-content: center;
-  margin: 24px;
   position: sticky;
-  top: 48px;
+  margin-bottom: 24px;
+  top: 0px;
   display: flex;
   z-index: 1000;
-`
-
-const TabButtons = styled.div`
-  background: white;
-  border-radius: 50px;
-  display: flex;
   padding: 10px;
-  overflow: auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background-color: white;
 `
 
 const Tab = styled.div`
@@ -54,7 +49,7 @@ const Tab = styled.div`
   
 `
 
-const TabContent =  styled.div`
+const TabContent = styled.div`
   height: 100%;
   align-items: center;
   justify-content: center;
@@ -71,15 +66,13 @@ const Tabs = ({ tabs }: TabManagerProps) => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <div style={{flexDirection: 'column', display: 'flex', width: '100%'}}>
+    <div style={{flexDirection: 'column', display: 'flex', width: '100%', backgroundColor: '#eee'}}>
       <TabsContainer>
-        <TabButtons>
           {tabs.map(({title}, index: number) => (
             <Tab key={index} isActive={index===activeTab} onClick={() => setActiveTab(index)}>
               {title}
             </Tab>
           ))}
-        </TabButtons>
       </TabsContainer>
       <TabContent>
         {tabs[activeTab].component}
