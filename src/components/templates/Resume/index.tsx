@@ -67,11 +67,12 @@ const Image = styled.img`
 `
 
 const ImageSection = styled.div`
-  width: 100%;
+  width: 80vw;
   align-items: center;
   display: flex;
   justify-content: space-between;
   line-height: 2;
+  align-items: flex-start;
 
   @media screen and (max-width: 1020px) {
     flex-direction: column;
@@ -83,6 +84,7 @@ const ImageSection = styled.div`
       }
     }
   }
+  }
 
   @media screen and (max-width: 700px) {
     width: 100vw;
@@ -91,7 +93,18 @@ const ImageSection = styled.div`
 
 const ImageSectionContent = styled.div`
   padding: 24px;
-  width: 100%;
+
+  @media screen and (min-width: 700px) {
+    &:nth-child(1) {
+      padding-left: 8px;
+    }
+  
+    &:nth-child(2) {
+      padding-right: 8px;
+    }
+  }
+
+  width: 100%
   height: 100%;
   box-sizing: border-box;
 
@@ -110,17 +123,43 @@ const ImageSectionContent = styled.div`
   }
 `
 
+const Header = styled.div`
+  width: 100%;
+  height: 25vh;
+  background-color: #2f295e;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+`
+
+const Intro = styled.div`
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 25vh;
+  line-height: 2;
+  padding: 24px;
+
+  @media screen and (min-width: 2000px) {
+    width: 60vw;
+  }
+`
+
 const Resume = () => {
   return (
     <Page>
-      <div style={{ width: '100%', height: '25vh', backgroundColor: '#2f295e', color: 'white', alignItems: 'center', display: 'flex', justifyContent: 'center', fontSize: 40}}>
+      <Header>
         <h1>Resume</h1>
-      </div>
+      </Header>
 
-      <div style={{ width: '80%', display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center', minHeight: '25vh', lineHeight: '2', padding: 24}}>
+      <Intro>
         <h1>Harry Collins</h1>
         <p>Hard-working and creative software engineer currently employed in the telecoms industry. 3½ years of professional experience, with focus in full-stack web development and mobile app development utilising React Native/React/NodeJS. Bachelors degree in Computer Science (BSc).</p>
-      </div>
+      </Intro>
 
       <ImageSection>
         <Image src={Vodafone} alt='vodafone'/>
@@ -131,7 +170,9 @@ const Resume = () => {
           </div>
           <p>Software Engineer</p>
           <ul>
-            <li>Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers</li>
+            <li>Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.</li>
+            <li>Built and deployed custom React components, resuable helper functions, etc.</li>
+            <li>Liased with backend engineers to formaulat data structures for efficient cross-stack data handling.</li>
           </ul>
         </ImageSectionContent>
       </ImageSection>
@@ -145,11 +186,10 @@ const Resume = () => {
           </div>
           <p>Software Engineer</p>
           <ul>
-            <li>Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers</li>
+            <li>Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.</li>
             <li>Led implementation of ‘Help and Search’ section into giffgaff mobile application, featuring live chat (React Native,Typescript, Redux, GraphQL).</li>
             <li>Built and monitored NodeJS service to serve React components, utilising Hypernova (Javascript).</li>
             <li>Assisted in the building, improvement and technology-wide uptake of React component library (including Jest unit testing, Storybook).</li>
-            <li>Developed Flarum platform extensions for Community platform (Javascript/Mithril, PHP).</li>
             <li>Communicated with and managed expectations of stakeholders while working in agile environment, and delivering iterative improvements to products.</li>
           </ul>
         </ImageSectionContent>

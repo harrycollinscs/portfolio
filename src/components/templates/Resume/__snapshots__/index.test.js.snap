@@ -5,36 +5,14 @@ exports[`renders correctly 1`] = `
   className="sc-bcXHqe fmevvY"
 >
   <div
-    style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#2f295e",
-        "color": "white",
-        "display": "flex",
-        "fontSize": 40,
-        "height": "25vh",
-        "justifyContent": "center",
-        "width": "100%",
-      }
-    }
+    className="sc-eDvSVe eIvZXR"
   >
     <h1>
       Resume
     </h1>
   </div>
   <div
-    style={
-      Object {
-        "display": "flex",
-        "flexDirection": "column",
-        "justifyContent": "center",
-        "lineHeight": "2",
-        "minHeight": "25vh",
-        "padding": 24,
-        "textAlign": "center",
-        "width": "80%",
-      }
-    }
+    className="sc-jSUZER eSwWpE"
   >
     <h1>
       Harry Collins
@@ -44,7 +22,7 @@ exports[`renders correctly 1`] = `
     </p>
   </div>
   <div
-    className="sc-dkrFOg dXxfYs"
+    className="sc-dkrFOg eDKRfJ"
   >
     <img
       alt="vodafone"
@@ -52,7 +30,7 @@ exports[`renders correctly 1`] = `
       src={Object {}}
     />
     <div
-      className="sc-hLBbgP kVOhuI"
+      className="sc-hLBbgP cpGQCB"
     >
       <div>
         <h1>
@@ -67,16 +45,22 @@ exports[`renders correctly 1`] = `
       </p>
       <ul>
         <li>
-          Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers
+          Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.
+        </li>
+        <li>
+          Built and deployed custom React components, resuable helper functions, etc.
+        </li>
+        <li>
+          Liased with backend engineers to formaulat data structures for efficient cross-stack data handling.
         </li>
       </ul>
     </div>
   </div>
   <div
-    className="sc-dkrFOg dXxfYs"
+    className="sc-dkrFOg eDKRfJ"
   >
     <div
-      className="sc-hLBbgP kVOhuI"
+      className="sc-hLBbgP cpGQCB"
     >
       <div>
         <h1>
@@ -91,7 +75,7 @@ exports[`renders correctly 1`] = `
       </p>
       <ul>
         <li>
-          Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers
+          Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.
         </li>
         <li>
           Led implementation of ‘Help and Search’ section into giffgaff mobile application, featuring live chat (React Native,Typescript, Redux, GraphQL).
@@ -101,9 +85,6 @@ exports[`renders correctly 1`] = `
         </li>
         <li>
           Assisted in the building, improvement and technology-wide uptake of React component library (including Jest unit testing, Storybook).
-        </li>
-        <li>
-          Developed Flarum platform extensions for Community platform (Javascript/Mithril, PHP).
         </li>
         <li>
           Communicated with and managed expectations of stakeholders while working in agile environment, and delivering iterative improvements to products.

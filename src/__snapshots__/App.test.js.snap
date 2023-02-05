@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-fnGiBr gYRMjW"
+  className="sc-bjfHbI gNkJyp"
 >
   <div
     style={
@@ -15,44 +15,44 @@ exports[`renders correctly 1`] = `
     }
   >
     <div
-      className="sc-fEXmlR joMVUq"
+      className="sc-idXgbr eMWDo"
     >
       <div
-        className="sc-bjfHbI tUKTI"
+        className="sc-dIfARi gYFGEI"
         onClick={[Function]}
       >
         All
       </div>
       <div
-        className="sc-bjfHbI cYEoyA"
+        className="sc-dIfARi iaMwgo"
         onClick={[Function]}
       >
         Resume
       </div>
       <div
-        className="sc-bjfHbI cYEoyA"
+        className="sc-dIfARi iaMwgo"
         onClick={[Function]}
       >
         About
       </div>
       <div
-        className="sc-bjfHbI cYEoyA"
+        className="sc-dIfARi iaMwgo"
         onClick={[Function]}
       >
         Projects
       </div>
     </div>
     <div
-      className="sc-idXgbr eqMQiC"
+      className="sc-hHTYSt gXhTBO"
     >
       <div
         className="sc-bcXHqe fmevvY"
       >
         <div
-          className="sc-eDvSVe kSGOrt"
+          className="sc-gKPRtg ezfVdb"
         >
           <div
-            className="sc-jSUZER elSSAp"
+            className="sc-iBYQkv jXFhay"
           >
             <div
               aria-roledescription="carousel"
@@ -92,7 +92,7 @@ exports[`renders correctly 1`] = `
                       >
                         <img
                           alt="sliding"
-                          className="sc-iBYQkv czAqpd"
+                          className="sc-pyfCe dZKTVC"
                           src={Object {}}
                         />
                       </div>
@@ -108,7 +108,7 @@ exports[`renders correctly 1`] = `
                       >
                         <img
                           alt="sliding"
-                          className="sc-iBYQkv czAqpd"
+                          className="sc-pyfCe dZKTVC"
                           src={Object {}}
                         />
                       </div>
@@ -124,7 +124,7 @@ exports[`renders correctly 1`] = `
                       >
                         <img
                           alt="sliding"
-                          className="sc-iBYQkv czAqpd"
+                          className="sc-pyfCe dZKTVC"
                           src={Object {}}
                         />
                       </div>
@@ -140,7 +140,7 @@ exports[`renders correctly 1`] = `
                       >
                         <img
                           alt="sliding"
-                          className="sc-iBYQkv czAqpd"
+                          className="sc-pyfCe dZKTVC"
                           src={Object {}}
                         />
                       </div>
@@ -155,7 +155,7 @@ exports[`renders correctly 1`] = `
                       >
                         <img
                           alt="sliding"
-                          className="sc-iBYQkv czAqpd"
+                          className="sc-pyfCe dZKTVC"
                           src={Object {}}
                         />
                       </div>
@@ -166,10 +166,10 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-jSUZER huQERl"
+            className="sc-iBYQkv jWdXlS"
           >
             <div
-              className="sc-gKPRtg VWqxa"
+              className="sc-ftTHYK khEJvz"
               color="#d0d0d0"
             >
               <h1>
@@ -178,13 +178,13 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="sc-jSUZER bsGxpN"
+            className="sc-iBYQkv bIArQK"
           >
             <div
-              className="sc-kDvujY joytQO"
+              className="sc-csuSiG gEvwDd"
             >
               <div
-                className="sc-ksBlkl dPAcTF"
+                className="sc-fnGiBr irynzG"
               >
                 <strong>
                   <h2
@@ -199,10 +199,10 @@ exports[`renders correctly 1`] = `
                   </h2>
                 </strong>
                 <div
-                  className="sc-eDWCr hjjULR"
+                  className="sc-ksBlkl YmmFn"
                 >
                   <p
-                    className="sc-bqWxrE dZhmMA"
+                    className="sc-hBxehG eMmtcj"
                     style={
                       Object {
                         "margin": 0,
@@ -215,7 +215,7 @@ exports[`renders correctly 1`] = `
                 </div>
               </div>
               <div
-                className="sc-ksBlkl dPAcTF"
+                className="sc-fnGiBr irynzG"
               >
                 <strong>
                   <h2
@@ -230,10 +230,10 @@ exports[`renders correctly 1`] = `
                   </h2>
                 </strong>
                 <div
-                  className="sc-eDWCr hjjULR"
+                  className="sc-ksBlkl YmmFn"
                 >
                   <p
-                    className="sc-bqWxrE dZhmMA"
+                    className="sc-hBxehG eMmtcj"
                     style={
                       Object {
                         "margin": 0,
@@ -246,7 +246,7 @@ exports[`renders correctly 1`] = `
                 </div>
               </div>
               <div
-                className="sc-ksBlkl dPAcTF"
+                className="sc-fnGiBr irynzG"
               >
                 <strong>
                   <h2
@@ -261,10 +261,10 @@ exports[`renders correctly 1`] = `
                   </h2>
                 </strong>
                 <div
-                  className="sc-eDWCr hjjULR"
+                  className="sc-ksBlkl YmmFn"
                 >
                   <p
-                    className="sc-bqWxrE dZhmMA"
+                    className="sc-hBxehG eMmtcj"
                     style={
                       Object {
                         "margin": 0,
@@ -275,7 +275,7 @@ exports[`renders correctly 1`] = `
                     Music
                   </p>
                   <p
-                    className="sc-bqWxrE dZhmMA"
+                    className="sc-hBxehG eMmtcj"
                     style={
                       Object {
                         "margin": 0,
@@ -286,7 +286,7 @@ exports[`renders correctly 1`] = `
                     Basketball
                   </p>
                   <p
-                    className="sc-bqWxrE dZhmMA"
+                    className="sc-hBxehG eMmtcj"
                     style={
                       Object {
                         "margin": 0,
@@ -297,7 +297,7 @@ exports[`renders correctly 1`] = `
                     Travelling
                   </p>
                   <p
-                    className="sc-bqWxrE dZhmMA"
+                    className="sc-hBxehG eMmtcj"
                     style={
                       Object {
                         "margin": 0,
@@ -308,7 +308,7 @@ exports[`renders correctly 1`] = `
                     Fitness
                   </p>
                   <p
-                    className="sc-bqWxrE dZhmMA"
+                    className="sc-hBxehG eMmtcj"
                     style={
                       Object {
                         "margin": 0,
@@ -322,31 +322,31 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <div
-              className="sc-ipEyDJ egKTGN"
+              className="sc-eDWCr hIpPvN"
             />
           </div>
           <div
-            className="sc-jSUZER cSlcLb"
+            className="sc-iBYQkv htHfkc"
           />
           <div
-            className="sc-jSUZER egmtxK"
+            className="sc-iBYQkv eDHZXB"
           />
           <div
-            className="sc-jSUZER egmtxK"
+            className="sc-iBYQkv eDHZXB"
           />
           <div
-            className="sc-jSUZER cSlcLb"
+            className="sc-iBYQkv htHfkc"
           />
           <div
-            className="sc-jSUZER bfreLr"
+            className="sc-iBYQkv jgvhho"
             onClick={[Function]}
           />
           <div
-            className="sc-jSUZER bfreLr"
+            className="sc-iBYQkv jgvhho"
             onClick={[Function]}
           />
           <div
-            className="sc-jSUZER bfreLr"
+            className="sc-iBYQkv jgvhho"
             onClick={[Function]}
           />
         </div>

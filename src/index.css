@@ -6,6 +6,8 @@
 body {
   margin: 0;
   font-family: "DM Serif Display", serif;
+  font-size: 18px;
+
   font-family: "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
