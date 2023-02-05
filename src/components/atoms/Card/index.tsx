@@ -14,15 +14,15 @@ interface Props {
 
 const StyledCard = styled.div<any>`
   position: relative;
-  border-radius: ${( props ) => props.circle ? '50%' : '25px'};
+  border-radius: 0.25rem;
   background-color: ${( props ) => props.bgColor ? props.bgColor : 'white'};
   ${(props) => props.bgImage && css`
     background-image: url(${props.bgImage}) !important;
     background-repeat: no-repeat;
     background-size: 100%;
   `}
-  box-shadow: 0.2rem 0.2rem 1rem rgb(0 0 0 / 5%);
   padding: ${( props ) => props.noPadding ? '0': '24'}px;
+  border: 1px solid #eee;
 
   @media (max-width: 600px) {
     grid-column: span 2;

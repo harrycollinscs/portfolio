@@ -2,13 +2,13 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bcXHqe eimxqs"
+  className="sc-bcXHqe fmevvY"
 >
   <div
-    className="sc-gswNZR iuRrXo"
+    className="sc-gswNZR gJfzVz"
   >
     <div
-      className="sc-dkrFOg beUrbd"
+      className="sc-dkrFOg keYdkn"
     >
       <div
         aria-roledescription="carousel"
@@ -122,7 +122,7 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-dkrFOg dRJxC"
+      className="sc-dkrFOg dCJyCf"
     >
       <div
         className="sc-eDWCr kUEMiw"
@@ -134,13 +134,13 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="sc-dkrFOg kUHmoK"
+      className="sc-dkrFOg hXNbkz"
     >
       <div
         className="sc-iBYQkv jOIYsz"
       >
         <div
-          className="sc-ipEyDJ kSQOgU"
+          className="sc-ipEyDJ hFvOoH"
         >
           <strong>
             <h2
@@ -171,7 +171,7 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-ipEyDJ kSQOgU"
+          className="sc-ipEyDJ hFvOoH"
         >
           <strong>
             <h2
@@ -202,7 +202,7 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="sc-ipEyDJ kSQOgU"
+          className="sc-ipEyDJ hFvOoH"
         >
           <strong>
             <h2
@@ -282,27 +282,27 @@ exports[`renders correctly 1`] = `
       />
     </div>
     <div
-      className="sc-dkrFOg jaQSBE"
+      className="sc-dkrFOg ckcJxB"
     />
     <div
-      className="sc-dkrFOg hECYgN"
+      className="sc-dkrFOg kXDtM"
     />
     <div
-      className="sc-dkrFOg hECYgN"
+      className="sc-dkrFOg kXDtM"
     />
     <div
-      className="sc-dkrFOg jaQSBE"
+      className="sc-dkrFOg ckcJxB"
     />
     <div
-      className="sc-dkrFOg jPCCaQ"
+      className="sc-dkrFOg dwWklR"
       onClick={[Function]}
     />
     <div
-      className="sc-dkrFOg jPCCaQ"
+      className="sc-dkrFOg dwWklR"
       onClick={[Function]}
     />
     <div
-      className="sc-dkrFOg jPCCaQ"
+      className="sc-dkrFOg dwWklR"
       onClick={[Function]}
     />
   </div>

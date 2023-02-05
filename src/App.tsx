@@ -13,18 +13,17 @@ const Body = styled.div`
 const TabsContainer = styled.div`
   justify-content: center;
   position: sticky;
-  margin-bottom: 24px;
   top: 0px;
   display: flex;
   z-index: 1000;
   padding: 10px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0rem 0.1rem 0.3rem rgba(0,0,0,0.1);
   background-color: white;
 `
 
 const Tab = styled.div`
   padding: 4px;
-  border-radius: 25px;
+  border-radius: 8px;
   text-align: center;
   cursor: pointer;
   padding: 12px 20px;
@@ -66,7 +65,7 @@ const Tabs = ({ tabs }: TabManagerProps) => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <div style={{flexDirection: 'column', display: 'flex', width: '100%', backgroundColor: '#eee'}}>
+    <div style={{flexDirection: 'column', display: 'flex', width: '100%', backgroundColor: 'white'}}>
       <TabsContainer>
           {tabs.map(({title}, index: number) => (
             <Tab key={index} isActive={index===activeTab} onClick={() => setActiveTab(index)}>

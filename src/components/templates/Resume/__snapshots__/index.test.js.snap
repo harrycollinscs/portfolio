@@ -2,553 +2,118 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bcXHqe eimxqs"
+  className="sc-bcXHqe fmevvY"
 >
   <div
-    className="sc-gswNZR iuRrXo"
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#2f295e",
+        "color": "white",
+        "display": "flex",
+        "fontSize": 40,
+        "height": "25vh",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <h1>
+      Resume
+    </h1>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "lineHeight": "2",
+        "minHeight": "25vh",
+        "padding": 24,
+        "textAlign": "center",
+        "width": "80%",
+      }
+    }
+  >
+    <h1>
+      Harry Collins
+    </h1>
+    <p>
+      Hard-working and creative software engineer currently employed in the telecoms industry. 3½ years of professional experience, with focus in full-stack web development and mobile app development utilising React Native/React/NodeJS. Bachelors degree in Computer Science (BSc).
+    </p>
+  </div>
+  <div
+    className="sc-dkrFOg dXxfYs"
+  >
+    <img
+      alt="vodafone"
+      className="sc-gswNZR gmcFCZ"
+      src={Object {}}
+    />
+    <div
+      className="sc-hLBbgP kVOhuI"
+    >
+      <div>
+        <h1>
+          Vodafone
+        </h1>
+        <small>
+          Aug 2022 - Present
+        </small>
+      </div>
+      <p>
+        Software Engineer
+      </p>
+      <ul>
+        <li>
+          Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="sc-dkrFOg dXxfYs"
   >
     <div
-      className="sc-dkrFOg bMSBwt"
+      className="sc-hLBbgP kVOhuI"
     >
-      <div
-        className="sc-csuSiG hfMmvp"
-        color="#c1e9ff"
-      >
+      <div>
         <h1>
-          EMPLOYMENT
+          giffgaff
         </h1>
+        <small>
+          Sept 2019 - June 2022
+        </small>
       </div>
+      <p>
+        Software Engineer
+      </p>
+      <ul>
+        <li>
+          Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers
+        </li>
+        <li>
+          Led implementation of ‘Help and Search’ section into giffgaff mobile application, featuring live chat (React Native,Typescript, Redux, GraphQL).
+        </li>
+        <li>
+          Built and monitored NodeJS service to serve React components, utilising Hypernova (Javascript).
+        </li>
+        <li>
+          Assisted in the building, improvement and technology-wide uptake of React component library (including Jest unit testing, Storybook).
+        </li>
+        <li>
+          Developed Flarum platform extensions for Community platform (Javascript/Mithril, PHP).
+        </li>
+        <li>
+          Communicated with and managed expectations of stakeholders while working in agile environment, and delivering iterative improvements to products.
+        </li>
+      </ul>
     </div>
-    <div
-      className="sc-dkrFOg cyrHTR"
-    >
-      <div
-        className="sc-fnGiBr jpBQAq"
-      >
-        <img
-          alt=""
-          className="sc-bjfHbI kSaLdK"
-          src={Object {}}
-        />
-        <div
-          className="sc-fEXmlR fgKEHa"
-        >
-          <p>
-            Driven software engineer with 3 years of professional experience in software development. Focus in web and mobile app development.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      className="sc-dkrFOg kUHmoK"
-    >
-      <div
-        action={[Function]}
-        className="sc-gKPRtg jOLeIT"
-      >
-        <div
-          className="sc-ipEyDJ jiylQT"
-          style={
-            Object {
-              "width": "-webkit-fill-available",
-            }
-          }
-        >
-          <h2
-            className="sc-hLBbgP coKlKI"
-          >
-            Vodafone
-          </h2>
-          <p
-            className="sc-eDvSVe hKAcy"
-          >
-            Software Engineer
-          </p>
-          <small
-            className="sc-jSUZER bIcfNy"
-          >
-            Aug 2022 - Present
-          </small>
-        </div>
-        <div
-          className="sc-kDvujY dxZBBg"
-        >
-          <strong>
-            <h2
-              style={
-                Object {
-                  "color": "grey",
-                  "marginTop": 0,
-                }
-              }
-            >
-              Stack
-            </h2>
-          </strong>
-          <div
-            className="sc-pyfCe jYvaer"
-          >
-            <p
-              className="sc-jrcTuL bBXktZ"
-              style={
-                Object {
-                  "margin": 0,
-                  "marginTop": "5px",
-                }
-              }
-            >
-              React
-            </p>
-            <p
-              className="sc-jrcTuL bBXktZ"
-              style={
-                Object {
-                  "margin": 0,
-                  "marginTop": "5px",
-                }
-              }
-            >
-              Typescript
-            </p>
-            <p
-              className="sc-jrcTuL bBXktZ"
-              style={
-                Object {
-                  "margin": 0,
-                  "marginTop": "5px",
-                }
-              }
-            >
-              HTML
-            </p>
-          </div>
-        </div>
-        <div
-          className="sc-kDvujY dxZBBg"
-        >
-          <strong>
-            <h2
-              style={
-                Object {
-                  "color": "grey",
-                  "marginTop": 0,
-                }
-              }
-            >
-              Products
-            </h2>
-          </strong>
-          <div
-            className="sc-pyfCe jYvaer"
-          >
-            <p
-              className="sc-jrcTuL bBXktZ"
-              style={
-                Object {
-                  "margin": 0,
-                  "marginTop": "5px",
-                }
-              }
-            >
-              Upgrades & Offers
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        className="sc-iBYQkv jJHjWY"
-      >
-        <button
-          className="sc-ftTHYK eqsFIg"
-          onClick={[Function]}
-        >
-          More
-        </button>
-      </div>
-    </div>
-    <div
-      className="sc-dkrFOg kUHmoK"
-    >
-      <div
-        action={[Function]}
-        className="sc-gKPRtg jOLeIT"
-      >
-        <div
-          className="sc-ipEyDJ jiylQT"
-          style={
-            Object {
-              "width": "-webkit-fill-available",
-            }
-          }
-        >
-          <h2
-            className="sc-hLBbgP coKlKI"
-          >
-            giffgaff
-          </h2>
-          <p
-            className="sc-eDvSVe hKAcy"
-          >
-            Software Engineer
-          </p>
-          <small
-            className="sc-jSUZER bIcfNy"
-          >
-            Sept 2019 - June 2022
-          </small>
-        </div>
-        <div
-          className="sc-kDvujY dxZBBg"
-        >
-          <strong>
-            <h2
-              style={
-                Object {
-                  "color": "grey",
-                  "marginTop": 0,
-                }
-              }
-            >
-              Stack
-            </h2>
-          </strong>
-          <div
-            className="sc-pyfCe jYvaer"
-          >
-            <p
-              className="sc-jrcTuL bBXktZ"
-              style={
-                Object {
-                  "margin": 0,
-                  "marginTop": "5px",
-                }
-              }
-            >
-              React/Native
-            </p>
-            <p
-              className="sc-jrcTuL bBXktZ"
-              style={
-                Object {
-                  "margin": 0,
-                  "marginTop": "5px",
-                }
-              }
-            >
-              Javascript/NodeJS
-            </p>
-          </div>
-        </div>
-        <div
-          className="sc-kDvujY dxZBBg"
-        >
-          <strong>
-            <h2
-              style={
-                Object {
-                  "color": "grey",
-                  "marginTop": 0,
-                }
-              }
-            >
-              Products
-            </h2>
-          </strong>
-          <div
-            className="sc-pyfCe jYvaer"
-          >
-            <p
-              className="sc-jrcTuL bBXktZ"
-              style={
-                Object {
-                  "margin": 0,
-                  "marginTop": "5px",
-                }
-              }
-            >
-              FE Core/Community
-            </p>
-            <p
-              className="sc-jrcTuL bBXktZ"
-              style={
-                Object {
-                  "margin": 0,
-                  "marginTop": "5px",
-                }
-              }
-            >
-              Mobile Apps
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        className="sc-iBYQkv jJHjWY"
-      >
-        <button
-          className="sc-ftTHYK eqsFIg"
-          onClick={[Function]}
-        >
-          More
-        </button>
-      </div>
-    </div>
-    <div
-      className="sc-dkrFOg kYlpGy"
-    >
-      <div
-        className="sc-csuSiG bPuUAf"
-        color="#ffedb3"
-      >
-        <h1>
-          EDUCATION
-        </h1>
-      </div>
-    </div>
-    <div
-      className="sc-dkrFOg kUHmoK"
-    >
-      <div
-        action={[Function]}
-        className="sc-gKPRtg jOLeIT"
-      >
-        <div
-          className="sc-ipEyDJ jiylQT"
-          style={
-            Object {
-              "width": "-webkit-fill-available",
-            }
-          }
-        >
-          <h2
-            className="sc-hLBbgP coKlKI"
-          >
-            Loughborough University
-          </h2>
-          <p
-            className="sc-eDvSVe hKAcy"
-          >
-            BSc Computer Science
-          </p>
-          <small
-            className="sc-jSUZER bIcfNy"
-          >
-            Sept 2016 - July 2019
-          </small>
-        </div>
-      </div>
-      <div
-        className="sc-iBYQkv jJHjWY"
-      >
-        <button
-          className="sc-ftTHYK eqsFIg"
-          onClick={[Function]}
-        >
-          More
-        </button>
-      </div>
-    </div>
-    <div
-      className="sc-dkrFOg kUHmoK"
-    >
-      <div
-        action={[Function]}
-        className="sc-gKPRtg jOLeIT"
-      >
-        <div
-          className="sc-ipEyDJ jiylQT"
-          style={
-            Object {
-              "width": "-webkit-fill-available",
-            }
-          }
-        >
-          <h2
-            className="sc-hLBbgP coKlKI"
-          >
-            St. Mary's Sixth Form
-          </h2>
-          <p
-            className="sc-eDvSVe hKAcy"
-          >
-            A-Level
-          </p>
-          <small
-            className="sc-jSUZER bIcfNy"
-          >
-            Sept 2014 - July 2016
-          </small>
-        </div>
-      </div>
-      <div
-        className="sc-iBYQkv jJHjWY"
-      >
-        <button
-          className="sc-ftTHYK eqsFIg"
-          onClick={[Function]}
-        >
-          More
-        </button>
-      </div>
-    </div>
-    <div
-      className="sc-dkrFOg beUrbd"
-    >
-      <div
-        aria-roledescription="carousel"
-        dir="ltr"
-      >
-        <div
-          className="react-slideshow-container"
-          onMouseDown={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onMouseMove={[Function]}
-          onMouseOver={[Function]}
-          onMouseUp={[Function]}
-          onTouchCancel={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-        >
-          <div
-            className="react-slideshow-wrapper slide "
-          >
-            <div
-              className="images-wrap"
-              style={
-                Object {
-                  "transform": "translate(-0px)",
-                }
-              }
-            >
-              <div
-                aria-hidden="true"
-                aria-roledescription="slide"
-                data-index={-1}
-              >
-                <div
-                  className="each-slide"
-                >
-                  <img
-                    alt="sliding"
-                    className="sc-ksBlkl iTZeRe"
-                    src={Object {}}
-                  />
-                </div>
-              </div>
-              <div
-                aria-hidden="false"
-                aria-roledescription="slide"
-                className="active"
-                data-index={0}
-              >
-                <div
-                  className="each-slide"
-                >
-                  <img
-                    alt="sliding"
-                    className="sc-ksBlkl iTZeRe"
-                    src={Object {}}
-                  />
-                </div>
-              </div>
-              <div
-                aria-hidden="true"
-                aria-roledescription="slide"
-                className=""
-                data-index={1}
-              >
-                <div
-                  className="each-slide"
-                >
-                  <img
-                    alt="sliding"
-                    className="sc-ksBlkl iTZeRe"
-                    src={Object {}}
-                  />
-                </div>
-              </div>
-              <div
-                aria-hidden="true"
-                aria-roledescription="slide"
-                className=""
-                data-index={2}
-              >
-                <div
-                  className="each-slide"
-                >
-                  <img
-                    alt="sliding"
-                    className="sc-ksBlkl iTZeRe"
-                    src={Object {}}
-                  />
-                </div>
-              </div>
-              <div
-                aria-hidden="true"
-                aria-roledescription="slide"
-                data-index={3}
-              >
-                <div
-                  className="each-slide"
-                >
-                  <img
-                    alt="sliding"
-                    className="sc-ksBlkl iTZeRe"
-                    src={Object {}}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="sc-dkrFOg ficwqA"
-    >
-      <div
-        className="sc-eDWCr ciWzQS"
-      >
-        <h1
-          className="sc-bqWxrE csdKes"
-        >
-          SKILLS
-        </h1>
-        <div>
-          <p>
-            Javascript • Typescript
-          </p>
-          <p>
-            React • React Native
-          </p>
-          <p>
-            HTML • CSS
-          </p>
-          <p>
-            NodeJS
-          </p>
-          <p>
-            GraphQL
-          </p>
-          <p>
-            UX Mindset
-          </p>
-          <p>
-            Communication
-          </p>
-          <p>
-            Determination
-          </p>
-          <p>
-            Empathy
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      className="sc-dkrFOg hECYgN"
+    <img
+      alt="giffgaff"
+      className="sc-gswNZR gmcFCZ"
+      src={Object {}}
     />
   </div>
 </div>

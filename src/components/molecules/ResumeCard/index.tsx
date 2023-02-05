@@ -40,7 +40,7 @@ const ButtonContainer = styled.div`
 const StyledButton = styled.button`
   background-color: #ede0ff;
   color: #6603fc;
-  border-radius: 12px;
+  border-radius: 4px;
   padding: 12px 16px;
   width: auto;
   border: none;
@@ -60,7 +60,7 @@ const ListItem = styled.p`
 const List = styled.div<{index: number}>`
   margin-top: 24px;
   background-color: #eee;
-  border-radius: 25px;
+  border-radius: 8px;
   text-align: center;
   width: -webkit-fill-available;
 

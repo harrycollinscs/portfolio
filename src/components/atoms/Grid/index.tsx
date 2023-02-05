@@ -6,8 +6,8 @@ const StyledGrid = styled.div`
   display: grid;
   position: relative;
   max-width: 80%;
-  grid-template-columns: repeat(4, 266px);
-  grid-template-rows: repeat(6, 266px);
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(6, 400px);
   column-gap: 24px;
   row-gap: 24px;
   margin-bottom: 80px;

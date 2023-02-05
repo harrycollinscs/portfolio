@@ -1,6 +1,17 @@
-html {
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+@font-face {
+  font-family: appFont;
+  src: url("../src/assets/fonts/QuincyRegular.otf") format("opentype");
+}
 
+@font-face {
+  font-family: "DM Serif Display", serif !important;
+  src: url("../src/assets/fonts/QuincyRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
   z-index: -10;
   background: white;
   -webkit-background-size: cover;
@@ -16,6 +27,7 @@ html {
 
 .App {
   text-align: center;
+  font-family: "DM Serif Display", serif !important;
 }
 
 .App-logo {
