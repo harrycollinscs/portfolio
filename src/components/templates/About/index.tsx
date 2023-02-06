@@ -1,15 +1,12 @@
 import React from 'react';
-import Grid from '../../atoms/Grid';
+import Header from '../../atoms/Header';
 import Page from '../../atoms/Page';
-import TitleCard from '../../molecules/TitleCard';
 
 const About = () => {
 
   return (
     <Page>
-      <Grid>
-        <TitleCard title='ABOUT' bgColor='#003666' color='#c1e9ff' />
-      </Grid>
+      <Header title='About' />
     </Page>
   )
 }

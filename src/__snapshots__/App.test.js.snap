@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bjfHbI gNkJyp"
+  className="sc-pyfCe jBfwdF"
 >
   <div
     style={
@@ -15,341 +15,63 @@ exports[`renders correctly 1`] = `
     }
   >
     <div
-      className="sc-idXgbr eMWDo"
+      className="sc-jrcTuL hJWAlk"
     >
       <div
-        className="sc-dIfARi gYFGEI"
+        className="sc-kDvujY fIKiNi"
         onClick={[Function]}
       >
         All
       </div>
       <div
-        className="sc-dIfARi iaMwgo"
+        className="sc-kDvujY jAmFtC"
         onClick={[Function]}
       >
         Resume
       </div>
       <div
-        className="sc-dIfARi iaMwgo"
+        className="sc-kDvujY jAmFtC"
         onClick={[Function]}
       >
         About
       </div>
       <div
-        className="sc-dIfARi iaMwgo"
+        className="sc-kDvujY jAmFtC"
         onClick={[Function]}
       >
         Projects
       </div>
     </div>
     <div
-      className="sc-hHTYSt gXhTBO"
+      className="sc-ipEyDJ tVVaf"
     >
       <div
         className="sc-bcXHqe fmevvY"
       >
         <div
-          className="sc-gKPRtg ezfVdb"
+          className="sc-ftTHYK gEdfqx"
         >
-          <div
-            className="sc-iBYQkv jXFhay"
-          >
-            <div
-              aria-roledescription="carousel"
-              dir="ltr"
-            >
-              <div
-                className="react-slideshow-container"
-                onMouseDown={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onMouseMove={[Function]}
-                onMouseOver={[Function]}
-                onMouseUp={[Function]}
-                onTouchCancel={[Function]}
-                onTouchEnd={[Function]}
-                onTouchMove={[Function]}
-                onTouchStart={[Function]}
-              >
-                <div
-                  className="react-slideshow-wrapper slide "
-                >
-                  <div
-                    className="images-wrap"
-                    style={
-                      Object {
-                        "transform": "translate(-0px)",
-                      }
-                    }
-                  >
-                    <div
-                      aria-hidden="true"
-                      aria-roledescription="slide"
-                      data-index={-1}
-                    >
-                      <div
-                        className="each-slide"
-                      >
-                        <img
-                          alt="sliding"
-                          className="sc-pyfCe dZKTVC"
-                          src={Object {}}
-                        />
-                      </div>
-                    </div>
-                    <div
-                      aria-hidden="false"
-                      aria-roledescription="slide"
-                      className="active"
-                      data-index={0}
-                    >
-                      <div
-                        className="each-slide"
-                      >
-                        <img
-                          alt="sliding"
-                          className="sc-pyfCe dZKTVC"
-                          src={Object {}}
-                        />
-                      </div>
-                    </div>
-                    <div
-                      aria-hidden="true"
-                      aria-roledescription="slide"
-                      className=""
-                      data-index={1}
-                    >
-                      <div
-                        className="each-slide"
-                      >
-                        <img
-                          alt="sliding"
-                          className="sc-pyfCe dZKTVC"
-                          src={Object {}}
-                        />
-                      </div>
-                    </div>
-                    <div
-                      aria-hidden="true"
-                      aria-roledescription="slide"
-                      className=""
-                      data-index={2}
-                    >
-                      <div
-                        className="each-slide"
-                      >
-                        <img
-                          alt="sliding"
-                          className="sc-pyfCe dZKTVC"
-                          src={Object {}}
-                        />
-                      </div>
-                    </div>
-                    <div
-                      aria-hidden="true"
-                      aria-roledescription="slide"
-                      data-index={3}
-                    >
-                      <div
-                        className="each-slide"
-                      >
-                        <img
-                          alt="sliding"
-                          className="sc-pyfCe dZKTVC"
-                          src={Object {}}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <h1>
+            Hey, I'm Harry!
+          </h1>
+          <div>
+            <p>
+              I'm a 24 year old software engineer based in London.
+            </p>
+            <p>
+              I'm interested in roles that align with my values and come with a challenge. Here you'll find a bit about my work, and about me as a person.
+            </p>
           </div>
-          <div
-            className="sc-iBYQkv jWdXlS"
-          >
-            <div
-              className="sc-ftTHYK khEJvz"
-              color="#d0d0d0"
-            >
-              <h1>
-                HARRY COLLINS
-              </h1>
-            </div>
-          </div>
-          <div
-            className="sc-iBYQkv bIArQK"
-          >
-            <div
-              className="sc-csuSiG gEvwDd"
-            >
-              <div
-                className="sc-fnGiBr irynzG"
-              >
-                <strong>
-                  <h2
-                    style={
-                      Object {
-                        "color": "grey",
-                        "marginTop": 0,
-                      }
-                    }
-                  >
-                    👨🏻‍💻 Age
-                  </h2>
-                </strong>
-                <div
-                  className="sc-ksBlkl YmmFn"
-                >
-                  <p
-                    className="sc-hBxehG eMmtcj"
-                    style={
-                      Object {
-                        "margin": 0,
-                        "marginTop": "5px",
-                      }
-                    }
-                  >
-                    24
-                  </p>
-                </div>
-              </div>
-              <div
-                className="sc-fnGiBr irynzG"
-              >
-                <strong>
-                  <h2
-                    style={
-                      Object {
-                        "color": "grey",
-                        "marginTop": 0,
-                      }
-                    }
-                  >
-                    📍 Location
-                  </h2>
-                </strong>
-                <div
-                  className="sc-ksBlkl YmmFn"
-                >
-                  <p
-                    className="sc-hBxehG eMmtcj"
-                    style={
-                      Object {
-                        "margin": 0,
-                        "marginTop": "5px",
-                      }
-                    }
-                  >
-                    London, UK
-                  </p>
-                </div>
-              </div>
-              <div
-                className="sc-fnGiBr irynzG"
-              >
-                <strong>
-                  <h2
-                    style={
-                      Object {
-                        "color": "grey",
-                        "marginTop": 0,
-                      }
-                    }
-                  >
-                    ⛹🏻‍♂️ Interests
-                  </h2>
-                </strong>
-                <div
-                  className="sc-ksBlkl YmmFn"
-                >
-                  <p
-                    className="sc-hBxehG eMmtcj"
-                    style={
-                      Object {
-                        "margin": 0,
-                        "marginTop": "5px",
-                      }
-                    }
-                  >
-                    Music
-                  </p>
-                  <p
-                    className="sc-hBxehG eMmtcj"
-                    style={
-                      Object {
-                        "margin": 0,
-                        "marginTop": "5px",
-                      }
-                    }
-                  >
-                    Basketball
-                  </p>
-                  <p
-                    className="sc-hBxehG eMmtcj"
-                    style={
-                      Object {
-                        "margin": 0,
-                        "marginTop": "5px",
-                      }
-                    }
-                  >
-                    Travelling
-                  </p>
-                  <p
-                    className="sc-hBxehG eMmtcj"
-                    style={
-                      Object {
-                        "margin": 0,
-                        "marginTop": "5px",
-                      }
-                    }
-                  >
-                    Fitness
-                  </p>
-                  <p
-                    className="sc-hBxehG eMmtcj"
-                    style={
-                      Object {
-                        "margin": 0,
-                        "marginTop": "5px",
-                      }
-                    }
-                  >
-                    Food (Pasta)
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="sc-eDWCr hIpPvN"
-            />
-          </div>
-          <div
-            className="sc-iBYQkv htHfkc"
-          />
-          <div
-            className="sc-iBYQkv eDHZXB"
-          />
-          <div
-            className="sc-iBYQkv eDHZXB"
-          />
-          <div
-            className="sc-iBYQkv htHfkc"
-          />
-          <div
-            className="sc-iBYQkv jgvhho"
-            onClick={[Function]}
-          />
-          <div
-            className="sc-iBYQkv jgvhho"
-            onClick={[Function]}
-          />
-          <div
-            className="sc-iBYQkv jgvhho"
-            onClick={[Function]}
-          />
         </div>
+        <div
+          style={
+            Object {
+              "backgroundColor": "#e8b454",
+              "minHeight": "25vh",
+              "width": "100%",
+            }
+          }
+        />
       </div>
     </div>
   </div>

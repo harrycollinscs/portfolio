@@ -1,60 +1,57 @@
 import React from 'react';
 import Page from '../../atoms/Page';
-import Grid from '../../atoms/Grid';
-import Card from '../../atoms/Card';
-import Linkedin from '../../../assets/images/LinkedIn.jpg'
-import Github from '../../../assets/images/Github.png'
-import Gmail from '../../../assets/images/Gmail.png'
-import HarryCollins1 from '../../../assets/images/HarryCollins1.png'
-import HarryNewYork from '../../../assets/images/HarryNewYork.png'
-import HarryBridge from '../../../assets/images/HarryBridge.png'
 
-import 'react-slideshow-image/dist/styles.css'
-import ImagesCard from '../../molecules/ImagesCard';
-import ResumeCard from '../../molecules/ResumeCard';
-import TitleCard from '../../molecules/TitleCard';
+import styled from 'styled-components'
 
-const slideImages = [ HarryNewYork, HarryBridge, HarryCollins1 ];
+// const AboutMe = [
+//   {
+//     title: '👨🏻‍💻 Age',
+//     list: ['24'],
+//   },
+//   {
+//     title: '📍 Location',
+//     list: ['London, UK'],
+//   },
+//   {
+//     title: '⛹🏻‍♂️ Interests',
+//     list: ['Music', 'Basketball', 'Travelling', 'Fitness', 'Food (Pasta)'],
+//   }
+// ]
 
-const openLink = (link: string) => {
-  window.open(link, '_blank');
-}
+const Intro = styled.div`
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 25vh;
+  line-height: 2;
+  padding: 24px;
 
-const AboutMe = [
-  {
-    title: '👨🏻‍💻 Age',
-    list: ['24'],
-  },
-  {
-    title: '📍 Location',
-    list: ['London, UK'],
-  },
-  {
-    title: '⛹🏻‍♂️ Interests',
-    list: ['Music', 'Basketball', 'Travelling', 'Fitness', 'Food (Pasta)'],
+  h1 {
+    margin: 0;
   }
-]
+
+  @media screen and (min-width: 2000px) {
+    width: 60vw;
+  }
+`
 
 const All = () => {
 
   return (
     <Page>
-      <Grid>
-        <ImagesCard images={slideImages} />
-        <TitleCard title='HARRY COLLINS' bgColor='#fff' color='#d0d0d0' />
+      <Intro>
+        <h1>Hey, I'm Harry!</h1>
+        <div>
+          <p>I'm a 24 year old software engineer based in London.</p>
+          <p>I'm interested in roles that align with my values and come with a challenge. Here you'll find a bit about my work, and about me as a person.</p>
+        </div>
+      </Intro>
 
-        <ResumeCard subtitle='' subsubtitle='' lists={AboutMe} isTall />
-        <Card long />
-        <Card />
-        <Card />
-        <Card long />
-       
+      <div style={{ minHeight: '25vh', width: '100%', backgroundColor: '#e8b454' }}>
 
-        <Card bgImage={Linkedin} action={() => openLink('https://www.linkedin.com/in/harrycollinscs/')}/>
-        <Card bgImage={Github} action={() => openLink('https://www.github.com/harrycollinscs/')} />
-        <Card bgImage={Gmail} action={() => openLink('mailto:harrycol97@gmail.com')} />
-
-      </Grid>
+      </div>
     </Page>
   )
 }

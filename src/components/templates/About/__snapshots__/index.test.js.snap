@@ -5,20 +5,11 @@ exports[`renders correctly 1`] = `
   className="sc-gswNZR bYjodk"
 >
   <div
-    className="sc-bcXHqe jrgphz"
+    className="sc-bcXHqe jcsVHA"
   >
-    <div
-      className="sc-dkrFOg dXyzdQ"
-    >
-      <div
-        className="sc-hLBbgP bOGyJC"
-        color="#c1e9ff"
-      >
-        <h1>
-          ABOUT
-        </h1>
-      </div>
-    </div>
+    <h1>
+      About
+    </h1>
   </div>
 </div>
 `;

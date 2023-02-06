@@ -5,14 +5,14 @@ exports[`renders correctly 1`] = `
   className="sc-bcXHqe fmevvY"
 >
   <div
-    className="sc-eDvSVe eIvZXR"
+    className="sc-gswNZR isZRYM"
   >
     <h1>
       Resume
     </h1>
   </div>
   <div
-    className="sc-jSUZER eSwWpE"
+    className="sc-jSUZER fkWDbw"
   >
     <h1>
       Harry Collins
@@ -22,15 +22,15 @@ exports[`renders correctly 1`] = `
     </p>
   </div>
   <div
-    className="sc-dkrFOg eDKRfJ"
+    className="sc-hLBbgP dMKSaj"
   >
     <img
       alt="vodafone"
-      className="sc-gswNZR gmcFCZ"
+      className="sc-dkrFOg gaqqhz"
       src={Object {}}
     />
     <div
-      className="sc-hLBbgP cpGQCB"
+      className="sc-eDvSVe dcpsYI"
     >
       <div>
         <h1>
@@ -57,10 +57,10 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="sc-dkrFOg eDKRfJ"
+    className="sc-hLBbgP dMKSaj"
   >
     <div
-      className="sc-hLBbgP cpGQCB"
+      className="sc-eDvSVe dcpsYI"
     >
       <div>
         <h1>
@@ -75,10 +75,7 @@ exports[`renders correctly 1`] = `
       </p>
       <ul>
         <li>
-          Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.
-        </li>
-        <li>
-          Led implementation of ‘Help and Search’ section into giffgaff mobile application, featuring live chat (React Native,Typescript, Redux, GraphQL).
+          Led implementation of 'Help and Search' section into giffgaff mobile application, featuring live chat (React Native,Typescript, Redux, GraphQL).
         </li>
         <li>
           Built and monitored NodeJS service to serve React components, utilising Hypernova (Javascript).
@@ -93,9 +90,170 @@ exports[`renders correctly 1`] = `
     </div>
     <img
       alt="giffgaff"
-      className="sc-gswNZR gmcFCZ"
+      className="sc-dkrFOg gaqqhz"
       src={Object {}}
     />
+  </div>
+  <div
+    className="sc-gKPRtg iCaQmZ"
+    style={
+      Object {
+        "display": "flex",
+        "width": "80vw",
+      }
+    }
+  >
+    <h1>
+      Skills
+    </h1>
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-evenly",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "width": "50%",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "space-between",
+              "width": "60%",
+            }
+          }
+        >
+          Typescript/Javascript
+          <progress
+            className="sc-iBYQkv kIxnuh"
+            max="100"
+            value="70"
+          />
+        </div>
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "space-between",
+              "width": "60%",
+            }
+          }
+        >
+          React/Native
+          <progress
+            className="sc-iBYQkv kIxnuh"
+            max="100"
+            value="70"
+          />
+        </div>
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "space-between",
+              "width": "60%",
+            }
+          }
+        >
+          NodeJS
+          <progress
+            className="sc-iBYQkv kIxnuh"
+            max="100"
+            value="60"
+          />
+        </div>
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "space-between",
+              "width": "60%",
+            }
+          }
+        >
+          HTML/CSS
+          <progress
+            className="sc-iBYQkv kIxnuh"
+            max="100"
+            value="70"
+          />
+        </div>
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "space-between",
+              "width": "60%",
+            }
+          }
+        >
+          GraphQL
+          <progress
+            className="sc-iBYQkv kIxnuh"
+            max="100"
+            value="50"
+          />
+        </div>
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "space-between",
+              "width": "60%",
+            }
+          }
+        >
+          Pair programming
+          <progress
+            className="sc-iBYQkv kIxnuh"
+            max="100"
+            value="85"
+          />
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "textAlign": "left",
+            "width": "25%",
+          }
+        }
+      >
+        <div>
+          Communication
+        </div>
+        <div>
+          Determination
+        </div>
+        <div>
+          UX Mindset
+        </div>
+        <div>
+          Leadership
+        </div>
+        <div>
+          Empathy
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
