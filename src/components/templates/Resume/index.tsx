@@ -2,7 +2,7 @@ import React from 'react';
 import Page from '../../atoms/Page';
 import Header from '../../atoms/Header';
 
-import Vodafone from '../../../assets/images/Vodafone.jpeg'
+import Vodafone from '../../../assets/images/VodafoneGreen.jpeg'
 import giffgaff from '../../../assets/images/giffgaff.jpg'
 
 import styled from 'styled-components'
@@ -155,6 +155,8 @@ const Section = styled.div`
 
 const ProgressBar = styled.progress`
   border-radius: 25px; 
+  height: 8px;
+  margin-left: 8px;
 
   &::-webkit-progress-bar {
     background-color: #efefef;
@@ -165,6 +167,53 @@ const ProgressBar = styled.progress`
     background-color: #2f295e;
     border-radius: 25px;
   }
+
+  @media screen and (max-width: 499px) {
+    display: none;
+  }
+`
+
+const SkillsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media screen and (max-width: 799px) {
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 80vw;
+  }
+`
+
+const HardSkillsContainer = styled.div`
+  width: 400px;
+
+  @media screen and (max-width: 499px) {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+`
+
+const HardSkill = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+
+  @media screen and (max-width: 499px) {
+    flex-direction: column;
+  }
+`
+
+const SoftSkillsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
 `
 
 const Resume = () => {
@@ -187,8 +236,8 @@ const Resume = () => {
           <p>Software Engineer</p>
           <ul>
             <li>Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.</li>
-            <li>Built and deployed custom React components, resuable helper functions, etc.</li>
-            <li>Liased with backend engineers to formaulat data structures for efficient cross-stack data handling.</li>
+            <li>Built and deployed custom React components, reusable helper functions, etc.</li>
+            <li>Liased with backend engineers to formulate data structures for efficient cross-stack data handling.</li>
           </ul>
         </ImageSectionContent>
       </ImageSection>
@@ -211,20 +260,20 @@ const Resume = () => {
         <Image src={giffgaff} alt='giffgaff'/>
       </ImageSection>
 
-      <Section style={{ width: '80vw', display: 'flex'}}>
+      <Section>
         <h1>Skills</h1>
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly' }}>
-        <div style={{ display: 'flex', flexDirection: 'column', width: '50%' }}>
+        <SkillsContainer>
+          <HardSkillsContainer>
             {
               hardSkills.map((skill: { name: string; progress: string}) => (
-                <div style={{ width: '60%', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                <HardSkill>
                   {skill.name}
                   <ProgressBar value={skill.progress} max='100' />
-                </div>
+                </HardSkill>
               ))
             } 
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'left', width: '25%' }}>
+          </HardSkillsContainer>
+          <SoftSkillsContainer>
             {
               softSkills.map(skill => (
                 <div>
@@ -232,58 +281,14 @@ const Resume = () => {
                 </div>
               ))
             }
-          </div>
-        </div>
+          </SoftSkillsContainer>
+        </SkillsContainer>
         
       </Section>
+
+      <Section/>
     </Page>
   )
 }
 
 export default Resume
-
-// <Grid>
-//         <Card noPadding>
-//           <div style={{ backgroundImage: `url(${Speechmark})`, width: '100%', height: '50%', backgroundSize: '100%', borderRadius: '0.25rem 0.25rem 0 0' }}/>
-//           <div>
-//             <h2>Vodafone</h2>
-//             <p>Software Engineer </p>
-//           </div>
-//         </Card>
-//         <Card long />
-//         <Card noPadding>
-//           <div style={{ backgroundImage: `url(${Speechmark})`, width: '100%', height: '50%', backgroundSize: '100%', borderRadius: '0.25rem 0.25rem 0 0' }}/>
-//           <div>
-//             <h2>Vodafone</h2>
-//             <p>Software Engineer </p>
-//           </div>
-//         </Card>
-//         <Card long />
-//         <TitleCard title='EMPLOYMENT' bgColor='#003666' color='#c1e9ff' />
-
-//         {/* <Card bgColor="#d6f5ff" long>
-//           <ContentAndImage> 
-//             <MemojiContainer src={Memoji} alt=""/>
-//             <ContentContainer>
-//               <p>Driven software engineer with 3 years of professional experience in software development. Focus in web and mobile app development.</p>
-//             </ContentContainer>
-//           </ContentAndImage>
-//         </Card> */}
-
-//         {jobs.map(job => (
-//           <ResumeCard title={job.company} subtitle={job.role} subsubtitle={job.dates} lists={[{title: 'Stack', list: job.stack}, {title: 'Products', list: job.products }]} action={() => setModalContent(job)} isTall />
-//         ))}
-
-//         <TitleCard title='EDUCATION' bgColor='#fbb347' color='#ffedb3' />
-
-//         {education.map(education => (
-//           <ResumeCard title={education.school} subtitle={education.qualification} subsubtitle={education.dates} action={() => setModalContent(education)} isTall />
-//         ))}
-
-//         <ImagesCard images={loughboroughImages} />
-
-        
-//         <ListCard title='SKILLS' listItems={skills} bgColor='#3b3a67' titleColor='#8984bd' />
-
-//         <Card />
-//       </Grid>

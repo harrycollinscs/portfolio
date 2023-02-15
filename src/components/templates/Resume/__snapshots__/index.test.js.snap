@@ -48,10 +48,10 @@ exports[`renders correctly 1`] = `
           Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.
         </li>
         <li>
-          Built and deployed custom React components, resuable helper functions, etc.
+          Built and deployed custom React components, reusable helper functions, etc.
         </li>
         <li>
-          Liased with backend engineers to formaulat data structures for efficient cross-stack data handling.
+          Liased with backend engineers to formulate data structures for efficient cross-stack data handling.
         </li>
       </ul>
     </div>
@@ -96,146 +96,79 @@ exports[`renders correctly 1`] = `
   </div>
   <div
     className="sc-gKPRtg iCaQmZ"
-    style={
-      Object {
-        "display": "flex",
-        "width": "80vw",
-      }
-    }
   >
     <h1>
       Skills
     </h1>
     <div
-      style={
-        Object {
-          "display": "flex",
-          "flexDirection": "row",
-          "justifyContent": "space-evenly",
-        }
-      }
+      className="sc-ftTHYK fryqVJ"
     >
       <div
-        style={
-          Object {
-            "display": "flex",
-            "flexDirection": "column",
-            "width": "50%",
-          }
-        }
+        className="sc-pyfCe bdEObw"
       >
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "justifyContent": "space-between",
-              "width": "60%",
-            }
-          }
+          className="sc-jrcTuL kXBwmh"
         >
           Typescript/Javascript
           <progress
-            className="sc-iBYQkv kIxnuh"
+            className="sc-iBYQkv VGwZG"
             max="100"
             value="70"
           />
         </div>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "justifyContent": "space-between",
-              "width": "60%",
-            }
-          }
+          className="sc-jrcTuL kXBwmh"
         >
           React/Native
           <progress
-            className="sc-iBYQkv kIxnuh"
+            className="sc-iBYQkv VGwZG"
             max="100"
             value="70"
           />
         </div>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "justifyContent": "space-between",
-              "width": "60%",
-            }
-          }
+          className="sc-jrcTuL kXBwmh"
         >
           NodeJS
           <progress
-            className="sc-iBYQkv kIxnuh"
+            className="sc-iBYQkv VGwZG"
             max="100"
             value="60"
           />
         </div>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "justifyContent": "space-between",
-              "width": "60%",
-            }
-          }
+          className="sc-jrcTuL kXBwmh"
         >
           HTML/CSS
           <progress
-            className="sc-iBYQkv kIxnuh"
+            className="sc-iBYQkv VGwZG"
             max="100"
             value="70"
           />
         </div>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "justifyContent": "space-between",
-              "width": "60%",
-            }
-          }
+          className="sc-jrcTuL kXBwmh"
         >
           GraphQL
           <progress
-            className="sc-iBYQkv kIxnuh"
+            className="sc-iBYQkv VGwZG"
             max="100"
             value="50"
           />
         </div>
         <div
-          style={
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "justifyContent": "space-between",
-              "width": "60%",
-            }
-          }
+          className="sc-jrcTuL kXBwmh"
         >
           Pair programming
           <progress
-            className="sc-iBYQkv kIxnuh"
+            className="sc-iBYQkv VGwZG"
             max="100"
             value="85"
           />
         </div>
       </div>
       <div
-        style={
-          Object {
-            "display": "flex",
-            "flexDirection": "column",
-            "textAlign": "left",
-            "width": "25%",
-          }
-        }
+        className="sc-kDvujY fEoQLw"
       >
         <div>
           Communication
@@ -255,5 +188,8 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
   </div>
+  <div
+    className="sc-gKPRtg iCaQmZ"
+  />
 </div>
 `;
