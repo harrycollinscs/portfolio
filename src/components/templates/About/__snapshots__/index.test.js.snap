@@ -11,5 +11,14 @@ exports[`renders correctly 1`] = `
       About
     </h1>
   </div>
+  <div
+    className="sc-dkrFOg jrythW"
+  >
+    <div>
+      <p>
+        Coming soon...
+      </p>
+    </div>
+  </div>
 </div>
 `;

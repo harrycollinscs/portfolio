@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="sc-bcXHqe fmevvY"
 >
   <div
-    className="sc-dkrFOg kUXihC"
+    className="sc-dkrFOg jrythW"
   >
     <h1>
       Hey, I'm Harry!
@@ -26,181 +26,185 @@ exports[`renders correctly 1`] = `
     </h1>
   </div>
   <div
-    className="sc-hLBbgP ikxeNj"
+    className="sc-dkrFOg jrythW"
   >
     <div
-      style={
-        Object {
-          "borderRadius": "5px",
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexDirection": "column",
-          "justifyContent": "center",
-          "lineHeight": 2,
-          "minHeight": "25vh",
-          "padding": "8px",
-          "textAlign": "center",
-          "width": "100%",
-        }
-      }
+      className="sc-hLBbgP ikxeNj"
     >
-      <img
-        alt="Manteca"
-        src={Object {}}
+      <div
         style={
           Object {
-            "borderRadius": "50%",
-            "height": "auto",
+            "borderRadius": "5px",
+            "boxSizing": "border-box",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "lineHeight": 2,
+            "minHeight": "25vh",
+            "padding": "8px",
+            "textAlign": "center",
             "width": "100%",
           }
         }
-      />
-    </div>
-    <div
-      style={
-        Object {
-          "borderRadius": "5px",
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexDirection": "column",
-          "justifyContent": "center",
-          "lineHeight": 2,
-          "minHeight": "25vh",
-          "padding": "8px",
-          "textAlign": "center",
-          "width": "100%",
+      >
+        <img
+          alt="Manteca"
+          src={Object {}}
+          style={
+            Object {
+              "borderRadius": "50%",
+              "height": "auto",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+      <div
+        style={
+          Object {
+            "borderRadius": "5px",
+            "boxSizing": "border-box",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "lineHeight": 2,
+            "minHeight": "25vh",
+            "padding": "8px",
+            "textAlign": "center",
+            "width": "100%",
+          }
         }
-      }
-    >
-      <h1>
-        Software 
-        <br />
-         Engineer
-      </h1>
-    </div>
-    <div
-      style={
-        Object {
-          "borderRadius": "5px",
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexDirection": "column",
-          "justifyContent": "center",
-          "lineHeight": 2,
-          "minHeight": "25vh",
-          "padding": "8px",
-          "textAlign": "center",
-          "width": "100%",
+      >
+        <h1>
+          Software 
+          <br />
+           Engineer
+        </h1>
+      </div>
+      <div
+        style={
+          Object {
+            "borderRadius": "5px",
+            "boxSizing": "border-box",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "lineHeight": 2,
+            "minHeight": "25vh",
+            "padding": "8px",
+            "textAlign": "center",
+            "width": "100%",
+          }
         }
-      }
-    >
-      <h1>
-        Team 
-        <br />
-         Player
-      </h1>
-    </div>
-    <div
-      style={
-        Object {
-          "borderRadius": "5px",
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexDirection": "column",
-          "justifyContent": "center",
-          "lineHeight": 2,
-          "minHeight": "25vh",
-          "padding": "8px",
-          "textAlign": "center",
-          "width": "100%",
+      >
+        <h1>
+          Team 
+          <br />
+           Player
+        </h1>
+      </div>
+      <div
+        style={
+          Object {
+            "borderRadius": "5px",
+            "boxSizing": "border-box",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "lineHeight": 2,
+            "minHeight": "25vh",
+            "padding": "8px",
+            "textAlign": "center",
+            "width": "100%",
+          }
         }
-      }
-    >
-      <h1>
-        Foward 
-        <br />
-         Thinker
-      </h1>
-    </div>
-    <div
-      style={
-        Object {
-          "borderRadius": "5px",
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexDirection": "column",
-          "justifyContent": "center",
-          "lineHeight": 2,
-          "minHeight": "25vh",
-          "padding": "8px",
-          "textAlign": "center",
-          "width": "100%",
+      >
+        <h1>
+          Foward 
+          <br />
+           Thinker
+        </h1>
+      </div>
+      <div
+        style={
+          Object {
+            "borderRadius": "5px",
+            "boxSizing": "border-box",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "lineHeight": 2,
+            "minHeight": "25vh",
+            "padding": "8px",
+            "textAlign": "center",
+            "width": "100%",
+          }
         }
-      }
-    >
-      <p>
-        ^ That's me ^
-      </p>
-    </div>
-    <div
-      style={
-        Object {
-          "borderRadius": "5px",
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexDirection": "column",
-          "justifyContent": "center",
-          "lineHeight": 2,
-          "minHeight": "25vh",
-          "padding": "8px",
-          "textAlign": "center",
-          "width": "100%",
+      >
+        <p>
+          ^ That's me ^
+        </p>
+      </div>
+      <div
+        style={
+          Object {
+            "borderRadius": "5px",
+            "boxSizing": "border-box",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "lineHeight": 2,
+            "minHeight": "25vh",
+            "padding": "8px",
+            "textAlign": "center",
+            "width": "100%",
+          }
         }
-      }
-    >
-      <p>
-        I've been a Software Engineer for over 3 years, with a primary focus on front end development; though I prefer to think of myself as Full Stack.
-      </p>
-    </div>
-    <div
-      style={
-        Object {
-          "borderRadius": "5px",
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexDirection": "column",
-          "justifyContent": "center",
-          "lineHeight": 2,
-          "minHeight": "25vh",
-          "padding": "8px",
-          "textAlign": "center",
-          "width": "100%",
+      >
+        <p>
+          I've been a Software Engineer for over 3 years, with a primary focus on front end development; though I prefer to think of myself as Full Stack.
+        </p>
+      </div>
+      <div
+        style={
+          Object {
+            "borderRadius": "5px",
+            "boxSizing": "border-box",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "lineHeight": 2,
+            "minHeight": "25vh",
+            "padding": "8px",
+            "textAlign": "center",
+            "width": "100%",
+          }
         }
-      }
-    >
-      <p>
-        A team is only as good as how they feel. Morale, team work, and psychological safety above all else.
-      </p>
-    </div>
-    <div
-      style={
-        Object {
-          "borderRadius": "5px",
-          "boxSizing": "border-box",
-          "display": "flex",
-          "flexDirection": "column",
-          "justifyContent": "center",
-          "lineHeight": 2,
-          "minHeight": "25vh",
-          "padding": "8px",
-          "textAlign": "center",
-          "width": "100%",
+      >
+        <p>
+          A team is only as good as how they feel. Morale, team work, and psychological safety above all else.
+        </p>
+      </div>
+      <div
+        style={
+          Object {
+            "borderRadius": "5px",
+            "boxSizing": "border-box",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "lineHeight": 2,
+            "minHeight": "25vh",
+            "padding": "8px",
+            "textAlign": "center",
+            "width": "100%",
+          }
         }
-      }
-    >
-      <p>
-        Today's code is either tomorrow's downfall or saviour. I believe in eradicating tech debt as soon as possible and thinking about the long-term impact of our choices
-      </p>
+      >
+        <p>
+          Today's code is either tomorrow's downfall or saviour. I believe in eradicating tech debt as soon as possible and thinking about the long-term impact of our choices
+        </p>
+      </div>
     </div>
   </div>
 </div>

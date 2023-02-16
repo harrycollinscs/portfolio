@@ -12,184 +12,185 @@ exports[`renders correctly 1`] = `
     </h1>
   </div>
   <div
-    className="sc-jSUZER fkWDbw"
+    className="sc-dkrFOg jrythW"
   >
-    <h1>
-      Harry Collins
-    </h1>
-    <p>
-      Hard-working and creative software engineer currently employed in the telecoms industry. 3½ years of professional experience, with focus in full-stack web development and mobile app development utilising React Native/React/NodeJS. Bachelors degree in Computer Science (BSc).
-    </p>
-  </div>
-  <div
-    className="sc-hLBbgP dMKSaj"
-  >
-    <img
-      alt="vodafone"
-      className="sc-dkrFOg gaqqhz"
-      src={Object {}}
-    />
     <div
-      className="sc-eDvSVe dcpsYI"
+      className="sc-gKPRtg dCxRiw"
     >
-      <div>
-        <h1>
-          Vodafone
-        </h1>
-        <small>
-          Aug 2022 - Present
-        </small>
-      </div>
+      <h1>
+        Harry Collins
+      </h1>
       <p>
-        Software Engineer
+        Hard-working and creative software engineer currently employed in the telecoms industry. 3½ years of professional experience, with focus in full-stack web development and mobile app development utilising React Native/React/NodeJS. Bachelors degree in Computer Science (BSc).
       </p>
-      <ul>
-        <li>
-          Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.
-        </li>
-        <li>
-          Built and deployed custom React components, reusable helper functions, etc.
-        </li>
-        <li>
-          Liased with backend engineers to formulate data structures for efficient cross-stack data handling.
-        </li>
-      </ul>
     </div>
-  </div>
-  <div
-    className="sc-hLBbgP dMKSaj"
-  >
     <div
-      className="sc-eDvSVe dcpsYI"
+      className="sc-eDvSVe eKFfnP"
     >
-      <div>
-        <h1>
-          giffgaff
-        </h1>
-        <small>
-          Sept 2019 - June 2022
-        </small>
-      </div>
-      <p>
-        Software Engineer
-      </p>
-      <ul>
-        <li>
-          Led implementation of 'Help and Search' section into giffgaff mobile application, featuring live chat (React Native,Typescript, Redux, GraphQL).
-        </li>
-        <li>
-          Built and monitored NodeJS service to serve React components, utilising Hypernova (Javascript).
-        </li>
-        <li>
-          Assisted in the building, improvement and technology-wide uptake of React component library (including Jest unit testing, Storybook).
-        </li>
-        <li>
-          Communicated with and managed expectations of stakeholders while working in agile environment, and delivering iterative improvements to products.
-        </li>
-      </ul>
-    </div>
-    <img
-      alt="giffgaff"
-      className="sc-dkrFOg gaqqhz"
-      src={Object {}}
-    />
-  </div>
-  <div
-    className="sc-gKPRtg iCaQmZ"
-  >
-    <h1>
-      Skills
-    </h1>
-    <div
-      className="sc-ftTHYK fryqVJ"
-    >
+      <img
+        alt="vodafone"
+        className="sc-hLBbgP cKXkhz"
+        src={Object {}}
+      />
       <div
-        className="sc-pyfCe bdEObw"
-      >
-        <div
-          className="sc-jrcTuL kXBwmh"
-        >
-          Typescript/Javascript
-          <progress
-            className="sc-iBYQkv VGwZG"
-            max="100"
-            value="70"
-          />
-        </div>
-        <div
-          className="sc-jrcTuL kXBwmh"
-        >
-          React/Native
-          <progress
-            className="sc-iBYQkv VGwZG"
-            max="100"
-            value="70"
-          />
-        </div>
-        <div
-          className="sc-jrcTuL kXBwmh"
-        >
-          NodeJS
-          <progress
-            className="sc-iBYQkv VGwZG"
-            max="100"
-            value="60"
-          />
-        </div>
-        <div
-          className="sc-jrcTuL kXBwmh"
-        >
-          HTML/CSS
-          <progress
-            className="sc-iBYQkv VGwZG"
-            max="100"
-            value="70"
-          />
-        </div>
-        <div
-          className="sc-jrcTuL kXBwmh"
-        >
-          GraphQL
-          <progress
-            className="sc-iBYQkv VGwZG"
-            max="100"
-            value="50"
-          />
-        </div>
-        <div
-          className="sc-jrcTuL kXBwmh"
-        >
-          Pair programming
-          <progress
-            className="sc-iBYQkv VGwZG"
-            max="100"
-            value="85"
-          />
-        </div>
-      </div>
-      <div
-        className="sc-kDvujY fEoQLw"
+        className="sc-jSUZER ecHNtq"
       >
         <div>
-          Communication
+          <h1>
+            Vodafone
+          </h1>
+          <small>
+            Aug 2022 - Present
+          </small>
         </div>
+        <p>
+          Software Engineer
+        </p>
+        <ul>
+          <li>
+            Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.
+          </li>
+          <li>
+            Built and deployed custom React components, reusable helper functions, etc.
+          </li>
+          <li>
+            Liased with backend engineers to formulate data structures for efficient cross-stack data handling.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="sc-eDvSVe eKFfnP"
+    >
+      <div
+        className="sc-jSUZER ecHNtq"
+      >
         <div>
-          Determination
+          <h1>
+            giffgaff
+          </h1>
+          <small>
+            Sept 2019 - June 2022
+          </small>
         </div>
-        <div>
-          UX Mindset
+        <p>
+          Software Engineer
+        </p>
+        <ul>
+          <li>
+            Led implementation of 'Help and Search' section into giffgaff mobile application, featuring live chat (React Native,Typescript, Redux, GraphQL).
+          </li>
+          <li>
+            Built and monitored NodeJS service to serve React components, utilising Hypernova (Javascript).
+          </li>
+          <li>
+            Assisted in the building, improvement and technology-wide uptake of React component library (including Jest unit testing, Storybook).
+          </li>
+          <li>
+            Communicated with and managed expectations of stakeholders while working in agile environment, and delivering iterative improvements to products.
+          </li>
+        </ul>
+      </div>
+      <img
+        alt="giffgaff"
+        className="sc-hLBbgP cKXkhz"
+        src={Object {}}
+      />
+    </div>
+    <div
+      className="sc-dkrFOg jrythW"
+    >
+      <h1>
+        Skills
+      </h1>
+      <div
+        className="sc-ftTHYK hxsFoN"
+      >
+        <div
+          className="sc-pyfCe bdEObw"
+        >
+          <div
+            className="sc-jrcTuL kXBwmh"
+          >
+            Typescript/Javascript
+            <progress
+              className="sc-iBYQkv VGwZG"
+              max="100"
+              value="70"
+            />
+          </div>
+          <div
+            className="sc-jrcTuL kXBwmh"
+          >
+            React/Native
+            <progress
+              className="sc-iBYQkv VGwZG"
+              max="100"
+              value="70"
+            />
+          </div>
+          <div
+            className="sc-jrcTuL kXBwmh"
+          >
+            NodeJS
+            <progress
+              className="sc-iBYQkv VGwZG"
+              max="100"
+              value="60"
+            />
+          </div>
+          <div
+            className="sc-jrcTuL kXBwmh"
+          >
+            HTML/CSS
+            <progress
+              className="sc-iBYQkv VGwZG"
+              max="100"
+              value="70"
+            />
+          </div>
+          <div
+            className="sc-jrcTuL kXBwmh"
+          >
+            GraphQL
+            <progress
+              className="sc-iBYQkv VGwZG"
+              max="100"
+              value="50"
+            />
+          </div>
+          <div
+            className="sc-jrcTuL kXBwmh"
+          >
+            Pair programming
+            <progress
+              className="sc-iBYQkv VGwZG"
+              max="100"
+              value="85"
+            />
+          </div>
         </div>
-        <div>
-          Leadership
-        </div>
-        <div>
-          Empathy
+        <div
+          className="sc-kDvujY fEoQLw"
+        >
+          <div>
+            Communication
+          </div>
+          <div>
+            Determination
+          </div>
+          <div>
+            UX Mindset
+          </div>
+          <div>
+            Leadership
+          </div>
+          <div>
+            Empathy
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div
-    className="sc-gKPRtg iCaQmZ"
-  />
 </div>
 `;

@@ -2,12 +2,11 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-eDWCr hPVNmv"
+  className="sc-csuSiG brJcII"
 >
   <div
     style={
       Object {
-        "backgroundColor": "white",
         "display": "flex",
         "flexDirection": "column",
         "width": "100%",
@@ -15,41 +14,41 @@ exports[`renders correctly 1`] = `
     }
   >
     <div
-      className="sc-bqWxrE LKUwJ"
+      className="sc-eDWCr eQhNiN"
     >
       <div
-        className="sc-ksBlkl iFOjfM"
+        className="sc-bqWxrE enqTKa"
         onClick={[Function]}
       >
         All
       </div>
       <div
-        className="sc-ksBlkl cNuROw"
+        className="sc-bqWxrE bzpHDi"
         onClick={[Function]}
       >
         Resume
       </div>
       <div
-        className="sc-ksBlkl cNuROw"
+        className="sc-bqWxrE bzpHDi"
         onClick={[Function]}
       >
         About
       </div>
       <div
-        className="sc-ksBlkl cNuROw"
+        className="sc-bqWxrE bzpHDi"
         onClick={[Function]}
       >
         Projects
       </div>
     </div>
     <div
-      className="sc-hBxehG fIpIdk"
+      className="sc-ksBlkl iaPOWV"
     >
       <div
         className="sc-bcXHqe fmevvY"
       >
         <div
-          className="sc-ipEyDJ fTLOFe"
+          className="sc-dkrFOg jrythW"
         >
           <h1>
             Hey, I'm Harry!
@@ -70,181 +69,185 @@ exports[`renders correctly 1`] = `
           </h1>
         </div>
         <div
-          className="sc-csuSiG cPCNOU"
+          className="sc-dkrFOg jrythW"
         >
           <div
-            style={
-              Object {
-                "borderRadius": "5px",
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexDirection": "column",
-                "justifyContent": "center",
-                "lineHeight": 2,
-                "minHeight": "25vh",
-                "padding": "8px",
-                "textAlign": "center",
-                "width": "100%",
-              }
-            }
+            className="sc-ipEyDJ FzpML"
           >
-            <img
-              alt="Manteca"
-              src={Object {}}
+            <div
               style={
                 Object {
-                  "borderRadius": "50%",
-                  "height": "auto",
+                  "borderRadius": "5px",
+                  "boxSizing": "border-box",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "lineHeight": 2,
+                  "minHeight": "25vh",
+                  "padding": "8px",
+                  "textAlign": "center",
                   "width": "100%",
                 }
               }
-            />
-          </div>
-          <div
-            style={
-              Object {
-                "borderRadius": "5px",
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexDirection": "column",
-                "justifyContent": "center",
-                "lineHeight": 2,
-                "minHeight": "25vh",
-                "padding": "8px",
-                "textAlign": "center",
-                "width": "100%",
+            >
+              <img
+                alt="Manteca"
+                src={Object {}}
+                style={
+                  Object {
+                    "borderRadius": "50%",
+                    "height": "auto",
+                    "width": "100%",
+                  }
+                }
+              />
+            </div>
+            <div
+              style={
+                Object {
+                  "borderRadius": "5px",
+                  "boxSizing": "border-box",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "lineHeight": 2,
+                  "minHeight": "25vh",
+                  "padding": "8px",
+                  "textAlign": "center",
+                  "width": "100%",
+                }
               }
-            }
-          >
-            <h1>
-              Software 
-              <br />
-               Engineer
-            </h1>
-          </div>
-          <div
-            style={
-              Object {
-                "borderRadius": "5px",
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexDirection": "column",
-                "justifyContent": "center",
-                "lineHeight": 2,
-                "minHeight": "25vh",
-                "padding": "8px",
-                "textAlign": "center",
-                "width": "100%",
+            >
+              <h1>
+                Software 
+                <br />
+                 Engineer
+              </h1>
+            </div>
+            <div
+              style={
+                Object {
+                  "borderRadius": "5px",
+                  "boxSizing": "border-box",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "lineHeight": 2,
+                  "minHeight": "25vh",
+                  "padding": "8px",
+                  "textAlign": "center",
+                  "width": "100%",
+                }
               }
-            }
-          >
-            <h1>
-              Team 
-              <br />
-               Player
-            </h1>
-          </div>
-          <div
-            style={
-              Object {
-                "borderRadius": "5px",
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexDirection": "column",
-                "justifyContent": "center",
-                "lineHeight": 2,
-                "minHeight": "25vh",
-                "padding": "8px",
-                "textAlign": "center",
-                "width": "100%",
+            >
+              <h1>
+                Team 
+                <br />
+                 Player
+              </h1>
+            </div>
+            <div
+              style={
+                Object {
+                  "borderRadius": "5px",
+                  "boxSizing": "border-box",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "lineHeight": 2,
+                  "minHeight": "25vh",
+                  "padding": "8px",
+                  "textAlign": "center",
+                  "width": "100%",
+                }
               }
-            }
-          >
-            <h1>
-              Foward 
-              <br />
-               Thinker
-            </h1>
-          </div>
-          <div
-            style={
-              Object {
-                "borderRadius": "5px",
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexDirection": "column",
-                "justifyContent": "center",
-                "lineHeight": 2,
-                "minHeight": "25vh",
-                "padding": "8px",
-                "textAlign": "center",
-                "width": "100%",
+            >
+              <h1>
+                Foward 
+                <br />
+                 Thinker
+              </h1>
+            </div>
+            <div
+              style={
+                Object {
+                  "borderRadius": "5px",
+                  "boxSizing": "border-box",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "lineHeight": 2,
+                  "minHeight": "25vh",
+                  "padding": "8px",
+                  "textAlign": "center",
+                  "width": "100%",
+                }
               }
-            }
-          >
-            <p>
-              ^ That's me ^
-            </p>
-          </div>
-          <div
-            style={
-              Object {
-                "borderRadius": "5px",
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexDirection": "column",
-                "justifyContent": "center",
-                "lineHeight": 2,
-                "minHeight": "25vh",
-                "padding": "8px",
-                "textAlign": "center",
-                "width": "100%",
+            >
+              <p>
+                ^ That's me ^
+              </p>
+            </div>
+            <div
+              style={
+                Object {
+                  "borderRadius": "5px",
+                  "boxSizing": "border-box",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "lineHeight": 2,
+                  "minHeight": "25vh",
+                  "padding": "8px",
+                  "textAlign": "center",
+                  "width": "100%",
+                }
               }
-            }
-          >
-            <p>
-              I've been a Software Engineer for over 3 years, with a primary focus on front end development; though I prefer to think of myself as Full Stack.
-            </p>
-          </div>
-          <div
-            style={
-              Object {
-                "borderRadius": "5px",
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexDirection": "column",
-                "justifyContent": "center",
-                "lineHeight": 2,
-                "minHeight": "25vh",
-                "padding": "8px",
-                "textAlign": "center",
-                "width": "100%",
+            >
+              <p>
+                I've been a Software Engineer for over 3 years, with a primary focus on front end development; though I prefer to think of myself as Full Stack.
+              </p>
+            </div>
+            <div
+              style={
+                Object {
+                  "borderRadius": "5px",
+                  "boxSizing": "border-box",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "lineHeight": 2,
+                  "minHeight": "25vh",
+                  "padding": "8px",
+                  "textAlign": "center",
+                  "width": "100%",
+                }
               }
-            }
-          >
-            <p>
-              A team is only as good as how they feel. Morale, team work, and psychological safety above all else.
-            </p>
-          </div>
-          <div
-            style={
-              Object {
-                "borderRadius": "5px",
-                "boxSizing": "border-box",
-                "display": "flex",
-                "flexDirection": "column",
-                "justifyContent": "center",
-                "lineHeight": 2,
-                "minHeight": "25vh",
-                "padding": "8px",
-                "textAlign": "center",
-                "width": "100%",
+            >
+              <p>
+                A team is only as good as how they feel. Morale, team work, and psychological safety above all else.
+              </p>
+            </div>
+            <div
+              style={
+                Object {
+                  "borderRadius": "5px",
+                  "boxSizing": "border-box",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "justifyContent": "center",
+                  "lineHeight": 2,
+                  "minHeight": "25vh",
+                  "padding": "8px",
+                  "textAlign": "center",
+                  "width": "100%",
+                }
               }
-            }
-          >
-            <p>
-              Today's code is either tomorrow's downfall or saviour. I believe in eradicating tech debt as soon as possible and thinking about the long-term impact of our choices
-            </p>
+            >
+              <p>
+                Today's code is either tomorrow's downfall or saviour. I believe in eradicating tech debt as soon as possible and thinking about the long-term impact of our choices
+              </p>
+            </div>
           </div>
         </div>
       </div>
