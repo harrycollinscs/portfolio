@@ -4,12 +4,12 @@ import Page from '../../atoms/Page'
 import Section from '../../atoms/Section'
 // import { Buffer } from 'buffer'
 
-interface SpotifyTrack {
-  name: string
-  artist: string
-  imageUrl: string
-  albumUrl: string
-}
+// interface SpotifyTrack {
+//   name: string
+//   artist: string
+//   imageUrl: string
+//   albumUrl: string
+// }
 
 const About = () => {
   // const [spotifyLastPlayed, setSpotifyLastPlayed] = useState<SpotifyTrack | null>(null)
