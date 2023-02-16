@@ -1,7 +1,7 @@
-import React from 'react';
-import Page from '../../atoms/Page';
-import Header from '../../atoms/Header';
-
+import React from 'react'
+import Page from '../../atoms/Page'
+import Header from '../../atoms/Header'
+import Section from '../../atoms/Section'
 import Vodafone from '../../../assets/images/VodafoneGreen.jpeg'
 import giffgaff from '../../../assets/images/giffgaff.jpg'
 
@@ -57,12 +57,13 @@ const Image = styled.img`
 
 const ImageSection = styled.div`
   padding: 24px;
-  width: 80vw;
+  width: 100%;
   align-items: center;
   display: flex;
   justify-content: space-between;
   line-height: 2;
   align-items: flex-start;
+  text-align: left;
 
   @media screen and (max-width: 1020px) {
     flex-direction: column;
@@ -142,17 +143,6 @@ const Intro = styled.div`
   }
 `
 
-const Section = styled.div`
-  min-height: 25vh;
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  line-height: 2;
-  padding: 24px;
-`
-
 const ProgressBar = styled.progress`
   border-radius: 25px; 
   height: 8px;
@@ -177,12 +167,12 @@ const SkillsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 80vw;
 
   @media screen and (max-width: 799px) {
     flex-direction: column;
     align-items: center;
     height: 50vh;
-    width: 80vw;
   }
 `
 
@@ -221,72 +211,73 @@ const Resume = () => {
     <Page>
       <Header title='Resume' />
 
-      <Intro>
-        <h1>Harry Collins</h1>
-        <p>Hard-working and creative software engineer currently employed in the telecoms industry. 3½ years of professional experience, with focus in full-stack web development and mobile app development utilising React Native/React/NodeJS. Bachelors degree in Computer Science (BSc).</p>
-      </Intro>
-
-      <ImageSection>
-        <Image src={Vodafone} alt='vodafone'/>
-        <ImageSectionContent>
-          <div>
-            <h1>Vodafone</h1>
-            <small>Aug 2022 - Present</small>
-          </div>
-          <p>Software Engineer</p>
-          <ul>
-            <li>Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.</li>
-            <li>Built and deployed custom React components, reusable helper functions, etc.</li>
-            <li>Liased with backend engineers to formulate data structures for efficient cross-stack data handling.</li>
-          </ul>
-        </ImageSectionContent>
-      </ImageSection>
-      
-
-      <ImageSection>
-        <ImageSectionContent>
-          <div>
-            <h1>giffgaff</h1>
-            <small>Sept 2019 - June 2022</small>
-          </div>
-          <p>Software Engineer</p>
-          <ul>
-            <li>Led implementation of 'Help and Search' section into giffgaff mobile application, featuring live chat (React Native,Typescript, Redux, GraphQL).</li>
-            <li>Built and monitored NodeJS service to serve React components, utilising Hypernova (Javascript).</li>
-            <li>Assisted in the building, improvement and technology-wide uptake of React component library (including Jest unit testing, Storybook).</li>
-            <li>Communicated with and managed expectations of stakeholders while working in agile environment, and delivering iterative improvements to products.</li>
-          </ul>
-        </ImageSectionContent>
-        <Image src={giffgaff} alt='giffgaff'/>
-      </ImageSection>
-
       <Section>
-        <h1>Skills</h1>
-        <SkillsContainer>
-          <HardSkillsContainer>
-            {
-              hardSkills.map((skill: { name: string; progress: string}) => (
-                <HardSkill>
-                  {skill.name}
-                  <ProgressBar value={skill.progress} max='100' />
-                </HardSkill>
-              ))
-            } 
-          </HardSkillsContainer>
-          <SoftSkillsContainer>
-            {
-              softSkills.map(skill => (
-                <div>
-                  {skill}
-                </div>
-              ))
-            }
-          </SoftSkillsContainer>
-        </SkillsContainer>
-        
-      </Section>
+        <Intro>
+          <h1>Harry Collins</h1>
+          <p>Hard-working and creative software engineer currently employed in the telecoms industry. 3½ years of professional experience, with focus in full-stack web development and mobile app development utilising React Native/React/NodeJS. Bachelors degree in Computer Science (BSc).</p>
+        </Intro>
 
-      <Section/>
+        <ImageSection>
+          <Image src={Vodafone} alt='vodafone'/>
+          <ImageSectionContent>
+            <div>
+              <h1>Vodafone</h1>
+              <small>Aug 2022 - Present</small>
+            </div>
+            <p>Software Engineer</p>
+            <ul>
+              <li>Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.</li>
+              <li>Built and deployed custom React components, reusable helper functions, etc.</li>
+              <li>Liased with backend engineers to formulate data structures for efficient cross-stack data handling.</li>
+            </ul>
+          </ImageSectionContent>
+        </ImageSection>
+        
+
+        <ImageSection>
+          <ImageSectionContent>
+            <div>
+              <h1>giffgaff</h1>
+              <small>Sept 2019 - June 2022</small>
+            </div>
+            <p>Software Engineer</p>
+            <ul>
+              <li>Led implementation of 'Help and Search' section into giffgaff mobile application, featuring live chat (React Native,Typescript, Redux, GraphQL).</li>
+              <li>Built and monitored NodeJS service to serve React components, utilising Hypernova (Javascript).</li>
+              <li>Assisted in the building, improvement and technology-wide uptake of React component library (including Jest unit testing, Storybook).</li>
+              <li>Communicated with and managed expectations of stakeholders while working in agile environment, and delivering iterative improvements to products.</li>
+            </ul>
+          </ImageSectionContent>
+          <Image src={giffgaff} alt='giffgaff'/>
+        </ImageSection>
+
+        <Section>
+          <h1>Skills</h1>
+          <SkillsContainer>
+            <HardSkillsContainer>
+              {
+                hardSkills.map((skill: { name: string; progress: string}) => (
+                  <HardSkill>
+                    {skill.name}
+                    <ProgressBar value={skill.progress} max='100' />
+                  </HardSkill>
+                ))
+              } 
+            </HardSkillsContainer>
+            <SoftSkillsContainer>
+              {
+                softSkills.map(skill => (
+                  <div>
+                    {skill}
+                  </div>
+                ))
+              }
+            </SoftSkillsContainer>
+          </SkillsContainer>
+          
+        </Section>
+
+      </Section>
     </Page>
   )
 }

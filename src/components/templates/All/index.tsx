@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Header from '../../atoms/Header';
 
 import Manteca from '../../../assets/images/HarryManteca.jpg';
+import Section from '../../atoms/Section';
 
 // const AboutMe = [
 //   {
@@ -20,25 +21,6 @@ import Manteca from '../../../assets/images/HarryManteca.jpg';
 //     list: ['Music', 'Basketball', 'Travelling', 'Fitness', 'Food (Pasta)'],
 //   }
 // ]
-
-const Intro = styled.div`
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  min-height: 25vh;
-  line-height: 2;
-  padding: 24px;
-
-  h1 {
-    margin: 0;
-  }
-
-  @media screen and (min-width: 2000px) {
-    width: 60vw;
-  }
-`
 
 const Grid = styled.div`
   display: grid;
@@ -134,24 +116,26 @@ const All = () => {
 
   return (
     <Page>
-      <Intro>
+      <Section>
         <h1>Hey, I'm Harry!</h1>
         <div>
           <p>I'm a 24 year old software engineer based in London. <br/>I'm interested in roles that align with my values and come with a challenge. Here you'll find a bit about my work, and about me as a person.</p>
         </div>
-      </Intro>
+      </Section>
 
       <Header title='Who I am' bgColor='#e8b454' />
       
-      <Grid>
-        {
-          Tiles.map((content, index) => (
-            <div style={{  lineHeight: 2, textAlign: 'center', width: '100%', borderRadius: '5px', minHeight: '25vh', padding: '8px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-              {content}
-            </div>
-          ))
-        }
-      </Grid>
+      <Section>
+        <Grid>
+          {
+            Tiles.map((content, index) => (
+              <div style={{  lineHeight: 2, textAlign: 'center', width: '100%', borderRadius: '5px', minHeight: '25vh', padding: '8px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                {content}
+              </div>
+            ))
+          }
+        </Grid>
+      </Section>
     </Page>
   )
 }

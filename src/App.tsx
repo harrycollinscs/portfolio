@@ -65,7 +65,7 @@ const Tabs = ({ tabs }: TabManagerProps) => {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <div style={{flexDirection: 'column', display: 'flex', width: '100%', backgroundColor: 'white'}}>
+    <div style={{flexDirection: 'column', display: 'flex', width: '100%'}}>
       <TabsContainer>
           {tabs.map(({title}, index: number) => (
             <Tab key={index} isActive={index===activeTab} onClick={() => setActiveTab(index)}>
