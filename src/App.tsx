@@ -1,11 +1,13 @@
 import React from 'react'
-import './App.css';
-import { useState, ReactNode } from 'react';
-import styled, { css } from 'styled-components';
-import Resume from './components/templates/Resume';
-import About from './components/templates/About';
-import All from './components/templates/All';
-import Projects from './components/templates/Projects';
+import './App.css'
+import { useState, ReactNode } from 'react'
+import styled, { css } from 'styled-components'
+import Resume from './components/templates/Resume'
+import About from './components/templates/About'
+import All from './components/templates/All'
+import Projects from './components/templates/Projects'
+// import { Provider } from 'react-redux'
+// import store from './store'
 
 const Body = styled.div`
 `
@@ -91,9 +93,11 @@ const App = () => {
   ];
 
   return (
-    <Body>
-      <Tabs tabs={tabs}/>
-    </Body>
+    // <Provider store={store}>
+      <Body>
+        <Tabs tabs={tabs}/>
+      </Body>
+    // </Provider>
   );
 }
 
