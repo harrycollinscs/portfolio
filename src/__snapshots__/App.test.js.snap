@@ -48,7 +48,7 @@ exports[`renders correctly 1`] = `
         className="sc-bcXHqe fmevvY"
       >
         <div
-          className="sc-dkrFOg jrythW"
+          className="sc-dkrFOg eAHWBt"
         >
           <h1>
             Hey, I'm Harry!
@@ -69,7 +69,7 @@ exports[`renders correctly 1`] = `
           </h1>
         </div>
         <div
-          className="sc-dkrFOg jrythW"
+          className="sc-dkrFOg eAHWBt"
         >
           <div
             className="sc-ipEyDJ FzpML"

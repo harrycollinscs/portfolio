@@ -129,7 +129,7 @@ const All = () => {
         <Grid>
           {
             Tiles.map((content, index) => (
-              <div style={{  lineHeight: 2, textAlign: 'center', width: '100%', borderRadius: '5px', minHeight: '25vh', padding: '8px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+              <div key={index} style={{  lineHeight: 2, textAlign: 'center', width: '100%', borderRadius: '5px', minHeight: '25vh', padding: '8px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                 {content}
               </div>
             ))

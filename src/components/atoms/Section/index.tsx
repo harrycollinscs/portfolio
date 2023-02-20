@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const StyledDiv = styled.div`
+const StyledDiv = styled.div<{bgColor?: string}>`
   min-height: 25vh;
   width: 90vw;
   display: flex;
@@ -10,7 +10,7 @@ const StyledDiv = styled.div`
   text-align: center;
   line-height: 2;
   padding: 24px;
-  background-color: white;
+  background-color: ${(props) => props.bgColor ? props.bgColor : 'white'};
   margin: 16px;
   border-radius: 10px;
   box-sizing: border-box;
@@ -23,8 +23,8 @@ const StyledDiv = styled.div`
   }
 `
 
-const Section = ({ children }: { children?: React.ReactNode }) => (
-  <StyledDiv>
+const Section = ({ children, bgColor }: { children?: React.ReactNode, bgColor?: string }) => (
+  <StyledDiv bgColor={bgColor}>
     {children}
   </StyledDiv>
 )

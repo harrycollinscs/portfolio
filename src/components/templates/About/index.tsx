@@ -1,54 +1,90 @@
-import React, { useCallback, useEffect } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Header from '../../atoms/Header'
 import Page from '../../atoms/Page'
 import Section from '../../atoms/Section'
-// import { Buffer } from 'buffer'
+import axios from 'axios'
+import styled from 'styled-components'
 
-// interface SpotifyTrack {
-//   name: string
-//   artist: string
-//   imageUrl: string
-//   albumUrl: string
-// }
+interface SpotifyTrack {
+  name: string
+  artist: string
+  imageUrl: string
+  albumUrl?: string
+}
+
+const SpotifyCard = ({ name, artist, imageUrl }: SpotifyTrack) => {
+  const Container = styled.div`
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+
+    img {
+      width: auto;
+      height: 80%;
+      border-radius: 10px;
+      margin-left: 16px;
+    }
+  `
+
+  const TextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    text-align: start;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+
+    h3 {
+      font-weight: bold;
+      margin: 0;
+      line-height: 1;
+    }
+
+    p {
+      margin: 0;
+    }
+  `
+
+  return (
+    <Container>
+    <img src={imageUrl} alt='spotify artist' />
+    <TextContainer>
+      <p>Now playing</p>
+      <div>
+        <h3>{name}</h3>
+        <p>{artist}</p>
+      </div>
+    </TextContainer>
+  </Container>
+  )
+}
 
 const About = () => {
-  // const [spotifyLastPlayed, setSpotifyLastPlayed] = useState<SpotifyTrack | null>(null)
+  const [spotifyLastPlayed, setSpotifyLastPlayed] = useState<SpotifyTrack | null>(null)
 
   const getSpotify = useCallback(() => {
-
-    // axios({
-    //   method: 'get',
-    //   url: 'https://localhost:3001/spotify-login'
-    // })
-
-    // axios({
-    //   method: 'post',
-    //   url: 'https://accounts.spotify.com/api/token',
-    //   headers: {
-    //     'Authorization': 'Basic ' + Buffer.from(process.env.SPOTIFY_CLIENT_ID + ':' + process.env.SPOTIFY_CLIENT_SECRET).toString('base64')
-    //   },
-    // }).then(res => {
-    //   console.log(res)
-    // })
-
-    // axios({
-    //   method: 'get',
-    //   url: 'https://api.spotify.com/v1/me/player/recently-played',
-    //   headers: {
-    //     'Authorization': `Bearer BQBZrijEFVxMxQCEZTkYZcP86ij2zZ5gcaDwyyXpBFa06fbFJtaPd4CphfxEz6Nrw5wa4SjXGea_Hw-6Q6aVAkqAqDG6MkbWnpUQWHD_prU_rUYTdxt4wtYXn0CpVPIF2ebiUGORIGWNisGAQLnSaYd2gIkgT1vDI7Qcj1nN37uphzd9KvA_Uw`,
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json',
-    //   }
-    // })
-    //   .then((res: any) => {
-    //     const { name, album, artists } = res.data.items[0].track
-    //     setSpotifyLastPlayed({
-    //       name,
-    //       artist: artists[0].name,
-    //       imageUrl: album.images[0].url,
-    //       albumUrl: album.uri,
-    //     })
-    //   });
+    try {
+      axios({
+        method: 'get',
+        url: `${process.env.REACT_APP_SERVER_URL}/get-recently-played-song`
+      }).then(res => {
+        const { track } = res.data.items[0]
+  
+        setSpotifyLastPlayed({
+          name: track.name,
+          artist: track.album.artists[0].name,
+          imageUrl: track.album.images[0].url,
+          albumUrl: track.album.uri
+        })
+      })
+    } catch (err) {
+      console.log(err)
+    }   
   }, [])
 
   useEffect(() => {
@@ -58,17 +94,11 @@ const About = () => {
   return (
     <Page>
       <Header title='About' />
-      {/* <Section>
-        <div style={{ width: 400, height: 100, border: '1px solid grey', borderRadius: 5, display: 'flex', flexDirection: 'row' }}>
-          <img src={spotifyLastPlayed?.imageUrl} style={{ width: 20, height:20}} alt='spotify artist' />
-
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <p>{spotifyLastPlayed?.name}<br/>
-            {spotifyLastPlayed?.artist}</p>
-          </div>
-
-        </div>
-      </Section> */}
+      {spotifyLastPlayed &&  
+        <Section bgColor='transparent'>
+          <SpotifyCard name={spotifyLastPlayed.name} artist={spotifyLastPlayed.artist} imageUrl={spotifyLastPlayed.imageUrl} />
+        </Section>
+      }
       <Section>
         <div>
           <p>Coming soon...</p>

@@ -12,7 +12,7 @@ exports[`renders correctly 1`] = `
     </h1>
   </div>
   <div
-    className="sc-dkrFOg jrythW"
+    className="sc-dkrFOg eAHWBt"
   >
     <div
       className="sc-gKPRtg dCxRiw"
@@ -98,7 +98,7 @@ exports[`renders correctly 1`] = `
       />
     </div>
     <div
-      className="sc-dkrFOg jrythW"
+      className="sc-dkrFOg eAHWBt"
     >
       <h1>
         Skills
