@@ -6,8 +6,6 @@ import Resume from './components/templates/Resume'
 import About from './components/templates/About'
 import All from './components/templates/All'
 import Projects from './components/templates/Projects'
-// import { Provider } from 'react-redux'
-// import store from './store'
 
 const Body = styled.div`
 `
@@ -93,11 +91,9 @@ const App = () => {
   ];
 
   return (
-    // <Provider store={store}>
-      <Body>
-        <Tabs tabs={tabs}/>
-      </Body>
-    // </Provider>
+    <Body>
+      <Tabs tabs={tabs}/>
+    </Body>
   );
 }
 

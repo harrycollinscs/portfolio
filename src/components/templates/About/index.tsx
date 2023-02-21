@@ -1,9 +1,11 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useEffect } from 'react'
 import Header from '../../atoms/Header'
 import Page from '../../atoms/Page'
 import Section from '../../atoms/Section'
 import axios from 'axios'
 import styled from 'styled-components'
+import { useSelector, useDispatch } from 'react-redux'
+import { setTrack } from '../../../store/reducers/spotify/recentlyPlayed'
 
 interface SpotifyTrack {
   name: string
@@ -65,7 +67,8 @@ const SpotifyCard = ({ name, artist, imageUrl }: SpotifyTrack) => {
 }
 
 const About = () => {
-  const [spotifyLastPlayed, setSpotifyLastPlayed] = useState<SpotifyTrack | null>(null)
+  const dispatch = useDispatch()
+  const track = useSelector((state: any) => state.recentlyPlayed.value)
 
   const getSpotify = useCallback(() => {
     try {
@@ -74,18 +77,21 @@ const About = () => {
         url: `${process.env.REACT_APP_SERVER_URL}/get-recently-played-song`
       }).then(res => {
         const { track } = res.data.items[0]
-  
-        setSpotifyLastPlayed({
-          name: track.name,
-          artist: track.album.artists[0].name,
-          imageUrl: track.album.images[0].url,
-          albumUrl: track.album.uri
-        })
+
+        dispatch(setTrack(
+          {
+            name: track.name,
+            artist: track.album.artists[0].name,
+            imageUrl: track.album.images[0].url,
+            albumUrl: track.album.uri
+          }
+        ))
+
       })
     } catch (err) {
       console.log(err)
     }   
-  }, [])
+  }, [dispatch])
 
   useEffect(() => {
     getSpotify()
@@ -94,9 +100,9 @@ const About = () => {
   return (
     <Page>
       <Header title='About' />
-      {spotifyLastPlayed &&  
+      {track &&  
         <Section bgColor='transparent'>
-          <SpotifyCard name={spotifyLastPlayed.name} artist={spotifyLastPlayed.artist} imageUrl={spotifyLastPlayed.imageUrl} />
+          <SpotifyCard name={track.name} artist={track.artist} imageUrl={track.imageUrl} />
         </Section>
       }
       <Section>
