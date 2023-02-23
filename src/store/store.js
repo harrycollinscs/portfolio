@@ -1,5 +1,6 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import recentlyPlayedReducer from './reducers/spotify/recentlyPlayed'
+import topTracksReducer from './reducers/spotify/topTracks'
 
 import storage from 'redux-persist/lib/storage';
 import { persistReducer, persistStore } from 'redux-persist';
@@ -12,6 +13,7 @@ const persistConfig = {
 
 const rootReducer = combineReducers({ 
   recentlyPlayed: recentlyPlayedReducer,
+  topTracks: topTracksReducer,
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)

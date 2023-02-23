@@ -59,14 +59,14 @@ const getAccessToken = async () => {
   }
 }
 
-const getRecentlyPlayedSong = async (accessToken) => {  
+const getSpotifyContent = async (url, accessToken) => {  
   const headers = {
     Authorization: `Bearer ${accessToken}`,
     "Content-Type": "application/json",
   };
 
   try {
-    return await axios.get(SPOTIFY_RECENTLY_PLAYED_URL, { headers })
+    return await axios.get(url, { headers })
       .then(res => {
         return res.data
       })
@@ -76,11 +76,19 @@ const getRecentlyPlayedSong = async (accessToken) => {
   }
 }
 
-app.get('/get-recently-played-song', async (req, res) => {
+app.get('/get-spotify-data', async (req, res) => {
   let accessToken = await getAccessToken().then()
-  let recentlyPlayedSong = await getRecentlyPlayedSong(accessToken)
 
-  res.send(recentlyPlayedSong)
+  Promise.all([
+    await getSpotifyContent(SPOTIFY_RECENTLY_PLAYED_URL, accessToken),
+    await getSpotifyContent('https://api.spotify.com/v1/me/top/tracks', accessToken),
+  ]).then((values) => {
+    res.send({
+      recentlyPlayed: values[0],
+      topTracks: values[1]
+    })
+    console.log(values);
+  });
 });
 
 app.listen({ port: PORT }, () => {
