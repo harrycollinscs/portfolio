@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import NavigationBar from '../../molecules/NavigationBar'
 
 interface Props {
   children: React.ReactNode
@@ -12,12 +13,16 @@ const Template = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: #efefef;
   `
 
 const Page = ({ children }: Props) => (
-  <Template>
-    {children}
-  </Template>
+  <>
+    <NavigationBar />
+    <Template>
+      {children}
+    </Template>
+  </>
 )
 
 export default Page

@@ -118,9 +118,7 @@ const All = () => {
     <Page>
       <Section>
         <h1>Hey, I'm Harry!</h1>
-        <div>
-          <p>I'm a 24 year old software engineer based in London. <br/>I'm interested in roles that align with my values and come with a challenge. Here you'll find a bit about my work, and about me as a person.</p>
-        </div>
+        <p>I'm a 24 year old software engineer based in London. <br/>I'm interested in roles that align with my values and come with a challenge. Here you'll find a bit about my work, and about me as a person.</p>
       </Section>
 
       <Header title='Who I am' bgColor='#e8b454' />

@@ -256,8 +256,8 @@ const Resume = () => {
           <SkillsContainer>
             <HardSkillsContainer>
               {
-                hardSkills.map((skill: { name: string; progress: string}) => (
-                  <HardSkill>
+                hardSkills.map((skill: { name: string; progress: string}, index) => (
+                  <HardSkill key={index}>
                     {skill.name}
                     <ProgressBar value={skill.progress} max='100' />
                   </HardSkill>
@@ -266,8 +266,8 @@ const Resume = () => {
             </HardSkillsContainer>
             <SoftSkillsContainer>
               {
-                softSkills.map(skill => (
-                  <div>
+                softSkills.map((skill, index) => (
+                  <div key={index}>
                     {skill}
                   </div>
                 ))
