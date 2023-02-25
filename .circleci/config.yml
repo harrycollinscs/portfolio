@@ -11,7 +11,6 @@ jobs:
       - run: npm run build
       - run: cd cf-worker && npm install && CF_API_TOKEN=$CLOUDFLARE_API_TOKEN CLOUD_FLARE_EMAIL=harrycol97@gmail.com npx wrangler pages publish ../build --project-name=portfolio --branch=main
       - run: |
-          curl https://sdk.cloud.google.com
           echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
           gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
           gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
