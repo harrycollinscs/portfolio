@@ -26,7 +26,7 @@ jobs:
           name: Deploy to Google App Engine
           command: |
             cd server
-            gcloud app deploy ./app.yaml --set-env-vars=PORT=8080
+            gcloud app deploy ${GCLOUD_YAML}
 
 workflows:
   deploy:
