@@ -33,3 +33,8 @@ workflows:
     jobs:
       - deploy:
           context: cf-worker
+      - gae_deploy:
+          filters:
+            branches:
+              only:
+                - main
