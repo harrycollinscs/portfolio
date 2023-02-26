@@ -5,7 +5,7 @@ const { default: axios } = require("axios");
 
 require('dotenv').config()
 
-const { PORT, SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN, SPOTIFY_REFRESH_TOKEN_URL, SPOTIFY_RECENTLY_PLAYED_URL } = process.env
+const { PORT, CLIENT_URL, SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN, SPOTIFY_REFRESH_TOKEN_URL, SPOTIFY_RECENTLY_PLAYED_URL } = process.env
 
 const app = express();
 
@@ -24,7 +24,11 @@ const headers = {
   Authorization: `Basic ${auth}`,
 };
 
-app.use(cors());
+const corsOptions = {
+  origin: CLIENT_URL,
+};
+
+app.use(cors(corsOptions));
 
 app.use(function (req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
