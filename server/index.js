@@ -76,7 +76,7 @@ const getSpotifyContent = async (url, accessToken) => {
   }
 }
 
-app.get('/get-spotify-data', async (req, res) => {
+app.get('/get-spotify-datas', async (req, res) => {
   let accessToken = await getAccessToken().then()
 
   Promise.all([
