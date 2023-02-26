@@ -1,12 +1,1 @@
 runtime: nodejs18
-env_variables:
-  SPOTIFY_CLIENT_ID: $SPOTIFY_CLIENT_ID
-  SPOTIFY_CLIENT_SECRET: $SPOTIFY_CLIENT_SECRET
-  SPOTIFY_REFRESH_TOKEN: $SPOTIFY_REFRESH_TOKEN
-  SPOTIFY_REFRESH_TOKEN_URL: https://accounts.spotify.com/api/token,
-  SPOTIFY_RECENTLY_PLAYED_URL: https://api.spotify.com/v1/me/player/recently-played"
-handlers:
-  - url: /
-    # static_dir: /
-    http_headers:
-      Access-Control-Allow-Origin: https://harrycollins.dev
