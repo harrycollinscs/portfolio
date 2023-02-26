@@ -279,16 +279,18 @@ const About = () => {
         </Card>
         <Card>
           <h2>Travel</h2>
-          <Carousel autoPlay={true} showThumbs={false} infiniteLoop={true} showStatus={false}>
-            {
-              TravelSlides.map(slide => (
-                <> 
-                  <img src={slide.image} alt={slide.label}/>
-                  <Legend className="">{slide.label}</Legend>
-                </>
-              ))
-            }
-          </Carousel>
+          <div style={{ maxWidth: '50vh' }}>
+            <Carousel autoPlay={true} showThumbs={false} infiniteLoop={true} showStatus={false}>
+              {
+                TravelSlides.map(slide => (
+                  <> 
+                    <img src={slide.image} alt={slide.label}/>
+                    <Legend className="">{slide.label}</Legend>
+                  </>
+                ))
+              }
+            </Carousel>
+          </div>
           <p>📍 Trying to see as many new places as possible. <br/>Next on the list: Amsterdam, Barcelona, Iceland, Japan</p>
         </Card>
         <Card>
