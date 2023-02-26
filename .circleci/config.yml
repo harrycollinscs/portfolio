@@ -26,7 +26,7 @@ jobs:
           name: Deploy to Google App Engine
           command: |
             cd server
-            gcloud app deploy ${GCLOUD_YAML}
+            gcloud app deploy ./app.yaml
 
 workflows:
   deploy:
