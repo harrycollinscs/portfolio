@@ -5,7 +5,7 @@ const { default: axios } = require("axios");
 
 require('dotenv').config()
 
-const { PORT, SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN, SPOTIFY_REFRESH_TOKEN_URL, SPOTIFY_RECENTLY_PLAYED_URL } = process.env
+const { PORT, CLIENT_URL, SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN, SPOTIFY_REFRESH_TOKEN_URL, SPOTIFY_RECENTLY_PLAYED_URL } = process.env
 
 const app = express();
 
@@ -25,7 +25,7 @@ const headers = {
 };
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: CLIENT_URL,
   optionsSuccessStatus: 200, // For legacy browser support
 };
 
