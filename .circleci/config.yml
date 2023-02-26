@@ -26,15 +26,15 @@ jobs:
           name: Deploy to Google App Engine
           command: |
             cd server
-            gcloud app deploy ./app.yaml
+            gcloud run deploy vigilant-yeti-223019 --source . --region=europe-west2 --set-env-vars="SPOTIFY_CLIENT_ID=$SPOTIFY_CLIENT, SPOTIFY_CLIENT_SECRET=$SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN=$SPOTIFY_REFRESH_TOKEN, SPOTIFY_REFRESH_TOKEN_URL=$SPOTIFY_REFRESH_TOKEN_URL, SPOTIFY_RECENTLY_PLAYED_URL=$SPOTIFY_RECENTLY_PLAYED_URL"
 
 workflows:
   deploy:
     jobs:
       - deploy:
           context: cf-worker
-      # - gae_deploy:
-      #     filters:
-      #       branches:
-      #         only:
-      #           - main
+      - gae_deploy:
+          filters:
+            branches:
+              only:
+                - main
