@@ -95,6 +95,12 @@ app.get('/get-spotify-data', async (req, res) => {
   });
 });
 
+app.all('*', (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Content-Type,Content-Length, Authorization, Accept,X-Requested-With");
+  res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
+ });
+
 app.listen({ port: PORT }, () => {
   console.log(`🚀Server ready at http://localhost:${PORT}`);
 });
