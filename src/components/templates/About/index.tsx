@@ -57,6 +57,8 @@ const SpotifyCard = ({ name, artist, imageUrl }: SpotifyTrack) => {
     h3 {
       font-weight: bold;
       margin: 0;
+      margin: 0 0 10px 0;
+      line-height: 1;      
     }
 
     p {
@@ -113,6 +115,19 @@ const SpotifyCard = ({ name, artist, imageUrl }: SpotifyTrack) => {
     }
   `
 
+  const AudioColumn = styled.div`
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 500px) {
+     display: none;
+    }
+  `
+
   return (
     <Container>
       <img src={imageUrl} alt='spotify artist' />
@@ -123,12 +138,12 @@ const SpotifyCard = ({ name, artist, imageUrl }: SpotifyTrack) => {
           <p>{artist}</p>
         </div>
       </TextContainer>
-      <div style={{ width: 'auto', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center'}}>
+      <AudioColumn>
         <FontAwesomeIcon icon={faSpotify} color='#2ad45e' size='2x'/>
         <AudioAnimation>
           <span /><span /><span />
         </AudioAnimation>
-      </div>
+      </AudioColumn>
     </Container>
   )
 }
