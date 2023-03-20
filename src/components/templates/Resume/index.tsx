@@ -228,7 +228,7 @@ const Resume = () => {
             <ul>
               <li>Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.</li>
               <li>Built and deployed custom React components, reusable helper functions, etc.</li>
-              <li>Liased with backend engineers to formulate data structures for efficient cross-stack data handling.</li>
+              <li>Liaised with backend engineers to formulate data structures for efficient cross-stack data handling.</li>
             </ul>
           </ImageSectionContent>
         </ImageSection>
