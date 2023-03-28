@@ -13,7 +13,6 @@ const Template = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #efefef;
   `
 
 const Page = ({ children }: Props) => (

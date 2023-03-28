@@ -7,46 +7,17 @@ import Header from '../../atoms/Header';
 import Manteca from '../../../assets/images/HarryManteca.jpg';
 import Section from '../../atoms/Section';
 
-// const AboutMe = [
-//   {
-//     title: '👨🏻‍💻 Age',
-//     list: ['24'],
-//   },
-//   {
-//     title: '📍 Location',
-//     list: ['London, UK'],
-//   },
-//   {
-//     title: '⛹🏻‍♂️ Interests',
-//     list: ['Music', 'Basketball', 'Travelling', 'Fitness', 'Food (Pasta)'],
-//   }
-// ]
-
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  width: 80vw;
+  width: 90vw;
   box-sizing: border-box;
-  padding: 24px;
+  margin: 16px 0;
   min-height: auto;
 
-  @media screen and (max-width: 899px) {
+  @media screen and (max-width: 1100px) {
     grid-template-columns: repeat(2, 1fr);
-
-    div:nth-child(5) {
-      grid-row: 1;
-      grid-column: 2;
-    }
-
-    div:nth-child(6) {
-      grid-row: 2;
-    }
-
-    div:nth-child(4) {
-      grid-row: 4;
-      grid-column: 2;
-    }
   }
 
   @media screen and (max-width: 499px) {
@@ -54,62 +25,45 @@ const Grid = styled.div`
     div {
       grid-column: span 2;
     }
-
-    div:nth-child(1) {
-      grid-row: 1;
-      grid-column: span 2;
-    }
-
-    div:nth-child(3) {
-      grid-row: 4;
-      grid-column: span 2;
-    }
-
-    div:nth-child(2) {
-      grid-row: 2;
-      grid-column: span 2;
-    }
-
-    div:nth-child(5) {
-      grid-row: 8;
-      grid-column: span 2;
-      visible: false;
-    }
-
-    div:nth-child(4) {
-      grid-row: 6;
-      grid-column: span 2;
-
-    }
-
-    div:nth-child(6) {
-      grid-row: 3;
-      grid-column: span 2;
-
-    }
-
-    div:nth-child(7) {
-      grid-row: 5;
-      grid-column: span 2;
-
-    }
-
-    div:nth-child(8) {
-      grid-row: 7;
-      grid-column: span 2;
-    }
   }
 `
 
+const Tile = styled.div`
+  line-height: 2;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  min-height: 25vh;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: white;
+  padding: 24px;
+  align-items: center;
+`
+
 const Tiles = [
-  <img src={Manteca} alt='Manteca' style={{ height: 'auto', width: '100%', borderRadius: '50%', }}/>,
-  <h1>Software <br/> Engineer</h1>,
-  <h1>Team <br/> Player</h1>,
-  <h1>Foward <br/> Thinker</h1>,
-  <p>^ That's me ^</p>,
-  <p>I've been a Software Engineer for over 3 years, with a primary focus on front end development; though I prefer to think of myself as Full Stack.</p>,
-  <p>A team is only as good as how they feel. Morale, team work, and psychological safety above all else.</p>,
-  <p>Today's code is either tomorrow's downfall or saviour. I believe in eradicating tech debt as soon as possible and thinking about the long-term impact of our choices</p>,
+  <Tile>
+    <img src={Manteca} alt='Manteca' style={{ height: 'auto', width: '80%', borderRadius: '50%', }}/>
+    <div style={{ margin: 24 }}>
+      <div><strong>👨🏻‍💻 Age </strong> 25 </div>
+      <div><strong>📍 Location </strong> London, UK </div>
+    </div>
+  </Tile>,
+  <Tile>
+    <h1>Software <br/> Engineer</h1>
+    <p>I've been a Software Engineer for over 3 years, with a primary focus on front end development; though I prefer to think of myself as Full Stack.</p>
+  </Tile>,
+  <Tile>
+    <h1>Team <br/> Player</h1>
+    <p>A team is only as good as how they feel. Morale, team work, and psychological safety above all else.</p>
+  </Tile>,
+  <Tile>
+    <h1>Forward <br/> Thinker</h1>
+    <p>Today's code is either tomorrow's downfall or saviour. I believe in eradicating tech debt as soon as possible and thinking about the long-term impact of our choices.</p>
+  </Tile>
 ]
 
 const All = () => {
@@ -123,17 +77,10 @@ const All = () => {
 
       <Header title='Who I am' bgColor='#e8b454' />
       
-      <Section>
         <Grid>
-          {
-            Tiles.map((content, index) => (
-              <div key={index} style={{  lineHeight: 2, textAlign: 'center', width: '100%', borderRadius: '5px', minHeight: '25vh', padding: '8px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-                {content}
-              </div>
-            ))
-          }
+          {Tiles.map((content, index) => content)}
         </Grid>
-      </Section>
+      <Section bgColor='#efefef'/>
     </Page>
   )
 }

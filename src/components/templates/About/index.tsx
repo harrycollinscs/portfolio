@@ -58,7 +58,16 @@ const SpotifyCard = ({ name, artist, imageUrl }: SpotifyTrack) => {
       font-weight: bold;
       margin: 0;
       margin: 0 0 10px 0;
-      line-height: 1;      
+      line-height: 1;  
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 15vw;
+
+      @media screen and (max-width: 899px) {
+        width: 30vw;
+      }  
+
     }
 
     p {
@@ -197,7 +206,7 @@ const Card = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start'
+  justify-content: flex-start;
 `
 
 const Legend = styled.p`
@@ -310,6 +319,8 @@ const About = () => {
         </Card>
         <Card>
           <h2>Sport</h2>
+          <p>I'm a regular at the gym, going between 3-6 times per week 🏋🏻. I try to keep myself active and healthy, and its a big part of my life.</p>
+          <p>Another one of my interests is basketball 🏀 I support both the London Lions (my local team), and the Brooklyn Nets.</p>
         </Card>
       </Grid>
     </Page>

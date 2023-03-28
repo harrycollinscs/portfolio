@@ -58,7 +58,7 @@ const Image = styled.img`
 const ImageSection = styled.div`
   padding: 24px;
   width: 100%;
-  align-items: center;
+  align-self: center;
   display: flex;
   justify-content: space-between;
   line-height: 2;
@@ -84,7 +84,6 @@ const ImageSection = styled.div`
 `
 
 const ImageSectionContent = styled.div`
-  padding: 24px;
   width: 100%
   height: 100%;
   box-sizing: border-box;
@@ -143,25 +142,25 @@ const Intro = styled.div`
   }
 `
 
-const ProgressBar = styled.progress`
-  border-radius: 25px; 
-  height: 8px;
-  margin-left: 8px;
+// const ProgressBar = styled.progress`
+//   border-radius: 25px; 
+//   height: 8px;
+//   margin-left: 8px;
 
-  &::-webkit-progress-bar {
-    background-color: #efefef;
-    border-radius: 25px;
-  }
+//   &::-webkit-progress-bar {
+//     background-color: #efefef;
+//     border-radius: 25px;
+//   }
   
-  &::-webkit-progress-value {
-    background-color: #2f295e;
-    border-radius: 25px;
-  }
+//   &::-webkit-progress-value {
+//     background-color: #2f295e;
+//     border-radius: 25px;
+//   }
 
-  @media screen and (max-width: 499px) {
-    display: none;
-  }
-`
+//   @media screen and (max-width: 499px) {
+//     display: none;
+//   }
+// `
 
 const SkillsContainer = styled.div`
   display: flex;
@@ -176,34 +175,11 @@ const SkillsContainer = styled.div`
   }
 `
 
-const HardSkillsContainer = styled.div`
-  width: 400px;
-
-  @media screen and (max-width: 499px) {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-`
-
-const HardSkill = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-
-  @media screen and (max-width: 499px) {
-    flex-direction: column;
-  }
-`
-
 const SoftSkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 60%;
+  width: 50%;
 `
 
 const Resume = () => {
@@ -216,7 +192,9 @@ const Resume = () => {
           <h1>Harry Collins</h1>
           <p>Hard-working and creative software engineer currently employed in the telecoms industry. 3½ years of professional experience, with focus in full-stack web development and mobile app development utilising React Native/React/NodeJS. Bachelors degree in Computer Science (BSc).</p>
         </Intro>
+      </Section>
 
+      <Section>
         <ImageSection>
           <Image src={Vodafone} alt='vodafone'/>
           <ImageSectionContent>
@@ -232,8 +210,10 @@ const Resume = () => {
             </ul>
           </ImageSectionContent>
         </ImageSection>
-        
+      </Section>
 
+        
+      <Section>
         <ImageSection>
           <ImageSectionContent>
             <div>
@@ -250,20 +230,21 @@ const Resume = () => {
           </ImageSectionContent>
           <Image src={giffgaff} alt='giffgaff'/>
         </ImageSection>
+      </Section>
 
-        <Section>
+      <Section>
           <h1>Skills</h1>
           <SkillsContainer>
-            <HardSkillsContainer>
+            <SoftSkillsContainer>
               {
                 hardSkills.map((skill: { name: string; progress: string}, index) => (
-                  <HardSkill key={index}>
+                  <div key={index}>
                     {skill.name}
-                    <ProgressBar value={skill.progress} max='100' />
-                  </HardSkill>
+                    {/* <ProgressBar value={skill.progress} max='100' /> */}
+                  </div>
                 ))
               } 
-            </HardSkillsContainer>
+            </SoftSkillsContainer>
             <SoftSkillsContainer>
               {
                 softSkills.map((skill, index) => (
@@ -276,8 +257,6 @@ const Resume = () => {
           </SkillsContainer>
           
         </Section>
-
-      </Section>
     </Page>
   )
 }
