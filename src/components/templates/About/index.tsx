@@ -2,7 +2,7 @@ import React, { useCallback, useEffect } from 'react'
 import Header from '../../atoms/Header'
 import Page from '../../atoms/Page'
 import axios from 'axios'
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 import { useSelector, useDispatch } from 'react-redux'
 import { setTrack } from '../../../store/reducers/spotify/recentlyPlayed'
 import { setTopTracks } from '../../../store/reducers/spotify/topTracks'
@@ -31,7 +31,7 @@ const SpotifyCard = ({ name, artist, imageUrl }: SpotifyTrack) => {
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    background-color: #efefef;
+    background-color: ${({ theme }) => theme.body};
     align-items: center;
     box-sizing: border-box;
     padding: 16px;
@@ -196,7 +196,7 @@ const Grid = styled.div`
 
 const Card = styled.div`
   align-items: center;
-  background-color: white;
+  background-color: ${({ theme }) => theme.container};
   line-height: 2;
   text-align: center;
   width: 100%;
@@ -224,7 +224,26 @@ const Legend = styled.p`
   opacity: 1;
 `
 
-const About = () => {
+const TravelSlides = [
+  {
+    image: HarryEdinburgh,
+    label: 'Edinburgh',
+  },
+  {
+    image: TimesSquare,
+    label: 'New York',
+  },
+  {
+    image: Budapest,
+    label: 'Budapest',
+  },
+  {
+    image: Venice,
+    label: 'Venice',
+  },
+]
+
+const About = (props: { theme?: any }) => {
   const dispatch = useDispatch()
   const track = useSelector((state: any) => state.recentlyPlayed.value)
   const topTracks = useSelector((state: any) => state.topTracks.value).slice(0, 10)
@@ -257,25 +276,6 @@ const About = () => {
   useEffect(() => {
     getSpotify()
   }, [getSpotify])
-
-  const TravelSlides = [
-    {
-      image: HarryEdinburgh,
-      label: 'Edinburgh',
-    },
-    {
-      image: TimesSquare,
-      label: 'New York',
-    },
-    {
-      image: Budapest,
-      label: 'Budaest',
-    },
-    {
-      image: Venice,
-      label: 'Venice',
-    },
-  ]
 
   return (
     <Page>
@@ -327,4 +327,4 @@ const About = () => {
   )
 }
 
-export default About
+export default withTheme(About)

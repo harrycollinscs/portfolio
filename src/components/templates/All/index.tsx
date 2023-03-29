@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from '../../atoms/Page';
 
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 import Header from '../../atoms/Header';
 
 import Manteca from '../../../assets/images/HarryManteca.jpg';
@@ -39,7 +39,7 @@ const Tile = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  background-color: white;
+  background-color: ${({ theme }) => theme.container };
   padding: 24px;
   align-items: center;
 `
@@ -66,23 +66,19 @@ const Tiles = [
   </Tile>
 ]
 
-const All = () => {
+const All = (props: { theme?:any }) => (
+  <Page>
+    <Section>
+      <h1>Hey, I'm Harry!</h1>
+      <p>I'm a 24 year old software engineer based in London. <br/>I'm interested in roles that align with my values and come with a challenge. Here you'll find a bit about my work, and about me as a person.</p>
+    </Section>
 
-  return (
-    <Page>
-      <Section>
-        <h1>Hey, I'm Harry!</h1>
-        <p>I'm a 24 year old software engineer based in London. <br/>I'm interested in roles that align with my values and come with a challenge. Here you'll find a bit about my work, and about me as a person.</p>
-      </Section>
+    <Header title='Who I am' bgColor='#e8b454' />
+    
+      <Grid>
+        {Tiles.map((content, index) => content)}
+      </Grid>
+  </Page>
+)
 
-      <Header title='Who I am' bgColor='#e8b454' />
-      
-        <Grid>
-          {Tiles.map((content, index) => content)}
-        </Grid>
-      <Section bgColor='#efefef'/>
-    </Page>
-  )
-}
-
-export default All
+export default withTheme(All)

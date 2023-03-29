@@ -1,5 +1,5 @@
 import React from 'react'
-import styled  from 'styled-components'
+import styled, { withTheme }  from 'styled-components'
 import { NavLink } from "react-router-dom";
 
 const Container = styled.div`
@@ -10,7 +10,7 @@ const Container = styled.div`
   z-index: 1000;
   padding: 10px;
   box-shadow: 0rem 0.1rem 0.3rem rgba(0,0,0,0.1);
-  background-color: white;
+  background-color: ${({ theme }) => theme.container};
 `
 
 const ButtonsList = styled.ul`
@@ -48,11 +48,10 @@ const tabs = [
   { to: `/`, title: 'All'},
   { to: `/resume`, title: 'Resume'},
   { to: `/about`, title: 'About'},
-  // { to: `/projects`, title: 'Projects'},
 ];
 
 
-const NavigationBar = () => (
+const NavigationBar = (props: { theme: any }) => (
   <Container>
     <nav>
       <ButtonsList>
@@ -70,4 +69,4 @@ const NavigationBar = () => (
   </Container>
 )
 
-export default NavigationBar
+export default withTheme(NavigationBar)

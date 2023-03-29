@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 
 const StyledDiv = styled.div<{bgColor?: string}>`
   min-height: 25vh;
@@ -10,7 +10,7 @@ const StyledDiv = styled.div<{bgColor?: string}>`
   text-align: center;
   line-height: 2;
   padding: 24px;
-  background-color: ${(props) => props.bgColor ? props.bgColor : 'white'};
+  background-color: ${(props) => props.theme.container };
   margin: 16px;
   border-radius: 10px;
   box-sizing: border-box;
@@ -23,10 +23,10 @@ const StyledDiv = styled.div<{bgColor?: string}>`
   }
 `
 
-const Section = ({ children, bgColor }: { children?: React.ReactNode, bgColor?: string }) => (
+const Section = ({ children, bgColor }: { children?: React.ReactNode, bgColor?: string, theme?: any }) => (
   <StyledDiv bgColor={bgColor}>
     {children}
   </StyledDiv>
 )
 
-export default Section
+export default withTheme(Section)
