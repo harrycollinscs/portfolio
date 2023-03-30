@@ -6,6 +6,7 @@ import Header from '../../atoms/Header';
 
 import Manteca from '../../../assets/images/HarryManteca.jpg';
 import Section from '../../atoms/Section';
+import GridCard from '../../atoms/GridCard';
 
 const Grid = styled.div`
   display: grid;
@@ -48,25 +49,25 @@ const Tile = styled.div`
 `
 
 const Tiles = [
-  <Tile>
-    <img src={Manteca} alt='Manteca' style={{ height: 'auto', width: '80%', borderRadius: '50%', }}/>
+  <GridCard>
+    <img src={Manteca} alt='Manteca' style={{ height: 'auto', width: '80%', alignSelf: 'center', borderRadius: '50%', }}/>
     <div style={{ margin: 24 }}>
       <div><strong>👨🏻‍💻 Age </strong> 25 </div>
       <div><strong>📍 Location </strong> London, UK </div>
     </div>
-  </Tile>,
-  <Tile>
+  </GridCard>,
+  <GridCard>
     <h1>Software <br/> Engineer</h1>
     <p>I've been a Software Engineer for over 3 years, with a primary focus on front end development; though I prefer to think of myself as Full Stack.</p>
-  </Tile>,
-  <Tile>
+  </GridCard>,
+  <GridCard>
     <h1>Team <br/> Player</h1>
     <p>A team is only as good as how they feel. Morale, team work, and psychological safety above all else.</p>
-  </Tile>,
-  <Tile>
+  </GridCard>,
+  <GridCard>
     <h1>Forward <br/> Thinker</h1>
     <p>Today's code is either tomorrow's downfall or saviour. I believe in eradicating tech debt as soon as possible and thinking about the long-term impact of our choices.</p>
-  </Tile>
+  </GridCard>
 ]
 
 const All = (props: { theme?:any }) => (

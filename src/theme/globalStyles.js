@@ -8,5 +8,12 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "Questrial", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 `
