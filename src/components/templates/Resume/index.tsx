@@ -6,6 +6,7 @@ import Vodafone from '../../../assets/images/VodafoneGreen.jpeg'
 import giffgaff from '../../../assets/images/giffgaff.jpg'
 
 import styled from 'styled-components'
+import GridCard from '../../atoms/GridCard'
 
 const hardSkills = [
   {
@@ -43,43 +44,17 @@ const softSkills = [
 ]
 
 const Image = styled.img`
-  max-height: 25vh;
-  max-width: 25vw;
-  height: 100%;
-  width: auto;
+  // max-height: 25vh;
+  max-width: 80%;
+  aspect-ratio: 1/1;
+  // height: 100%;
+  // width: auto;
+  margin: 16px;
 
-  @media screen and (max-width: 1020px) {
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-  }
-`
-
-const ImageSection = styled.div`
-  padding: 24px;
-  width: 100%;
-  align-self: center;
-  display: flex;
-  justify-content: space-between;
-  line-height: 2;
-  align-items: flex-start;
-  text-align: left;
-
-  @media screen and (max-width: 1020px) {
-    flex-direction: column;
-    width: 80vw;
-    
-    &:nth-child(4) {
-      div {
-        order: 2;
-      }
-    }
-  }
-  }
-
-  @media screen and (max-width: 700px) {
-    width: 100vw;
-    padding: 0;
+  @media screen and (max-width: 900px) {
+    // max-width: 100%;
+    // max-height: 100%;
+    // width: 100%;
   }
 `
 
@@ -123,64 +98,45 @@ const ImageSectionContent = styled.div`
   }
 `
 
-const Intro = styled.div`
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  min-height: 25vh;
-  line-height: 2;
-  padding: 24px;
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 90vw;
+  box-sizing: border-box;
+  padding: 16px 0px;
+  min-height: auto;
 
-  h1 {
-    margin: 0;
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (min-width: 2000px) {
-    width: 60vw;
+  @media screen and (max-width: 899px) {
+    grid-template-columns: repeat(1, 1fr);
   }
-`
 
-// const ProgressBar = styled.progress`
-//   border-radius: 25px; 
-//   height: 8px;
-//   margin-left: 8px;
-
-//   &::-webkit-progress-bar {
-//     background-color: #efefef;
-//     border-radius: 25px;
-//   }
-  
-//   &::-webkit-progress-value {
-//     background-color: #2f295e;
-//     border-radius: 25px;
-//   }
-
-//   @media screen and (max-width: 499px) {
-//     display: none;
-//   }
-// `
-
-const SkillsContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 80vw;
-
-  @media screen and (max-width: 799px) {
-    flex-direction: column;
-    align-items: center;
-    height: 50vh;
+  @media screen and (max-width: 700px) {
+    width: 100vw;
   }
 `
 
-const SoftSkillsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 50%;
-`
+const ImageAndContent = ({ title, subtitle, image, listTitle, listItems }: { title: string, subtitle: string, image: { src: string | undefined, alt: string }, listTitle: string, listItems: string[]}) => (
+  <ImageSectionContent>
+    <div>
+      <h1>{title}</h1>
+      <small>{subtitle}</small>
+    </div>
+    <Image src={image.src} alt={image.alt} style={{ borderRadius: '100%' }}/>
+    <h3>{listTitle}</h3>
+    <ul style={{ textAlign: 'left', padding: 0 }}>
+      {
+        listItems.map(item => (
+          <li>{item}</li>
+        ))
+      }
+    </ul>
+  </ImageSectionContent>
+)
 
 const Resume = () => {
   return (
@@ -188,75 +144,39 @@ const Resume = () => {
       <Header title='Resume' />
 
       <Section>
-        <Intro>
-          <h1>Harry Collins</h1>
-          <p>Hard-working and creative software engineer currently employed in the telecoms industry. 3½ years of professional experience, with focus in full-stack web development and mobile app development utilising React Native/React/NodeJS. Bachelors degree in Computer Science (BSc).</p>
-        </Intro>
+        <h1>Harry Collins</h1>
+        <p>Hard-working and creative software engineer currently employed in the telecoms industry. 3½ years of professional experience, with focus in full-stack web development and mobile app development utilising React Native/React/NodeJS. Bachelors degree in Computer Science (BSc).</p>
       </Section>
 
-      <Section>
-        <ImageSection>
-          <Image src={Vodafone} alt='vodafone'/>
-          <ImageSectionContent>
-            <div>
-              <h1>Vodafone</h1>
-              <small>Aug 2022 - Present</small>
-            </div>
-            <p>Software Engineer</p>
-            <ul>
-              <li>Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.</li>
-              <li>Built and deployed custom React components, reusable helper functions, etc.</li>
-              <li>Liaised with backend engineers to formulate data structures for efficient cross-stack data handling.</li>
-            </ul>
-          </ImageSectionContent>
-        </ImageSection>
-      </Section>
+      <Grid>
+        <GridCard>
+          <ImageAndContent
+            title='Vodafone'
+            subtitle='Aug 2022 - Present'
+            image={{ src: Vodafone, alt: 'vodafone' }}
+            listTitle='Software Engineer'
+            listItems={[ 'Designed architecture and led project to overhaul front end notification handling to be more reusable, and increase development speed of engineers.', 'Built and deployed custom React components, reusable helper functions, etc.', 'Liaised with backend engineers to formulate data structures for efficient cross-stack data handling.' ]}
+          />
+        </GridCard>
 
         
-      <Section>
-        <ImageSection>
-          <ImageSectionContent>
-            <div>
-              <h1>giffgaff</h1>
-              <small>Sept 2019 - June 2022</small>
-            </div>
-            <p>Software Engineer</p>
-            <ul>
-              <li>Led implementation of 'Help and Search' section into giffgaff mobile application, featuring live chat (React Native,Typescript, Redux, GraphQL).</li>
-              <li>Built and monitored NodeJS service to serve React components, utilising Hypernova (Javascript).</li>
-              <li>Assisted in the building, improvement and technology-wide uptake of React component library (including Jest unit testing, Storybook).</li>
-              <li>Communicated with and managed expectations of stakeholders while working in agile environment, and delivering iterative improvements to products.</li>
-            </ul>
-          </ImageSectionContent>
-          <Image src={giffgaff} alt='giffgaff'/>
-        </ImageSection>
-      </Section>
+        <GridCard>
+          <ImageAndContent
+            title='giffgaff'
+            subtitle='Sept 2019 - June 2022'
+            image={{ src: giffgaff, alt: 'giffgaff' }}
+            listTitle='Software Engineer'
+            listItems={["Led implementation of 'Help and Search' section into giffgaff mobile application, featuring live chat (React Native,Typescript, Redux, GraphQL).", 'Built and monitored NodeJS service to serve React components, utilising Hypernova (Javascript).', 'Assisted in the building, improvement and technology-wide uptake of React component library (including Jest unit testing, Storybook).', 'Communicated with and managed expectations of stakeholders while working in agile environment, and delivering iterative improvements to products.' ]}
+          />
+        </GridCard>
 
-      <Section>
-          <h1>Skills</h1>
-          <SkillsContainer>
-            <SoftSkillsContainer>
-              {
-                hardSkills.map((skill: { name: string; progress: string}, index) => (
-                  <div key={index}>
-                    {skill.name}
-                    {/* <ProgressBar value={skill.progress} max='100' /> */}
-                  </div>
-                ))
-              } 
-            </SoftSkillsContainer>
-            <SoftSkillsContainer>
-              {
-                softSkills.map((skill, index) => (
-                  <div key={index}>
-                    {skill}
-                  </div>
-                ))
-              }
-            </SoftSkillsContainer>
-          </SkillsContainer>
-          
-        </Section>
+        <GridCard>
+          <h1 style={{ margin: 0 }}>Skills</h1>
+          <div style={{ margin: '48px 0px' }}>{hardSkills.map(skill => <p style={{ margin: 0 }}>{skill.name}</p>)}</div>
+          <div>{softSkills.map(skill => <p style={{ margin: 0 }}>{skill}</p>)}</div>
+        </GridCard>
+
+        </Grid>
     </Page>
   )
 }

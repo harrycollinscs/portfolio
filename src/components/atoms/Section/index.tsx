@@ -12,7 +12,7 @@ const StyledDiv = styled.div<{bgColor?: string}>`
   padding: 24px;
   background-color: ${(props) => props.theme.container };
   margin: 16px;
-  border-radius: 10px;
+  border-radius: 5px;
   box-sizing: border-box;
   align-items: center;
 
@@ -20,6 +20,7 @@ const StyledDiv = styled.div<{bgColor?: string}>`
     width: 100vw;
     margin-left: 0px;
     margin-right: 0px;
+    border-radius: 0;
   }
 `
 

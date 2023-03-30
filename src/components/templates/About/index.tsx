@@ -15,6 +15,7 @@ import TimesSquare from '../../../assets/images/travel/TimesSquare.jpeg'
 import Budapest from '../../../assets/images/travel/Budapest.jpeg'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import GridCard from '../../atoms/GridCard'
 
 
 interface SpotifyTrack {
@@ -182,7 +183,7 @@ const AlbumsContainer = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   width: 90vw;
   box-sizing: border-box;
@@ -192,21 +193,10 @@ const Grid = styled.div`
   @media screen and (max-width: 899px) {
     grid-template-columns: repeat(1, 1fr);
   }
-`
 
-const Card = styled.div`
-  align-items: center;
-  background-color: ${({ theme }) => theme.container};
-  line-height: 2;
-  text-align: center;
-  width: 100%;
-  border-radius: 5px;
-  min-height: 50vh;
-  padding: 24px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  @media screen and (max-width: 700px) {
+    width: 100vw;
+  }
 `
 
 const Legend = styled.p`
@@ -246,7 +236,7 @@ const TravelSlides = [
 const About = (props: { theme?: any }) => {
   const dispatch = useDispatch()
   const track = useSelector((state: any) => state.recentlyPlayed.value)
-  const topTracks = useSelector((state: any) => state.topTracks.value).slice(0, 10)
+  const topTracks = useSelector((state: any) => state.topTracks.value).slice(0, 5)
 
   const getSpotify = useCallback(() => {
     try {
@@ -281,7 +271,7 @@ const About = (props: { theme?: any }) => {
     <Page>
       <Header title='About' />
       <Grid>
-        <Card>
+        <GridCard>
           <h2>Music</h2>
           <p>I love rap & rnb, but basically every genre too. I actually got into coding when I heard a rapper mention Python in a freestyle. I've been casually learning piano as a hobby and would love to learn music production.</p>
           {track &&  
@@ -300,8 +290,9 @@ const About = (props: { theme?: any }) => {
             </AlbumsContainer>
           ) : null}
           
-        </Card>
-        <Card>
+        </GridCard>
+
+        <GridCard>
           <h2>Travel</h2>
           <div style={{ maxWidth: '50vh' }}>
             <Carousel autoPlay={true} showThumbs={false} infiniteLoop={true} showStatus={false}>
@@ -316,12 +307,14 @@ const About = (props: { theme?: any }) => {
             </Carousel>
           </div>
           <p>📍 Trying to see as many new places as possible. <br/>Next on the list: Amsterdam, Barcelona, Iceland, Japan</p>
-        </Card>
-        <Card>
+        </GridCard>
+
+        <GridCard>
           <h2>Sport</h2>
           <p>I'm a regular at the gym, going between 3-6 times per week 🏋🏻. I try to keep myself active and healthy, and its a big part of my life.</p>
           <p>Another one of my interests is basketball 🏀 I support both the London Lions (my local team), and the Brooklyn Nets.</p>
-        </Card>
+        </GridCard>
+        
       </Grid>
     </Page>
   )

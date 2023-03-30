@@ -20,8 +20,11 @@ const Grid = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (max-width: 499px) {
+  @media screen and (max-width: 700px) {
+    width: 100vw;
+  }
 
+  @media screen and (max-width: 499px) {
     div {
       grid-column: span 2;
     }
@@ -70,7 +73,7 @@ const All = (props: { theme?:any }) => (
   <Page>
     <Section>
       <h1>Hey, I'm Harry!</h1>
-      <p>I'm a 24 year old software engineer based in London. <br/>I'm interested in roles that align with my values and come with a challenge. Here you'll find a bit about my work, and about me as a person.</p>
+      <p>I'm a 25 year old software engineer based in London. <br/>I'm interested in roles that align with my values and come with a challenge. Here you'll find a bit about my work, and about me as a person.</p>
     </Section>
 
     <Header title='Who I am' bgColor='#e8b454' />
