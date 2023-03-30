@@ -128,7 +128,7 @@ const ImageAndContent = ({ title, subtitle, image, listTitle, listItems }: { tit
     </div>
     <Image src={image.src} alt={image.alt} style={{ borderRadius: '100%' }}/>
     <h3>{listTitle}</h3>
-    <ul style={{ textAlign: 'left', padding: 0 }}>
+    <ul style={{ textAlign: 'left', padding: '16px' }}>
       {
         listItems.map(item => (
           <li>{item}</li>
