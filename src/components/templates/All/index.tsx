@@ -32,22 +32,6 @@ const Grid = styled.div`
   }
 `
 
-const Tile = styled.div`
-  line-height: 2;
-  text-align: center;
-  width: 100%;
-  border-radius: 5px;
-  min-height: 25vh;
-  padding: 8px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  background-color: ${({ theme }) => theme.container };
-  padding: 24px;
-  align-items: center;
-`
-
 const Tiles = [
   <GridCard>
     <img src={Manteca} alt='Manteca' style={{ height: 'auto', width: '80%', alignSelf: 'center', borderRadius: '50%', }}/>
