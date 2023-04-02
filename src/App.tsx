@@ -4,9 +4,7 @@ import { PersistGate } from 'redux-persist/integration/react'
 
 import {
   BrowserRouter,
-  createBrowserRouter,
   Route,
-  RouterProvider,
   Routes,
 } from "react-router-dom"
 import All from './components/templates/All'
