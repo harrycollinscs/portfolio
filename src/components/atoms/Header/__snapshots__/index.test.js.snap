@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bcXHqe jcsVHA"
+  className="sc-bcXHqe cWwACo"
 >
   <h1 />
 </div>

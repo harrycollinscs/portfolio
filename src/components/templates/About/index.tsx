@@ -6,8 +6,6 @@ import styled, { withTheme } from 'styled-components'
 import { useSelector, useDispatch } from 'react-redux'
 import { setTrack } from '../../../store/reducers/spotify/recentlyPlayed'
 import { setTopTracks } from '../../../store/reducers/spotify/topTracks'
-import { faSpotify } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Carousel } from 'react-responsive-carousel'
 import HarryEdinburgh from '../../../assets/images/travel/HarryEdinburgh.jpg'
 import Venice from '../../../assets/images/travel/Venice.jpeg'
@@ -16,147 +14,8 @@ import Budapest from '../../../assets/images/travel/Budapest.jpeg'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import GridCard from '../../atoms/GridCard'
-
-
-interface SpotifyTrack {
-  name: string
-  artist: string
-  imageUrl: string
-  albumUrl?: string
-}
-
-const SpotifyCard = ({ name, artist, imageUrl }: SpotifyTrack) => {
-  const Container = styled.div`
-    width: 100%;
-    height: 150px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    background-color: ${({ theme }) => theme.body};
-    align-items: center;
-    box-sizing: border-box;
-    padding: 16px;
-    margin: 24px 0px;
-
-    img {
-      width: auto;
-      height: 100%;
-      border-radius: 10px;
-    }
-  `
-
-  const TextContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding-left: 16px;
-    text-align: start;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-
-    h3 {
-      font-weight: bold;
-      margin: 0;
-      margin: 0 0 10px 0;
-      line-height: 1;  
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      width: 15vw;
-
-      @media screen and (max-width: 899px) {
-        width: 30vw;
-      }  
-
-    }
-
-    p {
-      margin: 0;
-      line-height: 1;
-    }
-  `
-
-  const AudioAnimation = styled.div`
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 16px;
-    height: 16px;
-
-    @keyframes bounce {
-      0% {
-        transform: scaleY(0.3);
-      }
-    
-      25% {
-        transform: scaleY(1);
-      }
-    
-      50% {
-        transform: scaleY(0.5);
-      }
-    
-      75% {
-        transform: scaleY(0.75);
-      }
-    
-      100% {
-        transform: scaleY(0.6);
-      }
-    }
-
-    span {
-      width: 4px;
-      height: 100%;
-      background-color: #2ad45e;
-      border-radius: 3px;
-      transform-origin: bottom;
-      animation: bounce 2.2s ease infinite alternate;
-      content: '';
-
-      &:nth-of-type(2) {
-        animation-delay: -2.2s; /* Start at the end of animation */
-      }
-    
-      &:nth-of-type(3) {
-        animation-delay: -3.7s; /* Start mid-way of return of animation */
-      }
-    }
-  `
-
-  const AudioColumn = styled.div`
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    @media screen and (max-width: 500px) {
-     display: none;
-    }
-  `
-
-  return (
-    <Container>
-      <img src={imageUrl} alt='spotify artist' />
-      <TextContainer>
-        <p>Now playing</p>
-        <div>
-          <h3>{name}</h3>
-          <p>{artist}</p>
-        </div>
-      </TextContainer>
-      <AudioColumn>
-        <FontAwesomeIcon icon={faSpotify} color='#2ad45e' size='2x'/>
-        <AudioAnimation>
-          <span /><span /><span />
-        </AudioAnimation>
-      </AudioColumn>
-    </Container>
-  )
-}
+import Grid from '../../atoms/Grid'
+import SpotifyNowPlaying from '../../molecules/SpotifyNowPlaying'
 
 const AlbumGrid = styled.div`
   display: flex;
@@ -180,24 +39,6 @@ const AlbumsContainer = styled.div`
     flex-direction: column;
     align-items: center;
   `
-
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  width: 90vw;
-  box-sizing: border-box;
-  padding: 16px 0px;
-  min-height: auto;
-
-  @media screen and (max-width: 899px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  @media screen and (max-width: 700px) {
-    width: 100vw;
-  }
-`
 
 const Legend = styled.p`
   position: absolute;
@@ -269,13 +110,13 @@ const About = (props: { theme?: any }) => {
 
   return (
     <Page>
-      <Header title='About' />
-      <Grid>
+      <Header title='About' bgColor={props.theme.body}/>
+      <Grid columns={{ desktop: 3, tablet: 2, smallTablet: 1, mobile: 1, smallMobile: 1 }}>
         <GridCard>
           <h2>Music</h2>
           <p>I love rap & rnb, but basically every genre too. I actually got into coding when I heard a rapper mention Python in a freestyle. I've been casually learning piano as a hobby and would love to learn music production.</p>
           {track &&  
-            <SpotifyCard name={track.name} artist={track.artist} imageUrl={track.imageUrl} />
+            <SpotifyNowPlaying name={track.name} artist={track.artist} imageUrl={track.imageUrl} />
           }
           {topTracks.length ? (
             <AlbumsContainer>
@@ -294,7 +135,7 @@ const About = (props: { theme?: any }) => {
 
         <GridCard>
           <h2>Travel</h2>
-          <div style={{ maxWidth: '50vh' }}>
+          <div style={{ maxWidth: '90%', alignSelf: 'center' }}>
             <Carousel autoPlay={true} showThumbs={false} infiniteLoop={true} showStatus={false}>
               {
                 TravelSlides.map(slide => (

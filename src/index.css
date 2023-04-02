@@ -4,6 +4,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
 body {
+  -ms-overflow-style: none !important; /* for Internet Explorer, Edge */
+  scrollbar-width: none !important; /* for Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
 }
 
 code {

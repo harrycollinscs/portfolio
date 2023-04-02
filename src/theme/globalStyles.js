@@ -9,11 +9,14 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    // remove scrollbar
+
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+  }
+
+  body::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
   }
 `

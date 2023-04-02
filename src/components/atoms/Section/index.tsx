@@ -10,7 +10,7 @@ const StyledDiv = styled.div<{bgColor?: string}>`
   text-align: center;
   line-height: 2;
   padding: 24px;
-  background-color: ${(props) => props.theme.container };
+  background-color: ${(props) => props.bgColor ? props.bgColor : props.theme.container };
   margin: 16px;
   border-radius: 5px;
   box-sizing: border-box;

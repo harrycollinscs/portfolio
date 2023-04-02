@@ -1,36 +1,13 @@
 import React from 'react';
 import Page from '../../atoms/Page';
 
-import styled, { withTheme } from 'styled-components'
+import { withTheme } from 'styled-components'
 import Header from '../../atoms/Header';
 
 import Manteca from '../../../assets/images/HarryManteca.jpg';
 import Section from '../../atoms/Section';
 import GridCard from '../../atoms/GridCard';
-
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  width: 90vw;
-  box-sizing: border-box;
-  margin: 16px 0;
-  min-height: auto;
-
-  @media screen and (max-width: 1100px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media screen and (max-width: 700px) {
-    width: 100vw;
-  }
-
-  @media screen and (max-width: 499px) {
-    div {
-      grid-column: span 2;
-    }
-  }
-`
+import Grid from '../../atoms/Grid';
 
 const Tiles = [
   <GridCard>
@@ -56,16 +33,18 @@ const Tiles = [
 
 const All = (props: { theme?:any }) => (
   <Page>
+    <Header title='Who I am' bgColor={props.theme.body} />
+
     <Section>
       <h1>Hey, I'm Harry!</h1>
       <p>I'm a 25 year old software engineer based in London. <br/>I'm interested in roles that align with my values and come with a challenge. Here you'll find a bit about my work, and about me as a person.</p>
     </Section>
 
-    <Header title='Who I am' bgColor='#e8b454' />
-    
-      <Grid>
-        {Tiles.map((content, index) => content)}
-      </Grid>
+    <Grid columns={{ desktop: 4, tablet: 2, smallTablet: 2, mobile: 1, smallMobile: 1 }}>
+      {Tiles.map((content, index) => content)}
+    </Grid>
+
+    <Section bgColor={props.theme.body}/>
   </Page>
 )
 

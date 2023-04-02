@@ -3,8 +3,11 @@ import store, { persistor } from './store/store'
 import { PersistGate } from 'redux-persist/integration/react'
 
 import {
+  BrowserRouter,
   createBrowserRouter,
+  Route,
   RouterProvider,
+  Routes,
 } from "react-router-dom"
 import All from './components/templates/All'
 import Projects from './components/templates/Projects'
@@ -15,25 +18,7 @@ import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from './theme/globalStyles'
 import { lightTheme, darkTheme } from './theme/Theme'
 import React, { useEffect, useState } from 'react'
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <All />,
-  },
-  {
-    path: "/resume",
-    element: <Resume />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/projects",
-    element: <Projects />,
-  },
-]);
+import ScrollToTop from './helpers/ScrollToTop'
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -58,9 +43,18 @@ const App = () => {
     <>
       <GlobalStyles/>
       <React.StrictMode>
+        
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
-            <RouterProvider router={router} />
+            <BrowserRouter>
+            <ScrollToTop />
+              <Routes>
+                <Route path="/" element={<All/>} />
+                <Route path="/resume" element={<Resume/>} />
+                <Route path="/about" element={<About/>} />
+                <Route path="/projects" element={<Projects/>} />
+              </Routes>
+            </BrowserRouter>
           </PersistGate>
         </Provider>
       </React.StrictMode>
