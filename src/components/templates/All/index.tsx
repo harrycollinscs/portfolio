@@ -23,11 +23,11 @@ const Tiles = [
   </GridCard>,
   <GridCard>
     <h1>Team <br/> Player</h1>
-    <p>A team is only as good as how they feel. Morale, team work, and psychological safety above all else.</p>
+    <p>A team is only as good as how they feel. Morale, team work, and psychological safety come first. Something great can be the by-product of having fun with it.</p>
   </GridCard>,
   <GridCard>
     <h1>Forward <br/> Thinker</h1>
-    <p>Today's code is either tomorrow's downfall or saviour. I believe in eradicating tech debt as soon as possible and thinking about the long-term impact of our choices.</p>
+    <p>What we do today can make or break tomorrow. I believe in taking take to plan ahead and think about the long-term impact of our choices. Creating something good isn't easy.</p>
   </GridCard>
 ]
 
