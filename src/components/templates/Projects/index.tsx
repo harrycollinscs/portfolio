@@ -53,6 +53,7 @@ const Projects = (props: { theme?: any }) => {
     <Page>
       <Header title='Projects' bgColor={props.theme.body}/>
 
+      <Section>
       <Grid columns={{ desktop: 3, tablet: 2, smallTablet: 1, mobile: 1, smallMobile: 1 }}>
         <ImageCard
           image={{ src: NotionHeader, alt: 'notion' }}
@@ -77,8 +78,7 @@ const Projects = (props: { theme?: any }) => {
           paragraphs={spotifyClientParagraphs} 
         />
       </Grid>
-
-      <Section bgColor={props.theme.body}/>
+      </Section>
 
     </Page>
   )

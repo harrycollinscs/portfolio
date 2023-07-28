@@ -1,5 +1,5 @@
-import React, { ReactElement } from 'react'
-import styled, { withTheme } from 'styled-components'
+import React, { ReactElement, ReactNode } from 'react'
+import styled, { css, withTheme } from 'styled-components'
 
 interface Props {
   image: { src: string, alt: string }
@@ -9,13 +9,14 @@ interface Props {
   paragraphs: string[]
   isList?: boolean
   link?: string
+  useDropdown?: boolean
   theme?: any 
 }
 
 const Card = styled.div`
-position: relative;
+  position: relative;
   align-content: center;
-  background-color: ${({ theme }) => theme.container};
+  background-color: ${({ theme }) => 'rgb(255, 255, 255, 0.5)'};
   line-height: 2;
   text-align: center;
   width: 100%;
@@ -24,6 +25,8 @@ position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background-color: #f8f8f8;
+
 
   img {
     border-radius: 5px 5px 0px 0px;
@@ -38,7 +41,7 @@ position: relative;
   }
 
   div {
-    padding: 24px;
+    padding: 12px 24px 0px 24px;
   }
 
   button {
@@ -51,6 +54,31 @@ position: relative;
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+
+  details {
+    summary {
+      display: flex;
+      justify-content: space-between;
+      margin: 24px;
+      padding: 0px 24px;
+      background-color:  ${({ theme }) => theme.secondary};
+      border-radius: 20px;
+      &:before {
+        content: 'Details';
+      }
+      &:after {
+        content: '▼';
+      }
+    }
+  }
+
+  details[open] {
+    summary {
+      &:after {
+        content: '▲';
+      }
+    }
   }
 
   @media screen and (max-width: 700px) {
@@ -72,27 +100,43 @@ const Paragraphs = (paras: string[]) => (
   </>
 )
 
-const ImageCard = ({ image, headerLeft, headerRight, title, paragraphs, isList, link }: Props) => (
-  <Card>
-    <img src={image.src} alt={image.alt}/>
-    <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', textAlign: 'center', alignItems: 'center' }}>
+const Dropdown = (children: ReactNode) => (
+  <details>
+    <summary></summary>
+    { children }
+  </details>
+)
+
+
+const ImageCard = ({ image, headerLeft, headerRight, title, paragraphs, isList, link, useDropdown = false, theme }: Props) => {
+  
+  return (
+    <Card>
+      <img src={image.src} alt={image.alt}/>
+      <div style={{ display: 'flex', justifyContent: 'space-between', textAlign: 'center', alignItems: 'center', marginBottom: 0 }}>
         {headerLeft}
         {headerRight}
       </div>
+      <div>
+
       {!!title && title}
-      { isList ? List(paragraphs) : Paragraphs(paragraphs) }
-    </div>
-    {
-      !!link && (
-        <div style={{ width: '100%', height: '40px' }}>
-          <a href={link} target="_blank" rel="noreferrer">
-            <button >See more</button>
-          </a>
-        </div>
-      )
-    }
-  </Card>
-)
+
+      {
+        useDropdown ? Dropdown(isList ? List(paragraphs) : Paragraphs(paragraphs)) : isList ? List(paragraphs) : Paragraphs(paragraphs)
+      }
+
+      {
+        !!link && (
+          <div style={{ width: '100%', height: '40px' }}>
+            <a href={link} target="_blank" rel="noreferrer">
+              <button>See more</button>
+            </a>
+          </div>
+        )
+      }
+      </div>
+    </Card>
+  )
+}
 
 export default withTheme(ImageCard)

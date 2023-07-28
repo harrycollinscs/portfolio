@@ -3,9 +3,14 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@200&family=Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   -ms-overflow-style: none !important; /* for Internet Explorer, Edge */
   scrollbar-width: none !important; /* for Firefox */
+  line-height: 1.5;
 }
 
 body::-webkit-scrollbar {
@@ -16,4 +21,19 @@ body::-webkit-scrollbar {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  font-size: 200%;
+  margin-top: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  font-size: 125%;
+  margin: 0;
+  line-height: 1.5;
 }

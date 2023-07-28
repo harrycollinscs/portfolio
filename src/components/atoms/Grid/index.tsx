@@ -5,9 +5,10 @@ const StyledGrid = styled.div<{columns: any}>`
   display: grid;
   grid-template-columns: repeat(${({columns}) => columns.desktop}, 1fr);
   grid-gap: 20px;
-  width: 90vw;
+  width: 100%;
   box-sizing: border-box;
   min-height: auto;
+  justify-content: center;
 
   @media screen and (max-width: 1100px) {
     grid-template-columns: repeat(${({columns}) => columns.tablet}, 1fr);
@@ -19,7 +20,7 @@ const StyledGrid = styled.div<{columns: any}>`
 
   @media screen and (max-width: 699px) {
     width: 100vw;
-    grid-template-columns: repeat(${({columns}) => columns.desmobilektop}, 1fr);
+    grid-template-columns: repeat(${({columns}) => columns.mobile}, 1fr);
   }
 
   @media screen and (max-width: 499px) {
