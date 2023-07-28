@@ -2,30 +2,31 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bcXHqe kIdong"
+  className="sc-bcXHqe emAjca"
 >
   <img
     alt="portfolio"
     src={Object {}}
   />
-  <div>
-    <div
-      style={
-        Object {
-          "alignItems": "center",
-          "display": "flex",
-          "justifyContent": "space-between",
-          "textAlign": "center",
-        }
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "marginBottom": 0,
+        "textAlign": "center",
       }
-    >
-      <p>
-        Test left
-      </p>
-      <p>
-        Test right
-      </p>
-    </div>
+    }
+  >
+    <p>
+      Test left
+    </p>
+    <p>
+      Test right
+    </p>
+  </div>
+  <div>
     <p>
       I recently began this project as a means of self-development. With the goal of increasing my breadth of knowledge in the world of Software Development, I have created a Notion document containing some important topics that I believe will be helpful to learn for any Full Stack Engineer.
     </p>
