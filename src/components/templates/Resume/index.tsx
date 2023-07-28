@@ -3,40 +3,38 @@ import Page from "../../atoms/Page";
 import Section from "../../atoms/Section";
 import Vodafone3 from "../../../assets/images/vodafone3.svg";
 import giffgaff2 from "../../../assets/images/giffgaff2.webp";
-import GridCard from "../../atoms/GridCard";
 import Grid from "../../atoms/Grid";
 import ImageCard from "../../molecules/ImageCard";
 import styled, { withTheme } from "styled-components";
-import Button from "../../atoms/Button";
 
-const Container = styled.div`
-  // position: relative;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100vh;
-  scroll-behavior: smooth;
-  overflow: auto;
-  white-space: nowrap;
+// const Container = styled.div`
+//   // position: relative;
+//   display: flex;
+//   flex-direction: row;
+//   width: 100%;
+//   height: 100vh;
+//   scroll-behavior: smooth;
+//   overflow: auto;
+//   white-space: nowrap;
 
-  section {
-    width: 100vw;
-    display: inline-block;
+//   section {
+//     width: 100vw;
+//     display: inline-block;
 
-    height: 100vh;
-    margin: 0 auto;
-    scroll-snap-align: start;
-  }
-`;
+//     height: 100vh;
+//     margin: 0 auto;
+//     scroll-snap-align: start;
+//   }
+// `;
 
-const Headings = [
-  "Design Driven",
-  "User Driven",
-  "Full Stack",
-  "Passionate",
-  "4 Years In Industry",
-  "...and more",
-];
+// const Headings = [
+//   "Design Driven",
+//   "User Driven",
+//   "Full Stack",
+//   "Passionate",
+//   "4 Years In Industry",
+//   "...and more",
+// ];
 
 const EmploymentContent = [
   {

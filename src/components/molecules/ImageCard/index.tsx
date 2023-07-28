@@ -1,5 +1,5 @@
 import React, { ReactElement, ReactNode } from 'react'
-import styled, { css, withTheme } from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 
 interface Props {
   image: { src: string, alt: string }

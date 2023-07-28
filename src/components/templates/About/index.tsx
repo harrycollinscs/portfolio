@@ -13,7 +13,6 @@ import TimesSquare from '../../../assets/images/travel/TimesSquare.jpeg'
 import Budapest from '../../../assets/images/travel/Budapest.jpeg'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import GridCard from '../../atoms/GridCard'
 import Grid from '../../atoms/Grid'
 import SpotifyNowPlaying from '../../molecules/SpotifyNowPlaying'
 import Section from '../../atoms/Section'
@@ -40,21 +39,6 @@ const AlbumsContainer = styled.div`
     flex-direction: column;
     align-items: center;
   `
-
-const Legend = styled.p`
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  margin-left: -45%;
-  width: 90%;
-  background: #fff;
-  border-radius: 10px;
-  color: #000;
-  padding: 10px;
-  font-size: 12px;
-  text-align: center;
-  opacity: 1;
-`
 
 const TravelSlides = [
   {
