@@ -47,11 +47,32 @@ const ProjectTitle = styled.h2`
   margin-right: 10px;
 `
 
+const ImageArticle = styled.article`
+  width: 25%;
+  height: 100%;
+  background-image: url(${NotionHeader});
+  img {
+    height: 100%;
+    width: 100%;
+  }
+`
+
 const Projects = (props: { theme?: any }) => {
 
   return (
     <Page>
       <Header title='Projects' bgColor={props.theme.body}/>
+
+      <Section>
+      <article style={{ width: '70%' }}>
+
+      </article>
+      <ImageArticle >
+        hi
+        {/* <img src={NotionHeader} alt='notion'/> */}
+      </ImageArticle>
+
+      </Section>
 
       <Section>
       <Grid columns={{ desktop: 3, tablet: 2, smallTablet: 1, mobile: 1, smallMobile: 1 }}>

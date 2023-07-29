@@ -10,6 +10,7 @@ interface Props {
   isList?: boolean
   link?: string
   useDropdown?: boolean
+  dropdownOpen?: boolean
   theme?: any 
 }
 
@@ -100,15 +101,15 @@ const Paragraphs = (paras: string[]) => (
   </>
 )
 
-const Dropdown = (children: ReactNode) => (
-  <details>
+const Dropdown = (children: ReactNode, open: boolean) => (
+  <details open={open}>
     <summary></summary>
     { children }
   </details>
 )
 
 
-const ImageCard = ({ image, headerLeft, headerRight, title, paragraphs, isList, link, useDropdown = false, theme }: Props) => {
+const ImageCard = ({ image, headerLeft, headerRight, title, paragraphs, isList, link, useDropdown = false, dropdownOpen = false, theme }: Props) => {
   
   return (
     <Card>
@@ -122,7 +123,7 @@ const ImageCard = ({ image, headerLeft, headerRight, title, paragraphs, isList, 
       {!!title && title}
 
       {
-        useDropdown ? Dropdown(isList ? List(paragraphs) : Paragraphs(paragraphs)) : isList ? List(paragraphs) : Paragraphs(paragraphs)
+        useDropdown ? Dropdown(isList ? List(paragraphs) : Paragraphs(paragraphs), dropdownOpen) : isList ? List(paragraphs) : Paragraphs(paragraphs)
       }
 
       {
