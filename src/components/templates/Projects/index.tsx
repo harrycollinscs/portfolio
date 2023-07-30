@@ -1,26 +1,23 @@
 import React from 'react';
 import { withTheme } from 'styled-components';
-import Grid from '../../atoms/Grid';
 import Header from '../../atoms/Header';
 import Page from '../../atoms/Page';
 import styled from 'styled-components'
 import NotionHeader from '../../../assets/images/NotionHeader.jpeg'
 import PortfolioLight from '../../../assets/images/PortfolioLightMode.png'
-import PortfolioDark from '../../../assets/images/PortfolioDarkMode.png'
 import SpotifyClient from '../../../assets/images/SpotifyClient.png'
 
-import ImageCard from '../../molecules/ImageCard';
 import Section from '../../atoms/Section';
 
-const Pill = styled.p<{isComplete?: boolean}>`
-  color: ${({ theme, isComplete }) => isComplete ? theme.completeText : theme.inProgressText};
-  background-color: ${({ theme, isComplete }) => isComplete ? theme.completeBgColor :theme.inProgressBgColor};
-  padding: 0px 10px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  text-align: center;
-  white-space: nowrap;
-`
+// const Pill = styled.p<{isComplete?: boolean}>`
+//   color: ${({ theme, isComplete }) => isComplete ? theme.completeText : theme.inProgressText};
+//   background-color: ${({ theme, isComplete }) => isComplete ? theme.completeBgColor :theme.inProgressBgColor};
+//   padding: 0px 10px;
+//   box-sizing: border-box;
+//   border-radius: 10px;
+//   text-align: center;
+//   white-space: nowrap;
+// `
 
 const notionParagraphs = [
   'With the goal of increasing my breadth of knowledge in the world of Software Development, I have created a Notion document containing some important topics that I believe will be helpful to learn for any Full Stack Engineer.',
@@ -41,11 +38,6 @@ const spotifyClientParagraphs = [
   'This is a small web app I built to experiment with full stack engineering as a junior engineer; it allows the user to sign into their Spotify account using the Spotify API and view their most played songs and their playlists, and play music from within the browser.',
   'As this was more of a learning piece, it was finished but never deployed.'
 ]
-
-const ProjectTitle = styled.h2`
-  text-align: left;
-  margin-right: 10px;
-`
 
 const ImageArticle = styled.article<{ image: any }>`
   width: 40%;
