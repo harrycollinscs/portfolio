@@ -1,13 +1,15 @@
 import React from 'react';
-import { withTheme } from 'styled-components';
+import { css, withTheme } from 'styled-components';
 import Header from '../../atoms/Header';
 import Page from '../../atoms/Page';
 import styled from 'styled-components'
 import NotionHeader from '../../../assets/images/NotionHeader.jpeg'
 import PortfolioLight from '../../../assets/images/PortfolioLightMode.png'
 import SpotifyClient from '../../../assets/images/SpotifyClient.png'
+import HelpAndSupport from '../../../assets/images/HelpAndSupport.png'
 
 import Section from '../../atoms/Section';
+import Grid from '../../atoms/Grid';
 
 // const Pill = styled.p<{isComplete?: boolean}>`
 //   color: ${({ theme, isComplete }) => isComplete ? theme.completeText : theme.inProgressText};
@@ -33,21 +35,54 @@ const portfolioParagraphs = [
   'The status of the project is complete, however I will make additions and changes over time.'
 ]
 
+const HelpAndSupportParagraphs = [
+  'During my time at giffgaff, I was fortunate enough to work on the giffgaff mobile app. As part of this, I worked with UX/UI designers and other engineers to design this brand new in-app feature.',
+  'Built using React Native & GraphQL, with a PHP backend, I worked with another engineer to bring this feature to life from the ground up.',
+  'This section of the app allows users to see FAQs, search through community-answered questions, and ask their own questions within a near-real-time chat experience.'
+]
+
 const spotifyClientParagraphs = [
   'Built using ReactJS and NodeJS',
   'This is a small web app I built to experiment with full stack engineering as a junior engineer; it allows the user to sign into their Spotify account using the Spotify API and view their most played songs and their playlists, and play music from within the browser.',
   'As this was more of a learning piece, it was finished but never deployed.'
 ]
 
-const ImageArticle = styled.article<{ image: any }>`
-  width: 40%;
-  height: 100%;
-  background-image: ${({ image }) => `url(${image})` }; 
+const TextArticle = styled.article<{ left?: boolean }>`
+  ${({ left }) => left ?`
+    margin-left: 48px;
+    text-align: right;
+  ` :
+  `
+    margin-right: 48px;
+    text-align: left;
+  `
+}
+
+  @media screen and (max-width: 1100px) {
+    text-align: left;
+    margin: 0;
+  }
+`
+
+const ImageArticle = styled.article<{ image: any, left?: boolean }>`
   display: flex;
-  background-repeat: no-repeat;
-  background-size: auto;
-  height: 400px;
-  background-size: cover;
+  min-height: 50vh;
+
+  ${({ image, left }) => css`
+    background: 
+      linear-gradient(to ${left ? 'left' : 'right'}, rgba(0, 0, 0, 0) 59%, rgba(255, 255, 255, 1) 100%),
+      url(${image}) no-repeat;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @media screen and (max-width: 1100px) {
+        order: 1;
+        background: none;
+        background-image: url(${image});
+        background-size: cover;
+      }
+
+  `}
 `
 
 const Projects = ({ theme }: { theme?: any }) => {
@@ -56,36 +91,56 @@ const Projects = ({ theme }: { theme?: any }) => {
     <Page>
       <Header title='Projects' bgColor={theme.body}/>
 
-      <Section>
-        <article style={{ width: '60%'}}>
-          <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
-              Notion Learning Resource
-            </h1>
-          {notionParagraphs}
-        </article>
-        <ImageArticle image={NotionHeader} />          
-      </Section>
 
       <Section>
-        <ImageArticle image={PortfolioLight}/>          
-        <article style={{ width: '60%', marginLeft: 24}}>
-          <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
+        <Grid columns={{ desktop: 2, tablet: 1, smallTablet: 1, mobile: 1, smallMobile: 1 }}>
+          <TextArticle>
+            <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
+              Help and Support
+            </h1>
+            <p>{HelpAndSupportParagraphs}</p>
+          </TextArticle>
+          <ImageArticle image={HelpAndSupport} />     
+        </Grid>     
+      </Section>
+      
+
+      <Section>
+        <Grid columns={{ desktop: 2, tablet: 1, smallTablet: 1, mobile: 1, smallMobile: 1 }}>
+          <ImageArticle image={PortfolioLight} />     
+          <TextArticle left>
+            <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
               Portfolio
             </h1>
-          {portfolioParagraphs}
-        </article>
+            <p>{portfolioParagraphs}</p>
+          </TextArticle>
+        </Grid>     
       </Section>
 
       <Section>
-        <article style={{ width: '60%' }}>
-          <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
-              Spotify Client
+        <Grid columns={{ desktop: 2, tablet: 1, smallTablet: 1, mobile: 1, smallMobile: 1 }}>
+          <TextArticle>
+            <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
+              Notion Learning Resource
             </h1>
-          {spotifyClientParagraphs}
-        </article>
-        <ImageArticle image={SpotifyClient} />          
-
+            <p>{notionParagraphs}</p>
+          </TextArticle>
+          <ImageArticle image={NotionHeader} left /> 
+        </Grid>     
       </Section>
+
+      <Section>
+        <Grid columns={{ desktop: 2, tablet: 1, smallTablet: 1, mobile: 1, smallMobile: 1 }}>
+        <ImageArticle image={SpotifyClient} />          
+        <TextArticle left>
+          <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
+            Spotify Client
+          </h1>
+          <p>{spotifyClientParagraphs}</p>
+        </TextArticle>
+        </Grid>
+      </Section>
+
 
       {/* <Section>
       <Grid columns={{ desktop: 3, tablet: 2, smallTablet: 1, mobile: 1, smallMobile: 1 }}>

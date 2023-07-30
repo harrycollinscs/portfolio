@@ -111,15 +111,17 @@ const Resume = ({ theme }: { theme?: any }) => {
             >
               {
                 EmploymentContent.map(({ company, dates, image, jobTitle, bullets }) => (
-                  <ImageCard
-                    image={{ src: image, alt: company }}
-                    headerLeft={<p>{company}</p>}
-                    headerRight={<small style={{ color: "grey" }}>{dates}</small>}
-                    title={<h2>{jobTitle}</h2>}
-                    paragraphs={bullets}
-                    useDropdown
-                    isList
-                  />
+                  <div>
+                    <ImageCard
+                      image={{ src: image, alt: company }}
+                      headerLeft={<p>{company}</p>}
+                      headerRight={<small style={{ color: "grey" }}>{dates}</small>}
+                      title={<h2>{jobTitle}</h2>}
+                      paragraphs={bullets}
+                      useDropdown
+                      isList
+                    />
+                  </div>
                 ))
               }
             </Grid>
