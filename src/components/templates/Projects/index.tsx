@@ -68,7 +68,18 @@ const ImageArticle = styled.article<{ image: any, left?: boolean }>`
   display: flex;
   min-height: 50vh;
 
-  ${({ image, left }) => css`
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: ${({ image }) => `url(${image});`}
+
+  @media screen and (max-width: 1100px) {
+    order: 1;
+    background: none;
+    background-image: ${({ image }) => `url(${image});`}
+    background-size: cover;
+  }
+
+  ${({ image }) => css`
       background-size: cover;
       background-repeat: no-repeat;
       background-image: url(${image});
