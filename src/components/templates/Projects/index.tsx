@@ -87,15 +87,15 @@ const Projects = ({ theme }: { theme?: any }) => {
       <Section>
         <article style={{ width: '60%' }}>
           <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
-              Notion Learning Resource
+              Spotify Client
             </h1>
-          {notionParagraphs}
+          {spotifyClientParagraphs}
         </article>
-        {/* <ImageArticle/>           */}
+        <ImageArticle image={SpotifyClient} />          
 
       </Section>
 
-      <Section>
+      {/* <Section>
       <Grid columns={{ desktop: 3, tablet: 2, smallTablet: 1, mobile: 1, smallMobile: 1 }}>
         <ImageCard
           image={{ src: NotionHeader, alt: 'notion' }}
@@ -120,7 +120,7 @@ const Projects = ({ theme }: { theme?: any }) => {
           paragraphs={spotifyClientParagraphs} 
         />
       </Grid>
-      </Section>
+      </Section> */}
 
     </Page>
   )
