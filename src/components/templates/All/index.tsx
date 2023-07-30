@@ -10,15 +10,15 @@ import Grid from '../../atoms/Grid';
 import Button from '../../atoms/Button';
 
 const Tiles = [
-  <GridCard bgColor='#f7f7f7' raisedCard>
+  <GridCard raisedCard>
     <h1>Software <br/> Engineer</h1>
     <p>I've been a Software Engineer for over 3 years, with a primary focus on front end development; though I prefer to think of myself as Full Stack.</p>
   </GridCard>,
-  <GridCard bgColor='#f7f7f7' raisedCard>
+  <GridCard raisedCard>
     <h1>Team <br/> Player</h1>
     <p>A team is only as good as how they feel. Morale, team work, and psychological safety come first. Something great can be the by-product of having fun with it.</p>
   </GridCard>,
-  <GridCard bgColor='#f7f7f7' raisedCard>
+  <GridCard raisedCard>
     <h1>Forward <br/> Thinker</h1>
     <p>What we do today can make or break tomorrow. I believe in taking take to plan ahead and think about the long-term impact of our choices. Creating something good isn't easy.</p>
   </GridCard>

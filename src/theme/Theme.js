@@ -6,7 +6,7 @@ export const mainText = '#000'
 export const lightTheme = {
   body: '#fff',
   container: 'rgb(255, 255, 255, 0)',
-  card: 'rgb(255, 255, 255, 0.5)',
+  card: '#f7f7f7',
   text: mainText,
   toggleBorder: '#FFF',
   background: '#363537',
@@ -35,6 +35,7 @@ export const lightTheme = {
 export const darkTheme = {
   body: '#191919',
   container: 'rgb(255, 255, 255, 0)',
+  card: '#252525',
   text: '#fff',
   toggleBorder: '#6B8096',
   background: '#999',
@@ -54,5 +55,8 @@ export const darkTheme = {
       background: '#d6eef2',
       text: '#000' 
     }
-  }
+  },
+  primary,
+  secondary: '#272c44',
+  accent,
 }

@@ -17,7 +17,7 @@ interface Props {
 const Card = styled.div`
   position: relative;
   align-content: center;
-  background-color: ${({ theme }) => 'rgb(255, 255, 255, 0.5)'};
+  background-color: ${({ theme }) => theme.card};
   line-height: 2;
   text-align: center;
   width: 100%;
@@ -26,8 +26,6 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #f8f8f8;
-
 
   img {
     border-radius: 5px 5px 0px 0px;
@@ -65,11 +63,15 @@ const Card = styled.div`
       padding: 0px 24px;
       background-color:  ${({ theme }) => theme.secondary};
       border-radius: 20px;
+
       &:before {
         content: 'Details';
       }
       &:after {
         content: '▼';
+      }
+      &::-webkit-details-marker {
+        display:none;
       }
     }
   }

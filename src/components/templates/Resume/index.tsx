@@ -97,9 +97,6 @@ const Resume = ({ theme }: { theme?: any }) => {
 
         <Section fullWidth>
           <Section column>
-            {/* <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
-              Employment
-            </h1> */}
             <Grid
               columns={{
                 desktop: 2,
@@ -130,9 +127,6 @@ const Resume = ({ theme }: { theme?: any }) => {
 
         <Section fullWidth>
           <Section column>
-            {/* <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
-              Education
-            </h1> */}
             <Grid
               columns={{
                 desktop: 2,
@@ -151,7 +145,6 @@ const Resume = ({ theme }: { theme?: any }) => {
                     title={<h2>{title}</h2>}
                     paragraphs={bullets}
                     useDropdown
-                    // dropdownOpen
                     isList
                   />
                 ))

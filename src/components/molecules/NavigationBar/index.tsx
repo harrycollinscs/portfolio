@@ -41,27 +41,6 @@ const ButtonsList = styled.ul`
   }
 `
 
-const LinkCommonStyle = {
-  display: 'inline-block',
-  borderRadius: '8px',
-  cursor: 'pointer',
-  fontSize: '16px',
-  letterSpacing: '0.5px',
-  transition: 'all 0.5s ease',
-  color: '#000',
-  textDecoration: 'none',
-}
-
-const LinkActiveStyle = {
-  ...LinkCommonStyle,
-  fontWeight: 'bold',
-}
-
-const LinkInactiveStyle = {
-  ...LinkCommonStyle,
-}
-
-
 const tabs = [
   { to: `/`, title: 'All'},
   { to: `/resume`, title: 'Resume'},
@@ -70,7 +49,24 @@ const tabs = [
 ];
 
 
-const NavigationBar = (props: { theme: any }) => (
+const NavigationBar = ({ theme }: { theme: any }) => {
+  const LinkStyle = {
+    display: 'inline-block',
+    borderRadius: '8px',
+    cursor: 'pointer',
+    fontSize: '16px',
+    letterSpacing: '0.5px',
+    transition: 'all 0.5s ease',
+    color: theme.text,
+    textDecoration: 'none',
+  }
+  
+  const LinkActiveStyle = {
+    ...LinkStyle,
+    fontWeight: 'bold',
+  }
+
+  return (
     <Nav id='navigation-bar'>
       <Container>
         <Title>HARRY COLLINS</Title>
@@ -79,7 +75,7 @@ const NavigationBar = (props: { theme: any }) => (
               <NavLink
                 key={index}
                 to={to}
-                style={({ isActive }) => isActive ? LinkActiveStyle : LinkInactiveStyle}
+                style={({ isActive }) => isActive ? LinkActiveStyle : LinkStyle}
               >
                 {title}
               </NavLink>
@@ -87,6 +83,7 @@ const NavigationBar = (props: { theme: any }) => (
         </ButtonsList>
       </Container>
     </Nav>
-)
+  )
+}
 
 export default withTheme(NavigationBar)
