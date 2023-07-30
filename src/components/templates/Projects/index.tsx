@@ -3,8 +3,8 @@ import { css, withTheme } from 'styled-components';
 import Header from '../../atoms/Header';
 import Page from '../../atoms/Page';
 import styled from 'styled-components'
-import NotionHeader from '../../../assets/images/NotionHeader.jpeg'
-import PortfolioLight from '../../../assets/images/PortfolioLightMode.png'
+import NotionDevice from '../../../assets/images/NotionDevice.png'
+import PortfolioDevice from '../../../assets/images/PortfolioDevice.png'
 import SpotifyClient from '../../../assets/images/SpotifyClient.png'
 import HelpAndSupport from '../../../assets/images/HelpAndSupport.png'
 
@@ -69,11 +69,9 @@ const ImageArticle = styled.article<{ image: any, left?: boolean }>`
   min-height: 50vh;
 
   ${({ image, left }) => css`
-    background: 
-      linear-gradient(to ${left ? 'left' : 'right'}, rgba(0, 0, 0, 0) 59%, rgba(255, 255, 255, 1) 100%),
-      url(${image}) no-repeat;
       background-size: cover;
       background-repeat: no-repeat;
+      background-image: url(${image});
 
       @media screen and (max-width: 1100px) {
         order: 1;
@@ -100,14 +98,14 @@ const Projects = ({ theme }: { theme?: any }) => {
             </h1>
             <p>{HelpAndSupportParagraphs}</p>
           </TextArticle>
-          <ImageArticle image={HelpAndSupport} />     
+          <ImageArticle image={HelpAndSupport} left/>     
         </Grid>     
       </Section>
       
 
       <Section>
         <Grid columns={{ desktop: 2, tablet: 1, smallTablet: 1, mobile: 1, smallMobile: 1 }}>
-          <ImageArticle image={PortfolioLight} />     
+          <ImageArticle image={PortfolioDevice} />     
           <TextArticle left>
             <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
               Portfolio
@@ -125,7 +123,7 @@ const Projects = ({ theme }: { theme?: any }) => {
             </h1>
             <p>{notionParagraphs}</p>
           </TextArticle>
-          <ImageArticle image={NotionHeader} left /> 
+          <ImageArticle image={NotionDevice} left /> 
         </Grid>     
       </Section>
 
