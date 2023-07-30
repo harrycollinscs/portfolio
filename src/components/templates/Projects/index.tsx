@@ -47,30 +47,51 @@ const ProjectTitle = styled.h2`
   margin-right: 10px;
 `
 
-const ImageArticle = styled.article`
-  width: 25%;
+const ImageArticle = styled.article<{ image: any }>`
+  width: 40%;
   height: 100%;
-  background-image: url(${NotionHeader});
-  img {
-    height: 100%;
-    width: 100%;
-  }
+  background-image: ${({ image }) => `url(${image})` }; 
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 400px;
+  background-size: cover;
 `
 
-const Projects = (props: { theme?: any }) => {
+const Projects = ({ theme }: { theme?: any }) => {
 
   return (
     <Page>
-      <Header title='Projects' bgColor={props.theme.body}/>
+      <Header title='Projects' bgColor={theme.body}/>
 
       <Section>
-      <article style={{ width: '70%' }}>
+        <article style={{ width: '60%'}}>
+          <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
+              Notion Learning Resource
+            </h1>
+          {notionParagraphs}
+        </article>
+        <ImageArticle image={NotionHeader} />          
+      </Section>
 
-      </article>
-      <ImageArticle >
-        hi
-        {/* <img src={NotionHeader} alt='notion'/> */}
-      </ImageArticle>
+      <Section>
+        <ImageArticle image={PortfolioLight}/>          
+        <article style={{ width: '60%', marginLeft: 24}}>
+          <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
+              Portfolio
+            </h1>
+          {portfolioParagraphs}
+        </article>
+      </Section>
+
+      <Section>
+        <article style={{ width: '60%' }}>
+          <h1 style={{ textDecorationStyle: 'wavy', textDecorationLine: 'underline', color: theme.accent, paddingBottom: 20, textUnderlineOffset: 20, textDecorationThickness: 6 }}>
+              Notion Learning Resource
+            </h1>
+          {notionParagraphs}
+        </article>
+        {/* <ImageArticle/>           */}
 
       </Section>
 
@@ -85,7 +106,7 @@ const Projects = (props: { theme?: any }) => {
         />
 
         <ImageCard
-          image={{ src: props.theme.light ? PortfolioDark : PortfolioLight, alt: 'portfolio' }}
+          image={{ src: theme.light ? PortfolioDark : PortfolioLight, alt: 'portfolio' }}
           headerLeft={<ProjectTitle>Portfolio site</ProjectTitle>}
           headerRight={<Pill isComplete>Complete</Pill>}
           paragraphs={portfolioParagraphs} 
