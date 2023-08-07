@@ -100,7 +100,6 @@ const Projects = ({ theme }: { theme?: any }) => {
     <Page>
       <Header title='Projects' bgColor={theme.body}/>
 
-
       <Section>
         <Grid columns={{ desktop: 2, tablet: 1, smallTablet: 1, mobile: 1, smallMobile: 1 }}>
           <TextArticle>

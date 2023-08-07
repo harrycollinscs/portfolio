@@ -32,7 +32,8 @@ h2 {
   margin: 0;
 }
 
-p {
+p,
+li {
   font-size: 125%;
   margin: 0;
   line-height: 1.5;
