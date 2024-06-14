@@ -16,6 +16,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import Grid from "../../atoms/Grid";
 import SpotifyNowPlaying from "../../molecules/SpotifyNowPlaying";
 import Section from "../../atoms/Section";
+import Title from "../../atoms/Title";
 
 const AlbumGrid = styled.div`
   display: flex;
@@ -151,67 +152,56 @@ const About = ({ theme }: { theme?: any }) => {
 
   return (
     <Page>
-      {/* <Header title='About' bgColor={theme.primary}/> */}
-      <Header title="About" bgColor={theme.body} />
+      <div style={{ marginTop: "60px", width: "100%" }}>
+        <Header title="About" bgColor={theme.secondary} />
+      </div>
 
-      <Section fullWidth bgColor={theme.secondary}>
-        <Section>
-          <Grid
-            columns={{
-              desktop: 2,
-              tablet: 2,
-              smallTablet: 1,
-              mobile: 1,
-              smallMobile: 1,
-            }}
-          >
-            <ImageArticle left>
-              <div>
-                {track && (
-                  <SpotifyNowPlaying
-                    name={track.name}
-                    artist={track.artist}
-                    imageUrl={track.imageUrl}
-                  />
-                )}
-                {topTracks.length ? (
-                  <AlbumsContainer>
-                    <h3>Top albums right now</h3>
-                    <AlbumGrid>
-                      {topTracks?.map((track: any) => (
-                        <img
-                          src={track.album.images[0].url}
-                          alt="images of top tracks"
-                        />
-                      ))}
-                    </AlbumGrid>
-                  </AlbumsContainer>
-                ) : null}
-              </div>
-            </ImageArticle>
+      <Section>
+        <Grid
+          columns={{
+            desktop: 2,
+            tablet: 2,
+            smallTablet: 1,
+            mobile: 1,
+            smallMobile: 1,
+          }}
+        >
+          <ImageArticle left>
+            <div>
+              {track && (
+                <SpotifyNowPlaying
+                  name={track.name}
+                  artist={track.artist}
+                  imageUrl={track.imageUrl}
+                />
+              )}
+              {topTracks.length ? (
+                <AlbumsContainer>
+                  <h3>Top albums right now</h3>
+                  <AlbumGrid>
+                    {topTracks?.map((track: any) => (
+                      <img
+                        src={track.album.images[0].url}
+                        alt="images of top tracks"
+                      />
+                    ))}
+                  </AlbumGrid>
+                </AlbumsContainer>
+              ) : null}
+            </div>
+          </ImageArticle>
 
-            <TextArticle>
-              <h1
-                style={{
-                  textDecorationStyle: "wavy",
-                  textDecorationLine: "underline",
-                  color: theme.accent,
-                  paddingBottom: 20,
-                  textUnderlineOffset: 20,
-                  textDecorationThickness: 6,
-                }}
-              >
-                Music
-              </h1>
-              <p>
-                I love rap & rnb, but basically every genre too. I actually got
-                into coding when I heard a rapper mention Python in a freestyle.
-                I've been casually learning piano as a hobby and would love to
-                learn music production.
-              </p>
-            </TextArticle>
-          </Grid>
-        </Section>
+          <TextArticle>
+            <Title text="Music" />
+            <p>
+              I love most genres of music, but particularly Rap and R&B. I
+              actually got into coding when I heard a rapper mention Python in a
+              freestyle. I play guitar occasionally, and I've been casually
+              learning piano as a hobby. I'd love to learn music production at
+              some point.
+            </p>
+          </TextArticle>
+        </Grid>
       </Section>
 
       <Section>
@@ -224,20 +214,8 @@ const About = ({ theme }: { theme?: any }) => {
             smallMobile: 1,
           }}
         >
-          {/* <div style={{ display: 'flex', }}> */}
           <article>
-            <h1
-              style={{
-                textDecorationStyle: "wavy",
-                textDecorationLine: "underline",
-                color: theme.accent,
-                paddingBottom: 20,
-                textUnderlineOffset: 20,
-                textDecorationThickness: 6,
-              }}
-            >
-              Travel
-            </h1>
+            <Title text="Travel" />
             <p>
               📍 Trying to see as many new places as possible. <br />
               Next on the list: Amsterdam, Barcelona, Iceland, Japan
@@ -255,43 +233,50 @@ const About = ({ theme }: { theme?: any }) => {
               ))}
             </Carousel>
           </div>
-          {/* </div> */}
         </Grid>
       </Section>
 
-      <Section bgColor={theme.secondary} fullWidth>
-        <Section>
-          <article style={{}}>
-            <h1
-              style={{
-                textDecorationStyle: "wavy",
-                textDecorationLine: "underline",
-                color: theme.accent,
-                paddingBottom: 20,
-                textUnderlineOffset: 20,
-                textDecorationThickness: 6,
-              }}
-            >
-              Sport
-            </h1>
+      {/* <Section bgColor={theme.secondary} fullWidth> */}
+      <Section>
+        <TextArticle>
+          <Title text="Sport & Fitness" />
+          <Grid
+            columns={{
+              desktop: 3,
+              tablet: 3,
+              smallTablet: 3,
+              mobile: 1,
+              smallMobile: 1,
+            }}
+          >
             <div>
+              <h3>Running 🏃🏻‍♂️</h3>
               <p>
-                I've recently got into running 🏃🏻‍♂️, and will be taking part in
-                the Hackney Half Marathon 2024.
+                I started running in 2023, with the goal of completing a half
+                marthon. After a lot of training and far too much cramp, I was
+                able to compete in the Hackney Half Marathon 2024 with a time of
+                2:04:50.
               </p>
+            </div>
+            <div>
+              <h3>Gym 🏋🏻</h3>
               <p>
                 I'm a regular at the gym, going between 3-6 times per week 🏋🏻. I
                 try to keep myself active and healthy, and its a big part of my
                 life.
               </p>
+            </div>
+            <div>
+              <h3>Basketball 🏀</h3>
               <p>
-                Another one of my interests is basketball 🏀 I support both the
-                London Lions (my local team), and the Brooklyn Nets.
+                I support both the London Lions (my local team), and the
+                Brooklyn Nets.
               </p>
             </div>
-          </article>
-        </Section>
+          </Grid>
+        </TextArticle>
       </Section>
+      {/* </Section> */}
     </Page>
   );
 };

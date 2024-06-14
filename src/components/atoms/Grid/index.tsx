@@ -10,7 +10,7 @@ const StyledGrid = styled.div<{columns: any}>`
   min-height: auto;
   justify-content: center;
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1200px) {
     grid-template-columns: repeat(${({columns}) => columns.tablet}, 1fr);
   }
 
@@ -18,13 +18,11 @@ const StyledGrid = styled.div<{columns: any}>`
     grid-template-columns: repeat(${({columns}) => columns.smallTablet}, 1fr);
   }
 
-  @media screen and (max-width: 699px) {
-    width: 100vw;
+  @media screen and (max-width: 750px) {
     grid-template-columns: repeat(${({columns}) => columns.mobile}, 1fr);
   }
 
-  @media screen and (max-width: 499px) {
-    width: 100vw;
+  @media screen and (max-width: 699px) {
     grid-template-columns: repeat(${({columns}) => columns.smallMobile}, 1fr);
   }
 `

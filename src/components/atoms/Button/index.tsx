@@ -13,7 +13,7 @@ const StyledButton = styled.button<{ appearance: string }>`
   background-color: ${({ theme, appearance }) => theme.button[appearance].background};
   color: ${({ theme, appearance }) => theme.button[appearance].text};
   padding: 15px 30px;
-  border-radius 5px;
+  border-radius 30px;
   border: none;
   box-sizing: border-box;
 

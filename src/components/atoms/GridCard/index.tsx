@@ -3,16 +3,16 @@ import styled, { css, withTheme } from 'styled-components'
 
 const Card = styled.div<{ noPadding?: boolean, bgColor?: string, raisedCard?: boolean }>`
   align-content: center;
-  background-color: ${({ theme, bgColor }) => bgColor ? bgColor : theme.card};
+  background-color: ${({ theme, bgColor }) => bgColor ? bgColor : theme.secondary};
   line-height: 2;
-  text-align: center;
   width: 100%;
-  border-radius: 5px;
-  padding: ${({ noPadding }) => noPadding ? 0 : '24px' };
+  border-radius: 15px;
+  padding: ${({ noPadding }) => noPadding ? 0 : '48px' };
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  font-weight: 400;
 
   ${({ theme, raisedCard }) => (
     raisedCard && css`
@@ -26,10 +26,7 @@ const Card = styled.div<{ noPadding?: boolean, bgColor?: string, raisedCard?: bo
     `
   )}
   
-  @media screen and (max-width: 700px) {
-    padding: 12px;
-    border-radius: 0;
-  }
+  
 `
 
 const GridCard = ({ children, noPadding, bgColor, raisedCard = false }: { children: any, noPadding?: boolean, bgColor?: string, raisedCard?: boolean, theme?: any }) => (

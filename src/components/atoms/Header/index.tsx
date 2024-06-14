@@ -3,7 +3,7 @@ import styled, { withTheme } from 'styled-components'
 
 const Container = styled.div<any>`
   width: 100%;
-  height: 25vh;
+  height: 50vh;
   background-color: ${(props) => props.bgColor ? props.bgColor : '#2f295e'};
   color: ${({ theme }) => theme.color};
   align-items: center;
