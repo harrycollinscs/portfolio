@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import NavigationBar from "../../molecules/NavigationBar";
 import Footer from "../../organisms/Footer";
 import Button from "../Button";
 
