@@ -19,11 +19,11 @@ export const lightTheme = {
   light: true,
   button: {
     primary: {
-      background: primary,
+      background: '#ff0000',
       text: '#fff', 
     },
     secondary: {
-      background: secondary,
+      background: 'rgb(221, 100, 50, 0.8)',
       text: mainText
     }
   },
