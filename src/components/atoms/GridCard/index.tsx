@@ -6,7 +6,7 @@ const Card = styled.div<{ noPadding?: boolean, bgColor?: string, raisedCard?: bo
   background-color: ${({ theme, bgColor }) => bgColor ? bgColor : theme.secondary};
   line-height: 2;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 50px;
   padding: ${({ noPadding }) => noPadding ? 0 : '48px' };
   box-sizing: border-box;
   display: flex;

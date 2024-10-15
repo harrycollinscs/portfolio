@@ -15,6 +15,7 @@ const StyledSection = styled.section<{bgColor?: string, fullWidth?: boolean, col
   padding: 60px 0px;
 
   @media screen and (max-width: 700px) {
+    width: ${(props) => props.fullWidth ? '100vw' : '90vw' };
     margin-left: 0px;
     margin-right: 0px;
     border-radius: 0;

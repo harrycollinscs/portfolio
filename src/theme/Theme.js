@@ -1,10 +1,10 @@
 export const primary = '#8EBEE6'
-export const secondary = '#FFF8EA'
+export const secondary = '#262c39'
 export const accent = '#FF6C2F'
-export const mainText = '#000'
+export const mainText = '#dddddd'
 
 export const lightTheme = {
-  body: '#fff',
+  body: '#14161c',
   container: 'rgb(255, 255, 255, 0)',
   card: '#f7f7f7',
   text: mainText,
