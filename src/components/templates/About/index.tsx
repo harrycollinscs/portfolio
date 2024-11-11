@@ -17,6 +17,7 @@ import Grid from "../../atoms/Grid";
 import SpotifyNowPlaying from "../../molecules/SpotifyNowPlaying";
 import Section from "../../atoms/Section";
 import Title from "../../atoms/Title";
+import GridCard from "../../atoms/GridCard";
 
 const AlbumGrid = styled.div`
   display: flex;
@@ -227,16 +228,16 @@ const About = ({ theme }: { theme?: any }) => {
               showThumbs={false}
               infiniteLoop={true}
               showStatus={false}
+              showArrows={false}
             >
               {TravelSlides.map((slide) => (
-                <img src={slide.image} alt={slide.label} />
+                <img src={slide.image} style={{ borderRadius: 40 }} alt={slide.label} />
               ))}
             </Carousel>
           </div>
         </Grid>
       </Section>
 
-      {/* <Section bgColor={theme.secondary} fullWidth> */}
       <Section>
         <TextArticle>
           <Title text="Sport & Fitness" />
@@ -249,34 +250,33 @@ const About = ({ theme }: { theme?: any }) => {
               smallMobile: 1,
             }}
           >
-            <div>
-              <h3>Running 🏃🏻‍♂️</h3>
-              <p>
+            <GridCard>
+              <h2>Running 🏃🏻‍♂️</h2>
+              <p style={{ marginTop: 48 }}>
                 I started running in 2023, with the goal of completing a half
                 marthon. After a lot of training and far too much cramp, I was
                 able to compete in the Hackney Half Marathon 2024 with a time of
                 2:04:50.
               </p>
-            </div>
-            <div>
-              <h3>Gym 🏋🏻</h3>
-              <p>
+            </GridCard>
+            <GridCard>
+              <h2>Gym 🏋🏻</h2>
+              <p style={{ marginTop: 48 }}>
                 I'm a regular at the gym, going between 3-6 times per week 🏋🏻. I
                 try to keep myself active and healthy, and its a big part of my
                 life.
               </p>
-            </div>
-            <div>
-              <h3>Basketball 🏀</h3>
-              <p>
+            </GridCard>
+            <GridCard>
+              <h2>Basketball 🏀</h2>
+              <p style={{ marginTop: 48 }}>
                 I support both the London Lions (my local team), and the
                 Brooklyn Nets.
               </p>
-            </div>
+            </GridCard>
           </Grid>
         </TextArticle>
       </Section>
-      {/* </Section> */}
     </Page>
   );
 };

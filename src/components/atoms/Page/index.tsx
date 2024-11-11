@@ -9,6 +9,7 @@ interface Props {
 }
 
 const Template = styled.main`
+  /* margin-top: 60px; */
   width: 100%;
   height: 100%;
   display: flex;

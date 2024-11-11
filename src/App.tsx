@@ -14,6 +14,8 @@ import NavigationBar from "./components/molecules/NavigationBar";
 import ScrollToTop from "./helpers/ScrollToTop";
 import { lightTheme } from "./theme/Theme";
 import { GlobalStyles } from "./theme/globalStyles";
+import Page from "./components/atoms/Page";
+import '../src/index.css'
 
 const App = () => {
   return (
@@ -33,7 +35,7 @@ const App = () => {
                   <Route path="/projects" element={<Projects />} />
 
                   {/* Not found fallback */}
-                  <Route path="*" element={<div>Not found</div>} />
+                  <Route path="*" element={<Page>Not found</Page>} />
                 </Routes>
               </BrowserRouter>
             </PersistGate>

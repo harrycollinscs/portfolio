@@ -1,19 +1,15 @@
-export const primary = '#8EBEE6'
-export const secondary = '#262c39'
+export const primary = '#3875f7'
+export const secondary = 'rgba(255, 0, 30, 0.1)'
 export const accent = '#FF6C2F'
-export const mainText = '#dddddd'
+export const mainText = '#000'
 
 export const lightTheme = {
-  body: '#14161c',
+  body: '#fffcf5',
   container: 'rgb(255, 255, 255, 0)',
   card: '#f7f7f7',
   text: mainText,
   toggleBorder: '#FFF',
   background: '#363537',
-  completeBgColor: '#8cd1a4',
-  completeText: '#12402a',
-  inProgressBgColor: '#a8d1ff',
-  inProgressText: '#082570',
   accentBackground: '#ede0ff',
   accentText: '#6603fc',
   light: true,
@@ -39,10 +35,6 @@ export const darkTheme = {
   text: '#fff',
   toggleBorder: '#6B8096',
   background: '#999',
-  completeBgColor: '#8cd1a4',
-  completeText: '#12402a',
-  inProgressBgColor: '#a8d1ff',
-  inProgressText: '#082570',
   accentBackground: '#ede0ff',
   accentText: '#6603fc',
   dark: true,

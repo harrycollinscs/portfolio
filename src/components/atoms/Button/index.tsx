@@ -13,12 +13,13 @@ const StyledButton = styled.button<{ appearance: string }>`
   background-color: ${({ theme, appearance }) => theme.button[appearance].background};
   color: ${({ theme, appearance }) => theme.button[appearance].text};
   padding: 15px 30px;
-  border-radius: 30px;
+  border-radius: 20px;
   border: none;
   box-sizing: border-box;
 
   p {
     font-size: 150%;
+    font-weight: 600;
   }
 `
 

@@ -12,7 +12,7 @@ const Nav = styled.nav`
   top: 0px;
   z-index: 1000;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   position: fixed;
@@ -30,60 +30,65 @@ const ButtonsList = styled.ul`
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  width: 400px;
+  width: 40rem;
 
   @media screen and (max-width: 600px) {
     width: 100%;
   }
 `;
 
-const NavigationLink = styled(NavLink)`
+const NavigationLink = styled.li`
   display: inline-block;
-  cursor: pointer;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  transition: all 0.5s ease;
-  color: ${({ theme }) => theme.text};
-  text-decoration: none;
   padding: 4px 20px;
   width: calc(100% / 3);
   text-align: center;
-`;
 
-const Indicator = styled.div<{ index: number; theme: any }>`
-  position: relative;
-  height: 2px;
-  width: calc(100% / 3);
-  left: ${({ index }) => `calc(100% / 3 * ${index})`};
-  background-color: ${({ theme }) => theme.primary};
-  transition: 0.1s linear;
+  a {
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: ${({ theme }) => theme.text};
+    text-decoration: none;
+    transition: all 0.25s ease ;
+    padding: 0px;
+    border-radius: 20px;
+  }
+
+  .active {
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: white;
+    background-color: ${({ theme }) => theme.button.primary.background};
+  }
 `;
 
 const NavigationBar = ({ theme }: { theme: any }) => {
-  const pathname = window.location.pathname;
-  const routeIndex = tabs.findIndex((item) => pathname === item.to);
-  const [navIndex, setNavIndex] = useState(routeIndex > 0 ? routeIndex : 0);
-
   return (
     <Nav id="navigation-bar">
       <Container>
         <ButtonsList>
           {tabs.map(({ to, title }, index) => (
-            <NavigationLink
-              key={index}
-              to={to}
-              onClick={(e) => {
-                setNavIndex(index);
-              }}
-              style={({ isActive }) =>
-                isActive ? { border: "1px solid red" } : {}
-              }
-            >
-              {title}
+            <NavigationLink>
+              <NavLink
+                key={index}
+                to={to}
+                className={({ isActive, isPending }) => {
+                  return isPending
+                    ? "pending"
+                    : isActive
+                    ? "active"
+                    : "inactive";
+                }}
+                // style={({ isActive }) =>
+                //   index === routeIndex ? { border: "1px solid red" } : {}
+                // }
+              >
+                {title}
+              </NavLink>
             </NavigationLink>
           ))}
         </ButtonsList>
-        <Indicator index={navIndex} />
       </Container>
     </Nav>
   );
