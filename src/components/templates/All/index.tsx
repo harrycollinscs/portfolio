@@ -261,7 +261,7 @@ const All = ({ theme }: { theme?: any }) => (
 
         <Title text="Charity" subtitle />
         <p>
-          After volunteering with The Felix Project in 2024, the importance of communities solidified in my mind. I'll be returning throughout 2025 to lend a helping hand where I can and help supply food to those who need it. See more about what they do <a href="https://thefelixproject.org/" target="_blank">here</a>.
+          After volunteering with The Felix Project in 2024, the importance of communities solidified in my mind. I'll be returning throughout 2025 to lend a helping hand where I can and help supply food to those who need it. See more about what they do <a href="https://thefelixproject.org/" target="_blank" rel="noreferrer">here</a>.
         </p>
       </Grid>
     </Section>
