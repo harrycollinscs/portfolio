@@ -253,10 +253,12 @@ const All = ({ theme }: { theme?: any }) => (
           as well as a London-based indie band called Lowblock among others.
         </p>
 
-        <Title text="Travel" subtitle />
+        <Title text="Travel & Sport" subtitle />
         <p>
-          In 2024 I visited Amsterdam, Indonesia, Singapore, and Scotland. In
-          2025 I'll be travelling to Las Vegas and Japan.
+          I love to travel - In 2024 I visited Amsterdam, Indonesia, Singapore, and Scotland, and in
+          2025 I'll be seeing the Grand Canyon and the Shibuya Scramble Crossing as I fly out to Las Vegas and Japan.
+
+          I'm also a regular at the gym, basketball court, and I'm no stanger to running, having completed the Hackney Half Marathon 2024.
         </p>
 
         <Title text="Charity" subtitle />
