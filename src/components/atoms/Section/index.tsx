@@ -2,16 +2,14 @@ import React from 'react'
 import styled, { withTheme } from 'styled-components'
 
 const StyledSection = styled.section<{bgColor?: string, fullWidth?: boolean, column?: boolean}>`
-  min-height: 100vh;
-  width: ${(props) => props.fullWidth ? '100vw' : '75vw' };
+  width: ${(props) => props.fullWidth ? '100vw' : '65vw' };
   display: flex;
   flex-direction: ${(props) => props.column ? 'column' : 'row' };
-  justify-content: center;
+  justify-content: ${(props) => props.column ? 'flex-start' : 'center' };
   line-height: 2;
   background-color: ${(props) => props.bgColor ? props.bgColor : props.theme.container };
   box-sizing: border-box;
   align-items: center;
-  padding: 24px 0px;
   padding: 60px 0px;
 
   @media screen and (max-width: 700px) {

@@ -5,7 +5,7 @@ import styled, { withTheme } from "styled-components";
 const tabs = [
   { to: `/`, title: "Home" },
   { to: `/projects`, title: "Projects" },
-  { to: `/about`, title: "Personal" },
+  // { to: `/about`, title: "Personal" },
 ];
 
 const Nav = styled.nav`
@@ -55,7 +55,7 @@ const Indicator = styled.div<{ index: number; theme: any }>`
   height: 2px;
   width: calc(100% / 3);
   left: ${({ index }) => `calc(100% / 3 * ${index})`};
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.secondary};
   transition: 0.1s linear;
 `;
 

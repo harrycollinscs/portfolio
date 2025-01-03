@@ -17,6 +17,7 @@ import Grid from "../../atoms/Grid";
 import SpotifyNowPlaying from "../../molecules/SpotifyNowPlaying";
 import Section from "../../atoms/Section";
 import Title from "../../atoms/Title";
+import GridCard from "../../atoms/GridCard";
 
 const AlbumGrid = styled.div`
   display: flex;
@@ -236,7 +237,6 @@ const About = ({ theme }: { theme?: any }) => {
         </Grid>
       </Section>
 
-      {/* <Section bgColor={theme.secondary} fullWidth> */}
       <Section>
         <TextArticle>
           <Title text="Sport & Fitness" />
@@ -249,7 +249,7 @@ const About = ({ theme }: { theme?: any }) => {
               smallMobile: 1,
             }}
           >
-            <div>
+            <GridCard>
               <h3>Running 🏃🏻‍♂️</h3>
               <p>
                 I started running in 2023, with the goal of completing a half
@@ -257,26 +257,25 @@ const About = ({ theme }: { theme?: any }) => {
                 able to compete in the Hackney Half Marathon 2024 with a time of
                 2:04:50.
               </p>
-            </div>
-            <div>
+            </GridCard>
+            <GridCard>
               <h3>Gym 🏋🏻</h3>
               <p>
                 I'm a regular at the gym, going between 3-6 times per week 🏋🏻. I
                 try to keep myself active and healthy, and its a big part of my
                 life.
               </p>
-            </div>
-            <div>
+            </GridCard>
+            <GridCard>
               <h3>Basketball 🏀</h3>
               <p>
                 I support both the London Lions (my local team), and the
                 Brooklyn Nets.
               </p>
-            </div>
+            </GridCard>
           </Grid>
         </TextArticle>
       </Section>
-      {/* </Section> */}
     </Page>
   );
 };

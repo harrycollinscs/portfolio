@@ -11,9 +11,9 @@ interface Props {
 
 const StyledButton = styled.button<{ appearance: string }>`
   background-color: ${({ theme, appearance }) => theme.button[appearance].background};
-  color: ${({ theme, appearance }) => theme.button[appearance].text};
-  padding: 15px 30px;
-  border-radius 30px;
+  color: #000;
+  padding: 15px 40px;
+  border-radius: 15px;
   border: none;
   box-sizing: border-box;
 

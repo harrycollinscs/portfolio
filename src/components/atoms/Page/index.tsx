@@ -36,7 +36,7 @@ const Page = ({ children, hideFooter = false }: Props) => {
       <Template>{children}</Template>
       {!hideFooter && <Footer />}
       {showScrollUpButton && (
-        <div style={{ position: "fixed", right: 40, bottom: 40 }}>
+        <div style={{ position: "fixed", right: 40, bottom: 40, zIndex: 1000 }}>
           <Button text="▲" onClick={scrollToTop} />
         </div>
       )}

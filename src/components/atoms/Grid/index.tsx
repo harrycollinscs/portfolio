@@ -4,11 +4,12 @@ import styled from 'styled-components'
 const StyledGrid = styled.div<{columns: any}>`
   display: grid;
   grid-template-columns: repeat(${({columns}) => columns.desktop}, 1fr);
-  grid-gap: 20px;
+  grid-gap: 100px;
   width: 100%;
   box-sizing: border-box;
   min-height: auto;
   justify-content: center;
+  z-index: 2;
 
   @media screen and (max-width: 1200px) {
     grid-template-columns: repeat(${({columns}) => columns.tablet}, 1fr);

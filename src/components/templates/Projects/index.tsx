@@ -37,6 +37,10 @@ const spotifyClientParagraphs = [
 ];
 
 const TextArticle = styled.article<{ left?: boolean }>`
+  h1 {
+    margin-bottom: 40px;
+  }
+  
   ${({ left }) =>
     left
       ? `

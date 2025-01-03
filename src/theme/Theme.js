@@ -1,6 +1,6 @@
-export const primary = '#8EBEE6'
-export const secondary = '#FFF8EA'
-export const accent = '#FF6C2F'
+export const primary = '#016b65'
+export const secondary = '#BBE5EC'
+export const accent = '#FDCFFF'
 export const mainText = '#000'
 
 export const lightTheme = {
@@ -19,7 +19,7 @@ export const lightTheme = {
   light: true,
   button: {
     primary: {
-      background: primary,
+      background: accent,
       text: '#fff', 
     },
     secondary: {
@@ -48,7 +48,7 @@ export const darkTheme = {
   dark: true,
   button: {
     primary: {
-      background: '#fdcf43',
+      background: accent,
       text: '#000' 
     },
     secondary: {

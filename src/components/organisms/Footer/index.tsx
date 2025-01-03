@@ -77,7 +77,7 @@ const Links = () => {
     <>
       <figure>
         <figcaption style={{ fontWeight: 'bold', color: 'grey' }}>HARRY COLLINS</figcaption>
-        <small>© Harry Collins, 2023</small>
+        <small>© Harry Collins, 2025</small>
       </figure>
 
       {
