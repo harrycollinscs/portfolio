@@ -127,7 +127,7 @@ const StyledDiv = styled.div`
         }
 
         &:nth-child(4) {
-          right: -40%;
+          left: 40%;
         }
 
         &:nth-child(5) {
@@ -182,7 +182,6 @@ const MainImage = styled.img`
   height: 500px;
   object-fit: cover;
   border-radius: 15px;
-
 
   @media screen and (max-width: 600px) {
     border-radius: 0;
