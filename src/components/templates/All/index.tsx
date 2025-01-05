@@ -148,7 +148,6 @@ const StyledImage = styled.img<{ index: number }>`
   height: ${({ index }) => 450 - Math.abs((index - 3) * 40)}px;
   z-index: ${({ index }) => -Math.abs(index - 3)};
   transform: ${({ index }) => `rotate(${(index - 3) * 10}deg)`};
-  border: 3px solid black;
 
   left: ${({ index }) => (index - 3) * 100}px;
   right: 0px;
