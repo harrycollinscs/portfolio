@@ -28,7 +28,7 @@ const Tiles = [
   <GridCard>
     <h2 style={{ textAlign: "center" }}>Forward Thinker</h2>
     <p style={{ marginTop: 48 }}>
-      I believe in taking take to plan ahead and think about the long-term
+      I believe in taking time to plan ahead and think about the long-term
       impact of our choices. <br /> <br />
       Build fast, learn fast, and avoid tech debt.
     </p>
@@ -238,7 +238,7 @@ const All = ({ theme }: { theme?: any }) => (
           columns={{
             desktop: 3,
             tablet: 2,
-            smallTablet: 2,
+            smallTablet: 1,
             mobile: 1,
             smallMobile: 1,
           }}
