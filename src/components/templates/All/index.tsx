@@ -36,7 +36,7 @@ const Tiles = [
   <GridCard>
     <h2 style={{ textAlign: "center" }}>Communication</h2>
     <p style={{ marginTop: 48 }}>
-      I’m a people person. I love chatting and solving problems with people.{" "}
+      I’m a people person, and I love chatting and solving problems with people.{" "}
       <br />
       <br />I always try to bring an ‘us vs. the problem’ mindset.
     </p>
