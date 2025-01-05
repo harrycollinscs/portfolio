@@ -9,6 +9,8 @@ import HalfMarathon from "../../../assets/images/HalfMarathon.jpg";
 import Weeknd from "../../../assets/images/Weeknd.jpg";
 import HazelDam from "../../../assets/images/HazelDam.jpg";
 import Venice from "../../../assets/images/travel/Venice.jpeg";
+import Wallows from "../../../assets/images/Wallows.jpg";
+import GiliT from "../../../assets/images/GiliT.jpg";
 import Section from "../../atoms/Section";
 import GridCard from "../../atoms/GridCard";
 import Grid from "../../atoms/Grid";
@@ -99,83 +101,110 @@ const StyledDiv = styled.div`
   height: 500px;
   width: 100%;
   margin-bottom: 80px;
-
+  padding-bottom: 60px;
 
   @media screen and (max-width: 600px) {
-    height: 400px;
+    display: none;
   }
-
-  @media screen and (max-width: 500px) {
-    height: 350px;
-  }
-  
 
   p {
     z-index: -5;
     transition: all 0.5s ease;
   }
 
-  &:hover {
-    img {
-      transform: rotate(0deg);
+  @media screen and (max-width: 1800px) {
+    &:hover {
+      img {
+        transform: rotate(0deg);
 
-      &:nth-child(1) {
-        left: 0px;
-        right: calc(100% - 350px);
-      }
+        &:nth-child(1) {
+          left: 0;
+          right: calc(100% - 350px);
+        }
 
-      &:nth-child(2) {
-        right: 25%;
-      }
+        &:nth-child(2) {
+          left: -40%;
+        }
 
-      &:nth-child(4) {
-        left: 25%;
-      }
+        &:nth-child(4) {
+          right: -40%;
+        }
 
-      &:nth-child(5) {
-        left: calc(100% - 350px);
+        &:nth-child(5) {
+          left: calc(100% - 350px);
+        }
       }
     }
+  }
+
+  @media screen and (min-width: 1800px) {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 `;
 
 const StyledImage = styled.img<{ index: number }>`
-  position: absolute;
   object-fit: cover;
   border-radius: 15px;
   align-self: center;
-  width: 350px;
-  height: ${({ index }) => 450 - Math.abs((index - 3) * 40)}px;
-  z-index: ${({ index }) => -Math.abs(index - 3)};
-  transform: ${({ index }) => `rotate(${(index - 3) * 10}deg)`};
-
-  left: ${({ index }) => (index - 3) * 100}px;
-  right: 0px;
-  margin-left: auto;
-  margin-right: auto;
-
-  top: 0px;
-  bottom: 0px;
-  margin-bottom: auto;
-  margin-top: auto;
+  width: 12vw;
+  height: 400px;
   transition: all 1s ease;
+
+  @media screen and (max-width: 1800px) {
+    position: absolute;
+    width: 350px;
+    height: ${({ index }) => 450 - Math.abs((index - 3) * 40)}px;
+    z-index: ${({ index }) => -Math.abs(index - 3)};
+    transform: ${({ index }) => `rotate(${(index - 3) * 10}deg)`};
+
+    left: calc(${({ index }) => (index - 3)} * 5vw);
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+    top: 0px;
+    bottom: 0px;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
 
   @media screen and (max-width: 900px) {
     transform: ${({ index }) => `rotate(${(index - 3) * 5}deg)`};
     left: ${({ index }) => (index - 3) * 25}px;
   }
+`;
+
+const MainImage = styled.img`
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+
 
   @media screen and (max-width: 600px) {
-    width: 300px;
-    height: ${({ index }) => 400 - Math.abs((index - 3) * 40)}px;
-  }
-
-  @media screen and (max-width: 500px) {
-    width: 250px;
-    height: ${({ index }) => 350 - Math.abs((index - 3) * 40)}px;
-    transform: ${({ index }) => `rotate(${(index - 3) * 2}deg)`};
+    border-radius: 0;
+    width: 100vw;
+    height: auto;
   }
 `;
+
+const ContentContainer  = styled.div`
+  @media screen and (max-width: 600px) {
+    padding: 0px 40px;
+  }
+`
+
+const TitleContainer = styled.div`
+  margin-bottom: 80px;
+  padding-top: 60px;
+
+  @media screen and (max-width: 600px) {
+    margin-bottom: 0px;
+  }
+`
 
 const All = ({ theme }: { theme?: any }) => (
   <Page>
@@ -220,20 +249,24 @@ const All = ({ theme }: { theme?: any }) => (
     </Section>
 
     <Section column>
-      <div style={{ marginBottom: 80 }}>
+      <TitleContainer>
         <Title text="Who I am" />
-      </div>
+      </TitleContainer>
 
       <StyledDiv>
-        <div style={{}}>
-          <StyledImage src={Weeknd} alt="Harry in Amsterdam" index={1} />
-          <StyledImage src={Venice} alt="Harry in Amsterdam" index={2} />
-          <StyledImage src={Singapore} alt="Harry in Amsterdam" index={3} />
-          <StyledImage src={HalfMarathon} alt="Harry in Amsterdam" index={4} />
-          <StyledImage src={HazelDam} alt="Harry in Amsterdam" index={5} />
-        </div>
+        <StyledImage src={Weeknd} alt="Weeknd concert" index={1} />
+        <StyledImage src={Venice} alt="Harry in Venice" index={2} />
+        <StyledImage src={Singapore} alt="Harry in Singapore" index={3} />
+        <StyledImage
+          src={HalfMarathon}
+          alt="Harry Hackney Half Marathon"
+          index={4}
+        />
+        <StyledImage src={HazelDam} alt="Harry in Amsterdam" index={5} />
       </StyledDiv>
+    </Section>
 
+    <Section>
       <Grid
         columns={{
           desktop: 2,
@@ -243,27 +276,51 @@ const All = ({ theme }: { theme?: any }) => (
           smallMobile: 1,
         }}
       >
-        <Title text="Interests" subtitle />
-        <p style={{ margin: 0, padding: 0 }}>
-          I'm massively into the arts - I constantly read, watch live music, go
-          to galleries, and enjoy film. <br />
-          <br /> I'm currently reading some classics including Hemingway & Marx,
-          and I recently got the chance to see the Weeknd and Charli XCX live,
-          as well as a London-based indie band called Lowblock among others.
-        </p>
+        <MainImage src={Wallows} alt="Wallows concert" />
+        <ContentContainer>
+          <Title text="Interests" subtitle />
+          <p style={{ margin: "100px 0px 0px 0px", padding: 0 }}>
+            I'm massively into the arts - I constantly read, watch live music,
+            go to galleries, and enjoy film. <br />
+            <br /> I'm currently reading some classics including Hemingway &
+            Marx, and I recently got the chance to see the Weeknd and Charli XCX
+            live, as well as a London-based indie band called Lowblock among
+            others.
+          </p>
+        </ContentContainer>
 
-        <Title text="Travel & Sport" subtitle />
-        <p>
-          I love to travel - In 2024 I visited Amsterdam, Indonesia, Singapore, and Scotland, and in
-          2025 I'll be seeing the Grand Canyon and the Shibuya Scramble Crossing as I fly out to Las Vegas and Japan.
+        <MainImage src={GiliT} alt="Gili T Island" />
 
-          I'm also a regular at the gym, basketball court, and I'm no stanger to running, having completed the Hackney Half Marathon 2024.
-        </p>
+        <ContentContainer>
+          <Title text="Travel & Sport" subtitle />
+          <p style={{ margin: "100px 0px 0px 0px", padding: 0 }}>
+            I love to travel - In 2024 I visited Amsterdam, Indonesia,
+            Singapore, and Scotland, and in 2025 I'll be seeing the Grand Canyon
+            and the Shibuya Scramble Crossing as I fly out to Las Vegas and
+            Japan. I'm also a regular at the gym, basketball court, and I'm no
+            stanger to running, having completed the Hackney Half Marathon 2024.
+          </p>
+        </ContentContainer>
 
-        <Title text="Charity" subtitle />
-        <p>
-          After volunteering with The Felix Project in 2024, the importance of communities solidified in my mind. I'll be returning throughout 2025 to lend a helping hand where I can and help supply food to those who need it. See more about what they do <a href="https://thefelixproject.org/" target="_blank" rel="noreferrer">here</a>.
-        </p>
+        <MainImage src={Weeknd} alt="Weeknd concert" />
+
+        <ContentContainer>
+          <Title text="Charity" subtitle />
+          <p style={{ margin: "100px 0px 0px 0px", padding: 0 }}>
+            After volunteering with The Felix Project in 2024, the importance of
+            communities solidified in my mind. I'll be returning throughout 2025
+            to lend a helping hand where I can and help supply food to those who
+            need it. See more about what they do{" "}
+            <a
+              href="https://thefelixproject.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              here
+            </a>
+            .
+          </p>
+        </ContentContainer>
       </Grid>
     </Section>
   </Page>

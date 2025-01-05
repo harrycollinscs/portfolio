@@ -60,8 +60,8 @@ const Links = () => {
 
   const tabs = [
     { to: `/`, title: 'All'},
-    { to: `/resume`, title: 'Resume'},
-    { to: `/about`, title: 'About'},
+    // { to: `/resume`, title: 'Resume'},
+    // { to: `/about`, title: 'About'},
     { to: `/projects`, title: 'Projects'},
   ];
 

@@ -17,7 +17,8 @@ const StyledButton = styled.button<{ appearance: string }>`
   border-radius: 15px;
   border: none;
   box-sizing: border-box;
-
+  border: 3px solid black;
+  
   @media screen and (max-width: 700px) {
     display: block;
     width: 100%;
