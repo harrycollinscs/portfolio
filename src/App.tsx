@@ -22,20 +22,20 @@ import { GlobalStyles } from './theme/globalStyles'
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
 
-  useEffect(() => {
-    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    setDarkMode(darkModeMediaQuery.matches);
+  // useEffect(() => {
+  //   const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  //   setDarkMode(darkModeMediaQuery.matches);
 
-    const handleChange = (event: any) => {
-      setDarkMode(event.matches);
-    };
+  //   const handleChange = (event: any) => {
+  //     setDarkMode(event.matches);
+  //   };
 
-    darkModeMediaQuery.addEventListener('change', handleChange);
+  //   darkModeMediaQuery.addEventListener('change', handleChange);
 
-    return () => {
-      darkModeMediaQuery.removeEventListener('change', handleChange);
-    };
-  }, []);
+  //   return () => {
+  //     darkModeMediaQuery.removeEventListener('change', handleChange);
+  //   };
+  // }, []);
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
