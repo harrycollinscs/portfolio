@@ -96,6 +96,7 @@ const IntroArticle = styled.article`
 `;
 
 const StyledDiv = styled.div`
+  position: relative;
   transition: all 1s ease;
   position: relative;
   height: 500px;
@@ -112,7 +113,7 @@ const StyledDiv = styled.div`
     transition: all 0.5s ease;
   }
 
-  @media screen and (max-width: 1800px) {
+  @media screen and (min-width: 1800px) {
     &:hover {
       img {
         transform: rotate(0deg);
@@ -137,7 +138,7 @@ const StyledDiv = styled.div`
     }
   }
 
-  @media screen and (min-width: 1800px) {
+  @media screen and (min-width: 1801px) {
     position: static;
     display: flex;
     flex-direction: row;
@@ -160,7 +161,7 @@ const StyledImage = styled.img<{ index: number }>`
     z-index: ${({ index }) => -Math.abs(index - 3)};
     transform: ${({ index }) => `rotate(${(index - 3) * 10}deg)`};
 
-    left: calc(${({ index }) => (index - 3)} * 5vw);
+    left: calc(${({ index }) => index - 3} * 5vw);
     right: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -190,11 +191,11 @@ const MainImage = styled.img`
   }
 `;
 
-const ContentContainer  = styled.div`
+const ContentContainer = styled.div`
   @media screen and (max-width: 600px) {
     padding: 0px 40px;
   }
-`
+`;
 
 const TitleContainer = styled.div`
   margin-bottom: 80px;
@@ -203,7 +204,7 @@ const TitleContainer = styled.div`
   @media screen and (max-width: 600px) {
     margin-bottom: 0px;
   }
-`
+`;
 
 const All = ({ theme }: { theme?: any }) => (
   <Page>
